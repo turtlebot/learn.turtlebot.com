@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "Testing TurtleBot Installation"
+date:   2015-02-01 13:46:11
+---
+
+***NOTE:* For this tutorial, set the computer on top of TurtleBot with the lid open instead of placing the closed netbook on the shelf above the Kobuki base.*
+
+## Test ROS Installation (TurtleBot and Work Station)
+
+Close all open terminals, and let’s test our ROS installation by opening a new terminal window (ctrl + alt + t) and running:
+
+{% highlight sh %}
+roscore
+{% endhighlight %}
+
+ROS is installed correctly if you see:
+
+{% highlight sh %}
+started core service [/rosout]
+{% endhighlight %}
+
+{% include image.html img="/assets/roscore-2.png" title="“roscore” running, “started core service [/rosout]” shows us ROS is installed correctly" %}
+
+If you see this, close this window.
+
+If you don’t see *started core service [/rosout]*, there is a problem with your installation. [Check this page for solutions](http://answers.ros.org/questions/).
+
+## Move Forward Via Teleoperation (TurtleBot only)
+
+Make sure TurtleBot’s Kobuki base is turned on (on/off switch is on the side).
+
+{% include image.html img="/assets/kobuki-onoff.jpg" title="Kobuki base on/off switch, turned “on”" %}
+
+The Kobuki base status light will turn green if you have sufficient battery power.
+
+{% include image.html img="/assets/kobuki-status-light.jpg" title="Kobuki base showing that we have sufficient battery power" %}
+
+Close any open terminals, then open a new terminal window and run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch 
+{% endhighlight %}
+
+{% include youtube.html youtubeid="ZAnfkpanUA0" %}
+
+TurtleBot will chime, letting you know that it’s booting up.
+
+When we were testing we saw a large number of warnings:
+
+{% highlight sh %}
+"Rapp Manager: No preferred rapp for  'rocon apps/talker'" warnings. 
+{% endhighlight %}
+
+They aren’t pretty, but they don’t affect the performance of these tutorials.
+
+Open another terminal tab and run:
+
+{% highlight sh %}
+roslaunch turtlebot_teleop keyboard_teleop.launch
+{% endhighlight %}
+
+{% include youtube.html youtubeid="a71oSx9HNY0" %}
+
+After this script has completely launched, instructions for controlling TurtleBot will be printed to the window. Press “i” to move forward.
+
+{% include youtube.html youtubeid="_jsd5xDYvmg" %}
+
+***NOTE:** This terminal window must be in focus/active (as opposed to another terminal window or program) for these commands to work.*

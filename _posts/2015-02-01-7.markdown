@@ -1,0 +1,101 @@
+---
+layout: post
+title:  "Setting Up Networking"
+date:   2015-02-01 13:46:12
+---
+
+Now that we’ve [chased the TurtleBot around while pressing keys on the netbook]({{ site.url }}{% post_url 2015-02-01-6 %}), we can really appreciate the workstation. This allows you to control the TurtleBot from the comfort of your chair.
+
+## Synchronizing Clocks (TurtleBot and Workstation)
+
+Follow only the [“Network Time Protocol” instructions on the Post-Installation Setup](http://wiki.ros.org/turtlebot/Tutorials/indigo/Post-Installation%20Setup) page. Skip the special cases instructions.
+
+***QUICK TIP:** Make sure both TurtleBot and the workstation are connected to the same router. To avoid problems moving forward, disable security options such as firewalls and anything that does port blocking .*
+
+## Set Up Networking (TurtleBot and Workstation)
+
+[Follow the network configuration instructions](http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration) and follow the options for “source installation”. Note that there are different and specific instructions for TurtleBot and the workstation.
+
+## Shell into TurtleBot
+
+***NOTE:** This may affect the security of your TurtleBot computer. Don’t do this outside of a local network or if it contains confidential information.*
+
+Though you can always go find the TurtleBot and type in the commands directly, it’s more convenient to SSH into its computer and control it from there.
+
+Check if SSH service exists by running on TurtleBot:
+
+{% highlight sh %}
+sudo service ssh status
+{% endhighlight %}
+
+If you receive **ssh: unrecognized service**,install the SSH server via:
+
+{% highlight sh %}
+sudo apt-get install openssh-server
+{% endhighlight %}
+
+Now that you’ve confirmed you have SSH installed or have just installed it, run:
+
+{% highlight sh %}
+sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
+sudo ufw allow ssh
+sudo /etc/init.d/ssh restart
+{% endhighlight %}
+
+Find TurtleBot’s IP by running the following on TurtleBot’s computer:
+
+{% highlight sh %}
+ifconfig
+{% endhighlight %}
+
+After **wlan0 (not "lo")** you’ll see an **inet addr:**. That is TurtleBot’s IP.
+
+**TIP:** If it starts with 127, it’s probable the IP for **lo** is the wrong one.
+
+{% include youtube.html youtubeid="ihhEnFwffDE" %}
+
+On the workstation, open a terminal and run:
+
+{% highlight sh %}
+ssh turtlebot@[ip_of_turtlebot]
+{% endhighlight %}
+
+NOTE: Replace **[ip_of_turtlebot]** with TurtleBot’s IP and **turtlebot** with its username if you didn’t use “turtlebot”.
+
+Now you can SSH into TurtleBot to run scripts including the start-up script:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch
+{% endhighlight %}
+
+…without having to walk over to TurtleBot!
+
+***TIP:** The password is the same password you use to log in to the TurtleBot computer (default: **turtlebot**).*
+
+{% include youtube.html youtubeid="RcYim7laT_c" %}
+
+## Drive in Comfort
+
+On the TurtleBot computer, close all terminal windows, close the computer, and set it on the [second shelf like we did in the Hardware Setup tutorial]({{ site.url }}{% post_url 2015-02-01-3 %}). Now that you know how to SSH into TurtleBot via your workstation you can run anything you need to via the workstation.
+
+Run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch
+{% endhighlight %}
+
+***NOTE:** turtlebot_bringup is the way of “booting up” TurtleBot. This must be run remotely on TurtleBot, never directly on the workstation*
+
+On the workstation, run:
+
+{% highlight sh %}
+roslaunch turtlebot_keyboard keyboard_teleop.launch
+{% endhighlight %}
+
+Try driving around from the workstation. This is what you should see on the workstation’s screen:
+
+{% include youtube.html youtubeid="BfpXhVCLosY" %}
+
+And this is what you should see in your office, home, etc:
+
+{% include youtube.html youtubeid="gvtBXeJxghk" %}

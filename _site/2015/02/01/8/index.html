@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Hardware Setup</title>
-  <meta name="description" content="">
+  <title>Testing Kinect</title>
+  <meta name="description" content="In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBot “sees” its environment. We’ve already installed the drivers for Kinect so n...">
 
   <link rel="stylesheet" href="/turtlebot-tutorial/css/main.css">
-  <link rel="canonical" href="/turtlebot-tutorial/turtlebot-tutorial/2015/02/01/3/">
+  <link rel="canonical" href="/turtlebot-tutorial/turtlebot-tutorial/2015/02/01/8/">
   <link rel="alternate" type="application/rss+xml" title="Learn TurtleBot and ROS" href="/turtlebot-tutorial/turtlebot-tutorial/feed.xml" />
 </head>
 
@@ -55,23 +55,20 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Hardware Setup</h1>
+    <h1 class="post-title">Testing Kinect</h1>
   </header>
 
 <div class="page-navigation"> 
         
          
 				<div class="left"> 
-                <a href="/turtlebot-tutorial/2015/02/01/2/" title="Previous Post: 
-What You Will Need">&laquo; What You Will Need</a> 
+                <a href="/turtlebot-tutorial/2015/02/01/7/" title="Previous Post: 
+Setting Up Networking">&laquo; Setting Up Networking</a> 
 				</div>
          
          
 
         <div class="right"> 
-         
-                <a href="/turtlebot-tutorial/2015/02/01/4/" title="next Post: 
-Installing Ubuntu 14.04">Installing Ubuntu 14.04 &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 
@@ -79,37 +76,53 @@ Installing Ubuntu 14.04">Installing Ubuntu 14.04 &raquo; </a>
 
 
   <article class="post-content">
-    <div style="margin: 0 auto; width:100%; margin-bottom: 1.5em;"><iframe width="700" height="393" src="https://www.youtube.com/embed/dzZGsZPW4aY?rel=0&amp;showinfo=0" style=" margin: 0 auto; display:block; border: solid #eef 15px; border-radius: 3px; max-width: 90%;" allowfullscreen=""></iframe></div>
+    <p>In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBot “sees” its environment. We’ve already installed the drivers for Kinect so now we’ll test it to make sure it works.</p>
 
-<p>TurtleBot comes pre-built. You simply need to plug in the cables.</p>
+<h2 id="test-driver-and-usb-connection-turtlebot-only">Test Driver and USB Connection (TurtleBot Only)</h2>
 
-<p>Take your netbook computer and place it on the second shelf with the USB plugs facing the rear of TurtleBot. (The rear has the various plugs into the Kobuki base.)</p>
+<p>On TurtleBot, close all terminals, then open a new window and run:</p>
 
-<!-- _includes/image.html -->
-<div class="image-wrapper">
-    
-        <img src="/turtlebot-tutorial//assets/kobuki-status-light-2.jpg" />
-    
-    
-        <p class="image-caption">Kobuki base showing rear plugs</p>
-    
-</div>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_bringup minimal.launch</code></pre></div>
 
-<p>TurtleBot comes with two cables, a USB A-B cable and a USB splitter-type cable. Plug the A side of the USB cable into your laptop and the B side into the Kobuki base. Next plug the female side of the USB splitter into the cable coming out of the Kinect. Plug the male USB from the splitter into the laptop and the other half of the splitter into the 12V 1.5amp plug on the Kobuki base.</p>
+<p>Then open another terminal window and run:</p>
 
-<p>Finally, locate the On/Off button on the side of the Kobuki base, turn TurtleBot on, and it is ready to go!</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch openni_launch openni.launch</code></pre></div>
 
-<!-- _includes/image.html -->
-<div class="image-wrapper">
-    
-        <img src="/turtlebot-tutorial//assets/kobuki-onoff-2.jpg" />
-    
-    
-        <p class="image-caption">Kobuki base on/off button</p>
-    
-</div>
+<p>If you get a collection of lines that start with <strong>process[camera…</strong> everything is perfect and you can skip the troubleshooting section below and move on to the “View Image Data” section. Leave the two terminal windows open.</p>
 
-<p><strong>EXTRA CREDIT:</strong> The laptop uses its own battery power, not TurtleBot’s. The kit comes with the ability to plug the laptop into the Kobuki base so that it charges up when TurtleBot is charging. <a href="http://www.clearpathrobotics.com/turtlebot_2/downloads/">Information on setting this up is here</a>.</p>
+<div style="margin: 0 auto; width:100%; margin-bottom: 1.5em;"><iframe width="700" height="393" src="https://www.youtube.com/embed/QjFBrZZki-E?rel=0&amp;showinfo=0" style=" margin: 0 auto; display:block; border: solid #eef 15px; border-radius: 3px; max-width: 90%;" allowfullscreen=""></iframe></div>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>If you repeatedly receive:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="o">[</span>INFO<span class="o">][</span><span class="c">#]: No devices connected.... waiting for devices to be connected</span></code></pre></div>
+
+<p>this is probably because the Kinect driver wasn’t installed. <a href="/turtlebot-tutorial/2015/02/01/5/">See Install Kinect Driver in our previous post</a>.</p>
+
+<p>If you receive:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">terminate called after throwing an instance of <span class="s1">&#39;openni_wrapper::OpenNIException&#39;</span></code></pre></div>
+
+<p>or</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">Image: PrimeSense/SensorV2/5.1.2.1: Failed to <span class="nb">set </span>USB interface!</code></pre></div>
+
+<p>these have occurred because Kinect isn’t compatible with USB 3.0. Plug it into a USB 2.0 port. (Problems can also occur with USB 2.0 ports that are 3.0 compatible.).</p>
+
+<h4 id="troubleshooting-i-dont-have-a-usb-20-port-or-its-still-giving-the-above-errors">Troubleshooting: I don’t have a USB 2.0 port or it’s still giving the above errors</h4>
+
+<p>We’re going to disable USB 3.0 in the bios.</p>
+
+<ol>
+  <li>Boot into BIOS by rebooting your computer and holding down the F2 key (it could be a different key on your computer)</li>
+  <li>Go to the <em>advanced</em> tab</li>
+  <li>This part varies depending on your computer.  If you have a USB option go there first.</li>
+  <li>If your BIOS lists <strong>xHCI</strong> disable it.</li>
+  <li>If you BIOS lists <strong>USB Debugging</strong> enable it.</li>
+  <li>Save and exit BIOS.</li>
+</ol>
+
 
   </article>
 
@@ -122,15 +135,12 @@ Installing Ubuntu 14.04">Installing Ubuntu 14.04 &raquo; </a>
         
          
 				<div class="left"> 
-                <a href="/turtlebot-tutorial/2015/02/01/2/" title="Previous Post: 
-What You Will Need">&laquo; What You Will Need</a> 
+                <a href="/turtlebot-tutorial/2015/02/01/7/" title="Previous Post: 
+Setting Up Networking">&laquo; Setting Up Networking</a> 
 				</div>
          
 
         <div class="right"> 
-         
-                <a href="/turtlebot-tutorial/2015/02/01/4/" title="next Post: 
-Installing Ubuntu 14.04">Installing Ubuntu 14.04 &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 

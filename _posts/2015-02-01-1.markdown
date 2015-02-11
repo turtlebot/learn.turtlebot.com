@@ -11,6 +11,7 @@ Through software packages like the [Robot Operating System (ROS)](http://www.ros
 **The goal of this article series is to get web, mobile, and maker developers programming with ROS via the development platform Turtlebot.** We hope you will see the amazing possibilities and opportunities, dive in and never look back.
 
 ## What is TurtleBot and What Does it Do?
+{% include image_onrightoftext.html img="assets/turtlebot_2_lg.png" width="225" %}
 
 **TurtleBot is an open source hardware platform and mobile base. When powered by ROS software, TurtleBot can handle vision, localization, communication and mobility. It can autonomously move anything on top of it to wherever that item needs to go, avoiding obstacles along the way.** This may not seem terribly exciting at first glance, but consider two things:
 

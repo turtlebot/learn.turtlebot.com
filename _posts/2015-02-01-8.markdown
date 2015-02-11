@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Testing Kinect"
+date:   2015-02-01 13:46:13
+---
+
+In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBot “sees” its environment. We’ve already installed the drivers for Kinect so now we’ll test it to make sure it works.
+
+## Test Driver and USB Connection (TurtleBot Only)
+
+On TurtleBot, close all terminals, then open a new window and run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch 
+{% endhighlight %}
+
+Then open another terminal window and run:
+
+{% highlight sh %}
+roslaunch openni_launch openni.launch 
+{% endhighlight %}
+
+If you get a collection of lines that start with **process[camera...** everything is perfect and you can skip the troubleshooting section below and move on to the “View Image Data” section. Leave the two terminal windows open.
+
+{% include youtube.html youtubeid="QjFBrZZki-E" %}
+
+## Troubleshooting
+
+If you repeatedly receive:
+
+{% highlight sh %}
+[INFO][#]: No devices connected.... waiting for devices to be connected
+{% endhighlight %}
+
+this is probably because the Kinect driver wasn’t installed. [See Install Kinect Driver in our previous post]({{ site.url }}{% post_url 2015-02-01-5 %}).
+
+If you receive:
+
+{% highlight sh %}
+terminate called after throwing an instance of 'openni_wrapper::OpenNIException' 
+{% endhighlight %}
+
+or
+
+{% highlight sh %}
+Image: PrimeSense/SensorV2/5.1.2.1: Failed to set USB interface!
+{% endhighlight %}
+
+these have occurred because Kinect isn’t compatible with USB 3.0. Plug it into a USB 2.0 port. (Problems can also occur with USB 2.0 ports that are 3.0 compatible.).
+
+#### Troubleshooting: I don't have a USB 2.0 port or it's still giving the above errors
+
+We're going to disable USB 3.0 in the bios.
+
+1. Boot into BIOS by rebooting your computer and holding down the F2 key (it could be a different key on your computer)
+2. Go to the *advanced* tab
+3. This part varies depending on your computer.  If you have a USB option go there first.
+4. If your BIOS lists **xHCI** disable it.
+5. If you BIOS lists **USB Debugging** enable it.
+6. Save and exit BIOS.
+
+
+
