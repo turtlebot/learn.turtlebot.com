@@ -70,6 +70,9 @@ Setting Up Networking">&laquo; Setting Up Networking</a>
 
         <div class="right"> 
          
+                <a href="/turtlebot-tutorial/2015/02/01/9/" title="next Post: 
+Teleoperation">Teleoperation &raquo; </a> 
+         
         </div> 
         <div class="clear">&nbsp;</div> 
 </div>
@@ -123,6 +126,58 @@ Setting Up Networking">&laquo; Setting Up Networking</a>
   <li>Save and exit BIOS.</li>
 </ol>
 
+<h4 id="if-you-still-have-trouble-check-that-the-kinect-has-power-by-running">If you still have trouble, check that the Kinect has power by running:</h4>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">lsusb</code></pre></div>
+
+<p>and verify that there are three lines about <strong>Microsoft Corp.,</strong> two of which are regarding <strong>XBox NUI</strong>. If you only have one line or none, Kinect may not be plugged in or is lacking power.</p>
+
+<h2 id="view-image-data-workstation">View Image Data (Workstation)</h2>
+
+<p>Close all terminal windows, open a new one, and run:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">rosrun image_view image_view image:<span class="o">=</span>/camera/rgb/image_color</code></pre></div>
+
+<p>You should see a live video stream from the Kinect. Press ‘q’ to quit.</p>
+
+<p>This is not much more exciting than a webcam, so let’s see a visual representation of distance by running:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">rosrun image_view image_view image:<span class="o">=</span>/camera/depth/image</code></pre></div>
+
+<p>You should see a grayscale video stream where objects closer to the Kinect appear darker.</p>
+
+<p><em><strong>TIP:</strong> If you see only solid gray, check that you are still running openni.launch on TurtleBot.</em></p>
+
+<p>Press ‘q’ to quit the depth image.</p>
+
+<div style="margin: 0 auto; width:100%; margin-bottom: 1.5em;"><iframe width="700" height="393" src="https://www.youtube.com/embed/9xN7zRUZsIw?rel=0&amp;showinfo=0" style=" margin: 0 auto; display:block; border: solid #eef 15px; border-radius: 3px; max-width: 90%;" allowfullscreen=""></iframe></div>
+
+<h2 id="stop-openni-turtlebot">Stop Openni (TurtleBot)</h2>
+
+<p>Go to the terminal on TurtleBot where <strong>openni</strong> is running. Press ctrl + C to stop it. Leave <strong>minimal.launch</strong> running. Now run:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_bringup 3dsensor.launch</code></pre></div>
+
+<div style="margin: 0 auto; width:100%; margin-bottom: 1.5em;"><iframe width="700" height="393" src="https://www.youtube.com/embed/-eGh2QJF398?rel=0&amp;showinfo=0" style=" margin: 0 auto; display:block; border: solid #eef 15px; border-radius: 3px; max-width: 90%;" allowfullscreen=""></iframe></div>
+
+<h2 id="rviz-workstation">RViz (Workstation)</h2>
+
+<p>Close all terminal windows, then open a new one and run:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_rviz_launchers view_robot.launch</code></pre></div>
+
+<p>Under “Displays” check “Registered DepthCloud” and “Image”. Hold down the left mouse button to rotate or the middle mouse button to move the camera.</p>
+
+<p><strong>*NOTE:</strong> If you don’t see the display panel, scroll your mouse to the top of the screen and click “Panels”. Check the box next to “Display Panel” to enable it. </p>
+
+<p>If you have trouble, here’s a YouTube walkthrough.</p>
+
+<div style="margin: 0 auto; width:100%; margin-bottom: 1.5em;"><iframe width="700" height="393" src="https://www.youtube.com/embed/QRWObANzrCk?rel=0&amp;showinfo=0" style=" margin: 0 auto; display:block; border: solid #eef 15px; border-radius: 3px; max-width: 90%;" allowfullscreen=""></iframe></div>
+
+<h2 id="troubleshooting-1">Troubleshooting</h2>
+
+<p>If you get a warning about “no image available”, try closing everything on both TurtleBot and workstation and then re-opening.</p>
+
 
   </article>
 
@@ -141,6 +196,9 @@ Setting Up Networking">&laquo; Setting Up Networking</a>
          
 
         <div class="right"> 
+         
+                <a href="/turtlebot-tutorial/2015/02/01/9/" title="next Post: 
+Teleoperation">Teleoperation &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 
