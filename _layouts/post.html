@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+<div class="page-navigation"> 
+        
+        {% if page.previous.url %} 
+				<div class="left"> 
+                <a href="{{site.url}}{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+				</div>
+        {% endif %} 
+         
+
+        <div class="right"> 
+        {% if page.next.url %} 
+                <a href="{{site.url}}{{page.next.url}}" title="next Post: 
+{{page.next.title}}">{{page.next.title}} &raquo; </a> 
+        {% endif %} 
+        </div> 
+        <div class="clear">&nbsp;</div> 
+</div>
+
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
+
+<div class="page-navigation"> 
+		<hr>
+		<div class="page-navigation-title">Keep Reading</div>
+        <div class="clear">&nbsp;</div> 
+        
+        {% if page.previous.url %} 
+				<div class="left"> 
+                <a href="{{site.url}}{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+				</div>
+        {% endif %} 
+
+        <div class="right"> 
+        {% if page.next.url %} 
+                <a href="{{site.url}}{{page.next.url}}" title="next Post: 
+{{page.next.title}}">{{page.next.title}} &raquo; </a> 
+        {% endif %} 
+        </div> 
+        <div class="clear">&nbsp;</div> 
+</div>

@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "What You Will Need"
+date:   2015-02-01 13:46:07
+---
+
+To follow this tutorial line-by-line you will need:
+
+1. **TurtleBot:** A [TurtleBot2](http://www.turtlebot.com/) with a Kobuki base. We used a pre-built one from [Clearpath Robotics](http://www.clearpathrobotics.com/turtlebot_2/)
+2. **TurtleBot’s Netbook:** Clearpath sells TurtleBots with compatible netbooks.  If you want to purchase your own netbook be aware that your netbook must be less than 21 cm wide to fit in the shelf.
+3. **Docking Station:** We recommend purchasing the docking station as well so TurtleBot can autonomously charge itself when it detects that it needs power.  This is listed as an option when purchasing a TurtleBot2 from Clearpath.
+4. **The Workstation:** A second computer with a decent graphics card and sufficient RAM for 3D simulations (4 GB+).
+5. **Router:** A wireless router allows the workstation and TurtleBot to communicate via local IPs.
+
+
+*Tip: Throughout this tutorial we’ll refer to TurtleBot but we’re always using the TurtleBot2 with a Kobuki base.  This tutorial series is not compatible with the original TurtleBot or TurtleBots using iRobot’s Create base.*
+
+## Why Two Computers?
+
+We need two computers because TurtleBot’s netbook will be closed and traveling with TurtleBot. Also, TurtleBot’s netbook generally doesn’t have sufficient resources to handle the graphic requirements for [RViz](http://wiki.ros.org/rviz), which is the primary 3D visualization tool for ROS.

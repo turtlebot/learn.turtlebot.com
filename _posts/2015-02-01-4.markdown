@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "Installing Ubuntu 14.04"
+date:   2015-02-01 13:46:09
+---
+
+## Ubuntu What?
+
+[Ubuntu](http://www.ubuntu.com/download/desktop/) is a (free) community-based Linux distribution. The desktop version feels rather similar to Mac with a “Finder”, icons to start apps, browsers and everything else users of commercial operating systems are accustomed to employing.
+
+## Very Important!
+
+**DO NOT USE OS X, WINDOWS OR ANYTHING EXCEPT UBUNTU 14.04 LTS!**
+
+If you go to the [ROS installation page](http://wiki.ros.org/ROS/Installation), it says there is an “experimental” version of ROS for OS X. It’s experimental for a reason – you’ll run into serious problems following this tutorial.
+
+## Did Linux and ROS Come Pre-Installed with TurtleBot?
+
+If you purchased TurtleBot and it came pre-installed with Linux and ROS, you should check which versions shipped with your computer. You can find out which version of Linux you have by opening a terminal (ctrl + alt + t) and typing:
+
+{% highlight sh %}
+lsb_release -a
+{% endhighlight %}
+
+{% include image.html img="/assets/lsb_release.png" title="Results of “lsb_release -a” in Terminal" %}
+
+You can check which distribution of ROS you have by running:
+
+{% highlight sh %}
+roscore
+{% endhighlight %}
+
+
+{% include image.html img="/assets/roscore.png" title="“roscore” runing in Terminal" %}
+
+If you look below the **PARAMETERS** heading, you’ll see **/rosdistro:...**. Whatever is written next is the name of your ROS distribution. In our case it’s indigo which is what we want.
+
+When we purchased our TurtleBot2 in September 2014 it shipped with Ubuntu 12 (12 being the version #) and ROS Hydro (Hydro being the distribution release’s name). The developers of ROS highly recommend using Ubuntu 14.04 LTS and ROS Indigo instead.
+
+## Why should I use (or upgrade to) ROS Indigo & Ubuntu 14.04?
+
+Both Ubuntu 14.04 and ROS Indigo are LTS (Long Term Support) meaning that you can depend on it for years.  ROS Indigo is specifically designed to work with Ubuntu 14.04.  
+
+ROS Hydro and earlier distributions are not LTS.
+
+## How to Install Linux
+
+We started with two Windows computers and installed Linux instead. As we [mentioned in a previous post]({{ site.url }}{% post_url 2015-02-01-2 %}), you have the TurtleBot netbook and a workstation. You’ll install Ubuntu Desktop 14.04 LTS on both of them using the same process.
+
+## Create Installation USB drive
+
+First download [Ubuntu Desktop 14.04 LTS](http://www.ubuntu.com/download/desktop/) on a Windows machine (virtually everyone will need the 64-bit version but if you are concerned [here are instructions on how to check if you are 64-bit or 32-bit](http://windows.microsoft.com/en-us/windows/32-bit-and-64-bit-windows#1TC=windows-7)). Follow [these instructions](https://help.ubuntu.com/community/Installation/FromUSBStickQuick) to create an Ubuntu-bootable USB drive.
+
+## Boot Via USB
+
+After the USB drive is ready, connect it to the computer you want to install Linux on and reboot the machine.
+
+You’ll need to get to the Boot Menu by pressing the appropriate function key during boot-up. Typically this is F12 or F8, but it could be any of them. You should then see an option to “Select a Boot First Drive”. Choose your USB drive (ours was called “USB-HDD”).
+
+Another option if you are having trouble with the Boot Menu is to boot it into BIOS mode (another function key depending on your computer). Then go to “Advanced” and “Set First Boot Drive” to “USB-HDD”. Save and continue.
+
+## Install
+
+If you’ve set the correct Boot Drive you should see a few different options. The first one is “Try Ubuntu”; skip this as we are going to commit! Select “Install Ubuntu”. In the “Installation Type” settings we recommend “Erase”. This will erase your current operating system and all data on it, but it will be the cleanest way to install the new OS.
+
+From here things are pretty much the same as installing any other OS. Select a timezone, language, keyboard layout, etc. On the TurtleBot netbook it’s traditional set the username and password to “turtlebot”. This isn’t mandatory but will help with following our tutorials.
+
+## Opening a Terminal Window
+
+If you’re not familiar with opening and adding new terminal windows, we’ve prepared a short video tutorial to get you started:
+
+{% include youtube.html youtubeid="mZD8NrC373Y" %}
+
+
+## Quick Course on Commands
+
+If you’ve never used Linux before, take a moment to review [tutorial one](http://www.ee.surrey.ac.uk/Teaching/Unix/unix1.html) and [tutorial two](http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html). Three and beyond are not required for the following tutorials.

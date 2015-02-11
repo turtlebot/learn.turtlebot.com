@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>A "getting started" guide for developers interested in robotics</h1>
+
+  <ol>
+    {% for post in site.posts reversed %}
+      <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ol>
+
+</div>

@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "We Want You to Learn Turtlebot (and Robotics)!"
+date:   2015-02-01 13:46:06
+---
+
+Practical and accessible robotics is upon us, ready to move from government and institutional labs to individual development spaces like the home, office, or garage. Like the personal computer revolution in the late 70’s and early 80’s, robots are ready for the first great generation of amateur developers to take the foundation work of robotics pioneers to undreamed-of places.
+
+Through software packages like the [Robot Operating System (ROS)](http://www.ros.org/), the intense research and expertise of engineers, computer scientists and more get distilled into ready-to-use development environments and function calls. Year by year, the barriers to entry come down and as web, mobile and maker developers transition into the field, the walls come down even faster.
+
+**The goal of this article series is to get web, mobile, and maker developers programming with ROS via the development platform Turtlebot.** We hope you will see the amazing possibilities and opportunities, dive in and never look back.
+
+## What is TurtleBot and What Does it Do?
+
+**TurtleBot is an open source hardware platform and mobile base. When powered by ROS software, TurtleBot can handle vision, localization, communication and mobility. It can autonomously move anything on top of it to wherever that item needs to go, avoiding obstacles along the way.** This may not seem terribly exciting at first glance, but consider two things:
+
+1. A mobile base is the heart of a modular/interoperability model of robotics. Without a shared base, parts such as robotic arms, sensors, and other tools could not find or get to their location. Even at their desired location, each would require an independent “brain” to know what to do, which would in turn require interpretation between each of the components.
+2. The [Kiva robot system](http://www.kivasystems.com/), which is essentially a really strong TurtleBot (a robot that autonomously moves objects on top of it around an environment), was purchased by Amazon for $775 million to manage products in their massive warehouses.
+Regardless of whether you support the all-in-one or modular/interoperable design theses, or you want to build anything from laundryBots to a fleet of waiters for hire, TurtleBot’s open source hardware, driven by the open source ROS software, is an ideal starting point for any developer transitioning into robotics.
+
+Regardless of whether you support the all-in-one or modular/interoperable design theses, or you want to build anything from laundryBots to a fleet of waiters for hire, TurtleBot’s open source hardware, driven by the open source ROS software, is an ideal starting point for any developer transitioning into robotics.
+
+## What is ROS?
+
+From the [ros.org](http://www.ros.org) website:
+
+> The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.
+
+ROS is essentially a general-purpose unified collection of software representing the shared knowledge of many experts that is open source and ready to use! In other words, it has drastically simplified our task of building robust and complex systems.
+
+## What Will We Do with TurtleBot?
+
+Given that TurtleBot is a mobile base that can autonomously move around an environment, we wanted to come up with an experiment that captured , however trivially, the value, utility and possibilities of the base station on its own.
+
+We decided to have TurtleBot perform the critical task of making coffee available on-demand for our coworkers without needing to leave the comfort of their desks.
+
+After mounting a Keurig coffee maker and k-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via a Google Chrome Extension on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker would then plug-in the Keurig and make their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
+
+## Start Dreaming Beyond These Demos!
+
+When a mobile base can move wherever it is needed without running into obstacles, lots of opportunities arise.
+
+Recently we saw Bill Smart from Oregon State University and his autonomously navigating electric wheelchair for patients with ALS. In ALS patients, the eyes often work well into the late stages of the disease. Smart places patients wearing Google Glass in the wheelchair and they simply look where they want to go and blink. The wheelchair navigates to that location, without running into anything along the way.
+
+In summary, whether you are delivering coffee, transporting people, or moving industrial equipment, progress starts with knowing where you are, what your goal is, and how to achieve it while avoiding obstacles in its path. TurtleBot makes learning these core concepts affordable, accessible and fun.
+

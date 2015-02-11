@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Installing ROS"
+date:   2015-02-01 13:46:10
+---
+
+We need to install ROS and TurtleBot packages on both the work station and TurtleBot. There are different distributions of ROS and they are named in alphabetical order from oldest to newest (e.g. Groovy came before Hydro which came before Indigo).
+
+We want to install the long term support, or LTS, version called **Indigo**.
+
+## Installing ROS (Workstation and TurtleBot)
+
+For your reference, [The ROS Wiki page](http://wiki.ros.org/indigo/Installation/Ubuntu) on installing Indigo is excellent. Follow it completely and use all the recommended options such as installing the desktop full version.
+
+***TIP:** If you followed our Installing Ubuntu tutorial you have Ubuntu 14.04.*
+
+***TIP:** All of these commands should be copied and pasted into a terminal. Use ctrl + alt + t to launch a terminal.*
+
+***TIP:** In the ROS documentation for the installation the bash steps are labeled as “convenient” but not required. However, be sure to do these steps as they make following these articles much easier.*
+
+## Install TurtleBot Packages (Workstation and TurtleBot)
+
+When you install ROS it comes with all the common packages but leaves out lots of stuff some robots won’t need. Obviously the TurtleBot packages are only for TurtleBot users so we’ll need to install that now.
+
+First, open a terminal and run:
+
+{% highlight sh %}
+sudo apt-get update
+{% endhighlight %}
+
+When this article was written, the deb format wasn’t available yet so we had to install TurtleBot from the source. Except for some copying and pasting, it’s not more difficult or different.
+
+***Update:** Since writing this a deb is available but OSRF still recommends installing the source installation while they fix some final bugs (2/11/15).*
+
+Follow the [TurtleBot installation instructions](http://wiki.ros.org/turtlebot/Tutorials/indigo/Installation) by copying every line below “Source Installation” into a terminal.
+
+## Install Kinect Driver (TurtleBot only)
+
+TurtleBot uses a Microsoft Kinect. To use the Kinect you need to install its driver. Do this by copying and pasting the following lines into a terminal:
+
+{% highlight sh %}
+mkdir ~/kinectdriver 
+cd ~/kinectdriver 
+git clone https://github.com/avin2/SensorKinect 
+cd SensorKinect/Bin/
+tar xvjf SensorKinect093-Bin-Linux-x64-v5.1.2.1.tar.bz2
+cd Sensor-Bin-Linux-x64-v5.1.2.1/
+sudo ./install.sh
+{% endhighlight %}
+
+## Prevent TurtleBot from Turning Off When You Close the Lid (TurtleBot Only)
+
+It’s a lot more practical to close the lid of TurtleBot’s netbook when driving around. To prevent it from turning off go to: System Settings (gear icon on left finder bar) > Search (top right) for *“power” > Power > “When lid is closed” set to “Do Nothing”* for both *“On battery power” & “When plugged in”*.
