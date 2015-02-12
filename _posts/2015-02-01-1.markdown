@@ -41,5 +41,5 @@ When a mobile base can move wherever it is needed without running into obstacles
 
 Recently we saw Bill Smart from Oregon State University and his autonomously navigating electric wheelchair for patients with ALS. In ALS patients, the eyes often work well into the late stages of the disease. Smart places patients wearing Google Glass in the wheelchair and they simply look where they want to go and blink. The wheelchair navigates to that location, without running into anything along the way.
 
-In summary, whether you are delivering coffee, transporting people, or moving industrial equipment, progress starts with knowing where you are, what your goal is, and how to achieve it while avoiding obstacles in its path. TurtleBot makes learning these core concepts affordable, accessible and fun.
+In summary, whether you are delivering coffee, transporting people, or moving industrial equipment, progress starts with knowing where you are, what your goal is, and how to achieve it while avoiding obstacles. TurtleBot makes learning these core concepts affordable, accessible and fun.
 
