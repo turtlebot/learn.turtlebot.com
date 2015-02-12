@@ -71,3 +71,7 @@ Note that TurtleBot may rotate a full 360 degrees to determine the ideal path to
 
 {% include youtube.html youtubeid="GYoF5XFVEJg" %}
 {% include youtube.html youtubeid="qJvxQ5k0oRg" %}
+
+## Learn more at wiki.ros.org
+
+* [Autonomous Navigation of a Known Map with TurtleBot](http://wiki.ros.org/turtlebot_navigation/Tutorials/Autonomously%20navigate%20in%20a%20known%20map)
