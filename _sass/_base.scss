@@ -239,3 +239,17 @@ pre {
 		margin-right: 20px;
 	}
 }
+
+.img_onrightoftext {
+	float:right;
+	display:inline;
+	margin-left:1.5em; 
+	max-width:90%;
+}
+
+@media (max-width: 600px) {
+	.img_onrightoftext {
+		display: block;
+		float: none;
+	}
+}
