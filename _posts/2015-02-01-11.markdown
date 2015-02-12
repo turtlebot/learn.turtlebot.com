@@ -40,3 +40,7 @@ ls /tmp/
 You will now see two files in the **/tmp/ directory my_map.pgm** and **my_map.yaml**. As you create maps in the future, you can save them with different names (e.g. **/tmp/my_office**).
 
 ***Tip:** Ubuntu's /tmp/ directory is automatically cleaned (deleted) on every boot.  You may want to use a different directory if you need want to keep the maps.*
+
+## Learn more at wiki.ros.org
+
+* [SLAM Map Building with TurtleBot](http://wiki.ros.org/turtlebot_navigation/Tutorials/Build%20a%20map%20with%20SLAM)
