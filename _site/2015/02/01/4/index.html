@@ -151,6 +151,40 @@ Installing ROS">Installing ROS &raquo; </a>
 
 <p>From here things are pretty much the same as installing any other OS. Select a timezone, language, keyboard layout, etc. On the TurtleBot netbook it’s traditional set the username and password to “turtlebot”. This isn’t mandatory but will help with following our tutorials.</p>
 
+<h2 id="troubleshooting-you-only-see-a-black-screen-after-you-boot-ubuntu-for-the-first-time">Troubleshooting: You only see a black screen after you boot Ubuntu for the first time</h2>
+
+<p>We did have issues with one ASUS X200M netbook that after we installed Ubuntu it loaded with a black screen and Ubuntu never loaded.</p>
+
+<p>This was because the intel graphics card wasn’t installed correctly by default.</p>
+
+<p>To fix this you have to boot Ubuntu in a “safe mode” to get past the graphics issues and load Ubuntu.  Then you can fix it.</p>
+
+<ul>
+  <li><a href="http://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it">Read this forum thread</a> and scroll down to “Black/purple screen after you boot Ubuntu for the first time”.  Follow the “nomodeset” instructions so you can boot into Ubuntu.</li>
+  <li>Check if you are using a intel graphics card by running:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">lspci <span class="p">|</span> grep VGA</code></pre></div>
+
+<p>If yes:</p>
+
+<ul>
+  <li>
+    <p>Download the <a href="http://01.org/linuxgraphics/downloads">Graphic Installer for Ubuntu 14.04, 64-bit</a>.  <em><strong>Note:</strong> this link didn’t work on my Mac (just spins like it’s trying to load) but will work in Ubuntu.</em></p>
+  </li>
+  <li>
+    <p>Install by running:</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">sudo intel-linux-graphics-installer</code></pre></div>
+
+<p><em><strong>Tip:</strong> we tried running the installer in the ubuntu software center but this did not work.  We needed “sudo”.</em></p>
+
+<ul>
+  <li>reboot</li>
+</ul>
+
 <h2 id="opening-a-terminal-window">Opening a Terminal Window</h2>
 
 <p>If you’re not familiar with opening and adding new terminal windows, we’ve prepared a short video tutorial to get you started:</p>
@@ -192,7 +226,10 @@ Installing ROS">Installing ROS &raquo; </a>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Learn TurtleBot and ROS</h2>
+    <!--<h2 class="footer-heading">Learn TurtleBot and ROS</h2>-->
+	<div style="margin-bottom:1.5em;">
+	<h4><a href="https://groups.google.com/forum/#!forum/ros-sig-turtlebot" target="_blank">Questions / comments?  Post them on TurtleBot's Group</a></h4>
+	</div>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">

@@ -65,6 +65,35 @@ If you’ve set the correct Boot Drive you should see a few different options. T
 
 From here things are pretty much the same as installing any other OS. Select a timezone, language, keyboard layout, etc. On the TurtleBot netbook it’s traditional set the username and password to “turtlebot”. This isn’t mandatory but will help with following our tutorials.
 
+## Troubleshooting: You only see a black screen after you boot Ubuntu for the first time
+
+We did have issues with one ASUS X200M netbook that after we installed Ubuntu it loaded with a black screen and Ubuntu never loaded.
+
+This was because the intel graphics card wasn't installed correctly by default.
+
+To fix this you have to boot Ubuntu in a "safe mode" to get past the graphics issues and load Ubuntu.  Then you can fix it.
+
+* [Read this forum thread](http://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it) and scroll down to "Black/purple screen after you boot Ubuntu for the first time".  Follow the "nomodeset" instructions so you can boot into Ubuntu.
+* Check if you are using a intel graphics card by running:
+
+{% highlight sh %}
+lspci | grep VGA
+{% endhighlight %}
+
+If yes:
+
+* Download the [Graphic Installer for Ubuntu 14.04, 64-bit](http://01.org/linuxgraphics/downloads).  ***Note:** this link didn't work on my Mac (just spins like it's trying to load) but will work in Ubuntu.*
+
+* Install by running:
+
+{% highlight sh %}
+sudo intel-linux-graphics-installer
+{% endhighlight %}
+
+***Tip:** we tried running the installer in the ubuntu software center but this did not work.  We needed "sudo".*
+
+* reboot
+
 ## Opening a Terminal Window
 
 If you’re not familiar with opening and adding new terminal windows, we’ve prepared a short video tutorial to get you started:
