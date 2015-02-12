@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Further Reading</title>
-  <meta name="description" content="Books will be here.">
+  <title>Creating a Map</title>
+  <meta name="description" content="Though ROS can work in unknown environments, it helps to start with a map of the environment that we’re working in.">
 
   <link rel="stylesheet" href="/turtlebot-tutorial/css/main.css">
-  <link rel="canonical" href="/turtlebot-tutorial/turtlebot-tutorial/2015/02/10/99/">
+  <link rel="canonical" href="/turtlebot-tutorial/turtlebot-tutorial/2015/02/01/11/">
   <link rel="alternate" type="application/rss+xml" title="Learn TurtleBot and ROS" href="/turtlebot-tutorial/turtlebot-tutorial/feed.xml" />
 </head>
 
@@ -55,20 +55,23 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Further Reading</h1>
+    <h1 class="post-title">Creating a Map</h1>
   </header>
 
 <div class="page-navigation"> 
         
          
 				<div class="left"> 
-                <a href="/turtlebot-tutorial/2015/02/01/14/" title="Previous Post: 
-Going to a Specific Location on Your Map Using Code">&laquo; Going to a Specific Location on Your Map Using Code</a> 
+                <a href="/turtlebot-tutorial/2015/02/01/10/" title="Previous Post: 
+Writing Your First Script">&laquo; Writing Your First Script</a> 
 				</div>
          
          
 
         <div class="right"> 
+         
+                <a href="/turtlebot-tutorial/2015/02/01/12/" title="next Post: 
+Autonomous Driving">Autonomous Driving &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 
@@ -76,8 +79,36 @@ Going to a Specific Location on Your Map Using Code">&laquo; Going to a Specific
 
 
   <article class="post-content">
-    <p>Books will be here.</p>
+    <p>Though ROS can work in unknown environments, it helps to start with a map of the environment that we’re working in.</p>
 
+<p>In this tutorial we’ll drive TurtleBot around our office once using teleoperation to create a map. This will give us a map we can reference in other scripts, giving TurtleBot completely autonomous navigation.</p>
+
+<h2 id="create-a-map-via-teleoperation">Create a Map Via Teleoperation</h2>
+
+<p>On TurtleBot, open a terminal window and run:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_bringup minimal.launch
+roslaunch turtlebot_navigation gmapping_demo.launch</code></pre></div>
+
+<p>On the workstation, open a terminal window and run:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_rviz_launchers view_navigation.launch
+roslaunch turtlebot_teleop keyboard_teleop.launch</code></pre></div>
+
+<p><em><strong>TIP:</strong> Instead of using the keyboard, the joystick may be more convenient.</em></p>
+
+<p>Now using teleoperation, navigate TurtleBot around the entire area you wish to map.</p>
+
+<div style="margin: 0 auto; width:100%; margin-bottom: 1.5em;"><iframe width="700" height="393" src="https://www.youtube.com/embed/9efBzYAi1QI?rel=0&amp;showinfo=0" style=" margin: 0 auto; display:block; border: solid #eef 15px; border-radius: 3px; max-width: 90%;" allowfullscreen=""></iframe></div>
+
+<p>On TurtleBot, open a terminal window and run:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">rosrun map_server map_saver -f /tmp/my_map
+ls /tmp/</code></pre></div>
+
+<p>You will now see two files in the <strong>/tmp/ directory my_map.pgm</strong> and <strong>my_map.yaml</strong>. As you create maps in the future, you can save them with different names (e.g. <strong>/tmp/my_office</strong>).</p>
+
+<p><em><strong>Tip:</strong> Ubuntu’s /tmp/ directory is automatically cleaned (deleted) on every boot.  You may want to use a different directory if you need want to keep the maps.</em></p>
 
   </article>
 
@@ -90,12 +121,15 @@ Going to a Specific Location on Your Map Using Code">&laquo; Going to a Specific
         
          
 				<div class="left"> 
-                <a href="/turtlebot-tutorial/2015/02/01/14/" title="Previous Post: 
-Going to a Specific Location on Your Map Using Code">&laquo; Going to a Specific Location on Your Map Using Code</a> 
+                <a href="/turtlebot-tutorial/2015/02/01/10/" title="Previous Post: 
+Writing Your First Script">&laquo; Writing Your First Script</a> 
 				</div>
          
 
         <div class="right"> 
+         
+                <a href="/turtlebot-tutorial/2015/02/01/12/" title="next Post: 
+Autonomous Driving">Autonomous Driving &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 

@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "Going Forward and Avoiding Obstacles with Code"
+date:   2015-02-01 13:46:15
+---
+
+By this point [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) for this article series and successfully [created a map (saved at /tmp/mymap)]({{ site.url }}{% post_url 2015-02-01-11 %}) of your current location. (If you have changed locations since the map generation article, create a new map.)
+
+## TurtleBot Without Obstacle Avoidance
+
+Let’s run our first script again. On TurtleBot run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch
+{% endhighlight %}
+
+On the workstation run:
+
+{% highlight sh %}
+python ~/helloworld/goforward.py
+{% endhighlight %}
+
+Your TurtleBot will be going forward. Intentionally stand in front of it and TurtleBot will crash into your feet. Press CTRL + C to stop it.
+
+## TurtleBot with Obstacle Avoidance
+
+Manually orient TurtleBot so it can go forward 3 meters without crashing into anything. On TurtleBot run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch
+roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
+{% endhighlight %}
+
+TurtleBot can’t reliably determine its initial pose (where it is) so we’ll give it a hint. After you initialize TurtleBot it can reliably know where it is even while traveling.
+
+On the workstation run:
+
+{% highlight sh %}
+roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
+{% endhighlight %}
+
+Select “2D Pose Estimate” and specify TurtleBot’s location. Leave **RViz** open so we can monitor its path planning. In a separate terminal run:
+
+{% highlight sh %}
+python ~/helloworld/goforward_and_avoid_obstacle.py
+{% endhighlight %}
+
+Try walking into the robot’s path while it is driving.
+
+{% include youtube.html youtubeid="uOPvR9GvJK8" %}
+{% include youtube.html youtubeid="XFS5ZqvsXNo" %}
+
+## Why Does It Go in Circles?
+
+TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Another YouTube user created an excellent video on TurtleBot localization:
+
+{% include youtube.html youtubeid="Mv1mbsMfbmI" %}
+
+***Note:** The above video was created by Melonee Wise.*
+
+## Let’s have a look at the code:
+
+{% highlight sh %}
+gedit ~/helloworld/goforward_and_avoid_obstacle.py
+{% endhighlight %}
+
+It's also available for [viewing on GitHub](https://github.com/markwsilliman/turtlebot/blob/master/goforward_and_avoid_obstacle.py).
+
+Note that instead of saying “go forward for a few seconds” we’re saying “we want to end up at the location 3 meters forward regardless of what path takes us there”. TurtleBot can take up to 60 seconds to try and find a path to this location all with a few lines of code.
+
