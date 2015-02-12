@@ -50,7 +50,7 @@ these have occurred because Kinect isn’t compatible with USB 3.0. Plug it into
 
 #### Troubleshooting: I don't have a USB 2.0 port or it's still giving the above errors
 
-We're going to disable USB 3.0 in the bios.
+We're going to disable USB 3.0 in the BIOS.
 
 1. Boot into BIOS by rebooting your computer and holding down the F2 key (it could be a different key on your computer)
 2. Go to the *advanced* tab
