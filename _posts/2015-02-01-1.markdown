@@ -27,8 +27,6 @@ From the [ros.org](http://www.ros.org) website:
 
 > The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.
 
-ROS is essentially a general-purpose unified collection of software representing the shared knowledge of many experts that is open source and ready to use! In other words, it has drastically simplified our task of building robust and complex systems.
-
 ## What Will We Do with TurtleBot?
 
 Given that TurtleBot is a mobile base that can autonomously move around an environment, we wanted to come up with an experiment that captured , however trivially, the value, utility and possibilities of the base station on its own.
