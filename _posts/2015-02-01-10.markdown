@@ -45,7 +45,7 @@ if __name__ ==  '__main__':
         GoForward()
 {% endhighlight %}
 
-This simply means “when we start this script try running GoForward's __init__ (initialize) function”. Let’s scroll back up to line 12 to inspect. From here the documentation in the code is pretty straightforward but not designed to be all-inclusive. To fully understand the publisher, etc., we’ve linked to [some great books]({{ site.url }}{% post_url 2015-02-10-99 %}).
+This simply means “when we start this script try running GoForward's __init__ (initialize) function”. From here the documentation in the code is pretty straightforward but not designed to be all-inclusive. To fully understand the publisher, etc., we’ve linked to [some great books]({{ site.url }}{% post_url 2015-02-10-99 %}).
 
 For fun let’s modify the command so TurleBot goes in circles. In a terminal window run:
 
