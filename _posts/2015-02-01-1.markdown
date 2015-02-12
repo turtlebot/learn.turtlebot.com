@@ -31,7 +31,7 @@ From the [ros.org](http://www.ros.org) website:
 
 Given that TurtleBot is a mobile base that can autonomously move around an environment, we wanted to come up with an experiment that captured, however trivially, the value, utility and possibilities of the base station on its own.
 
-We decided to have TurtleBot perform the critical task of making coffee available on-demand for our coworkers without needing to leave the comfort of their desks.
+We decided to have TurtleBot perform the *critical* task of making coffee available on-demand for our coworkers without needing to leave the comfort of their desks.
 
 After mounting a Keurig coffee maker and k-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via a Google Chrome Extension on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker would then plug-in the Keurig and make their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
 
