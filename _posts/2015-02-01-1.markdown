@@ -29,7 +29,7 @@ From the [ros.org](http://www.ros.org) website:
 
 ## What Will We Do with TurtleBot?
 
-Given that TurtleBot is a mobile base that can autonomously move around an environment, we wanted to come up with an experiment that captured , however trivially, the value, utility and possibilities of the base station on its own.
+Given that TurtleBot is a mobile base that can autonomously move around an environment, we wanted to come up with an experiment that captured, however trivially, the value, utility and possibilities of the base station on its own.
 
 We decided to have TurtleBot perform the critical task of making coffee available on-demand for our coworkers without needing to leave the comfort of their desks.
 
