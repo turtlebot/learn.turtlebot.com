@@ -117,6 +117,10 @@ If you have trouble, here’s a YouTube walkthrough.
 
 {% include youtube.html youtubeid="QRWObANzrCk" %}
 
+## Learn more at wiki.ros.org
+
+* [3D Visualization](http://wiki.ros.org/turtlebot_bringup/Tutorials/indigo/3D%20Visualisation)
+
 ## Troubleshooting
 
 If you get a warning about “no image available”, try closing everything on both TurtleBot and workstation and then re-opening.

@@ -83,3 +83,7 @@ There are other values that can be customized, but at the time of this writing a
 Teleoperation via joystick in your office, home, etc:
 
 {% include youtube.html youtubeid="3Q-tbrb2l4A" %}
+
+## Learn more at wiki.ros.org
+
+* [Teleoperation](http://wiki.ros.org/Robots/TurtleBot#turtlebot.2BAC8-Tutorials.2BAC8-indigo.Teleoperation)
