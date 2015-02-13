@@ -12,7 +12,7 @@ Take your netbook computer and place it on the second shelf with the USB plugs f
 
 {% include image.html img="/assets/kobuki-status-light-2.jpg" title="Kobuki base showing rear plugs" %}
 
-TurtleBot comes with two cables, a USB A-B cable and a USB splitter-type cable. Plug the A side of the USB cable into your laptop and the B side into the Kobuki base. Next plug the female side of the USB splitter into the cable coming out of the Kinect. Plug the male USB from the splitter into the laptop and the other half of the splitter into the 12V 1.5amp plug on the Kobuki base.
+TurtleBot comes with two cables: a USB A-B cable and a USB splitter-type cable. Plug the A side of the USB cable into your laptop and the B side into the Kobuki base. Next, plug the female side of the USB splitter into the cable coming out of the Kinect. Plug the male USB from the splitter into the laptop and the other half of the splitter into the 12V 1.5amp plug on the Kobuki base.
 
 Finally, locate the On/Off button on the side of the Kobuki base, turn TurtleBot on, and it is ready to go!
 
