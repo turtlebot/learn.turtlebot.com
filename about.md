@@ -23,9 +23,9 @@ Mark Silliman
 
 [Contact information is available on my GitHub page](https://github.com/markwsilliman)
 
-Full transparency: I don’t profit from TurtleBot sales nor did I get paid to create this content.
+***Full transparency:** I don’t profit from TurtleBot sales nor did I get paid to create this content.*
 
-List of Contributors
+## List of Contributors
 
 If you’d like to contribute, email me your github username and feel free to add your name below.
 
