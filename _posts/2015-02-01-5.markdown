@@ -12,7 +12,7 @@ We want to install the long term support, or LTS, version called **Indigo**.
 
 For your reference, [The ROS Wiki page](http://wiki.ros.org/indigo/Installation/Ubuntu) on installing Indigo is excellent. Follow it completely and use all the recommended options such as installing the desktop full version.
 
-***TIP:** If you followed our Installing Ubuntu tutorial you have Ubuntu 14.04.*
+**TIP:* If you followed our [Installing Ubuntu tutorial]({{ site.url }}{% post_url 2015-02-01-4%}) you have Ubuntu 14.04.*
 
 ***TIP:** All of these commands should be copied and pasted into a terminal. Use ctrl + alt + t to launch a terminal.*
 
