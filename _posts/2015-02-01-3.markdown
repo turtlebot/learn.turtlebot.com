@@ -6,7 +6,7 @@ date:   2015-02-01 13:46:08
 
 {% include youtube.html youtubeid="dzZGsZPW4aY" %}
 
-TurtleBot comes pre-built. You simply need to plug in the cables.
+TurtleBot comes pre-built; you simply need to plug in the cables.
 
 Take your netbook computer and place it on the second shelf with the USB plugs facing the rear of TurtleBot. (The rear has the various plugs into the Kobuki base.)
 
