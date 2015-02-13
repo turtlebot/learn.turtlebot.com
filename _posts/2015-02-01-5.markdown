@@ -16,11 +16,11 @@ For your reference, [The ROS Wiki page](http://wiki.ros.org/indigo/Installation/
 
 ***TIP:** All of these commands should be copied and pasted into a terminal. Use ctrl + alt + t to launch a terminal.*
 
-***TIP:** In the ROS documentation for the installation the bash steps are labeled as “convenient” but not required. However, be sure to do these steps as they make following these articles much easier.*
+***TIP:** In the ROS documentation for the installation, the bash steps are labeled as “convenient” but not required. However, be sure to do these steps as they make following these articles much easier.*
 
 ## Install TurtleBot Packages (Workstation and TurtleBot)
 
-When you install ROS it comes with all the common packages but leaves out lots of stuff some robots won’t need. Obviously the TurtleBot packages are only for TurtleBot users so we’ll need to install that now.
+When you install ROS it comes with all the common packages but leaves out lots of stuff some robots won’t need. Obviously, the TurtleBot packages are only for TurtleBot users so we’ll need to install that now.
 
 First, open a terminal and run:
 
@@ -30,7 +30,7 @@ sudo apt-get update
 
 When this article was written, the deb format wasn’t available yet so we had to install TurtleBot from the source. Except for some copying and pasting, it’s not more difficult or different.
 
-***Update:** Since writing this a deb is available but OSRF still recommends installing the source installation while they fix some final bugs (2/11/15).*
+***Update:** Since writing this, a deb is available but OSRF still recommends installing the source installation while they fix some final bugs (2/11/15).*
 
 Follow the [TurtleBot installation instructions](http://wiki.ros.org/turtlebot/Tutorials/indigo/Installation) by copying every line below “Source Installation” into a terminal.
 
