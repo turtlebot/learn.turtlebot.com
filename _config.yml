@@ -3,7 +3,7 @@ title: Learn TurtleBot and ROS
 email: mwsilliman@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   An open source getting started guide for web, mobile and maker developers interested in robotics.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "/" # the base hostname & protocol for your site
 github_username:  markwsilliman
 
