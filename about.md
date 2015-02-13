@@ -20,6 +20,7 @@ Simply put: Robots are awesome. None of us can bring about this revolution singl
 Change the world,
 
 Mark Silliman
+
 [Contact information is available on my GitHub page](https://github.com/markwsilliman)
 
 Full transparency: I don’t profit from TurtleBot sales nor did I get paid to create this content.
