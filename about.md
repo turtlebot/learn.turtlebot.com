@@ -29,6 +29,6 @@ Mark Silliman
 
 If you’d like to contribute, email me your github username and feel free to add your name below.
 
-[Mark Silliman](https://github.com/markwsilliman)
-[Austin Meyers](https://github.com/ak5a)
-[Melissa Eaton](https://github.com/MustangSally12)
+* [Mark Silliman](https://github.com/markwsilliman)
+* [Austin Meyers](https://github.com/ak5a)
+* [Melissa Eaton](https://github.com/MustangSally12)
