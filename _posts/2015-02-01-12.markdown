@@ -6,9 +6,9 @@ date:   2015-02-01 13:46:15
 
 Now let’s dive into the power of ROS. With ROS we have the ability to move TurtleBot (or any other robot) from one place to another while avoiding both static and dynamic obstacles all with a few lines of code.
 
-***NOTE:* Make sure you have created your [map prior to starting this tutorial]({{ site.url }}{% post_url 2015-02-01-11 %}).*
+***NOTE:* Make sure you have [created your map] prior to starting this tutorial({{ site.url }}{% post_url 2015-02-01-11 %}).*
 
-Stop everything from the previous tutorials on both the TurtleBot and the workstation, then on TurtleBot run:
+Stop everything from the previous tutorials on both the TurtleBot and the workstation. On TurtleBot run:
 
 {% highlight sh %}
 roslaunch turtlebot_bringup minimal.launch
@@ -29,7 +29,7 @@ roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
 
 **RViz** should open showing your map. TurtleBot isn’t capable of estimating its pose on startup, though it can do this after you initialize its pose.
 
-Select “2D Pose Estimate” then click and hold on the location where the TurtleBot is on the map. An arrow will appear under the mouse pointer while you are holding the mouse button – use this to estimate its orientation.
+Select “2D Pose Estimate” then click and hold on the location where TurtleBot is on the map. An arrow will appear under the mouse pointer while you are holding the mouse button – use this to estimate its orientation.
 
 After setting the estimated pose, select “2D Nav Goal” and click the location where you want TurtleBot to go. You can also specify a goal orientation using the same technique we used with “2D Pose Estimate”.
 
