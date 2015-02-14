@@ -32,7 +32,7 @@ Now let’s have a look at the code. Open it by running:
 gedit goforward.py
 {% endhighlight %}
 
-You can also view it on [GitHub if you prefer](https://github.com/markwsilliman/turtlebot/blob/master/goforward.py).
+You can also [view it on GitHub if you prefer](https://github.com/markwsilliman/turtlebot/blob/master/goforward.py).
 
 ***NOTE:** If you haven’t looked at Python code before, Learning Python by Mark Lutz is a good resource.*
 
