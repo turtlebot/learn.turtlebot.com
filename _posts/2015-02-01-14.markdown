@@ -27,7 +27,7 @@ roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
 
 In **RViz**, select “2D Pose Estimate” and click the map approximately where TurtleBot is and align the arrow to indicate orientation.
 
-Next, select “Publish Point” and hover over your map (but don’t click) where you’d like TurtleBot to go when you run your script. On the bottom left corner of the screen next to “select this point” you’ll notice three numbers which change when you move the mouse. This is your point so write these numbers down.
+Next, select “Publish Point” and hover over your map (but don’t click) where you’d like TurtleBot to go when you run your script. On the bottom left corner of the screen next to “select this point” you’ll notice three numbers which change when you move the mouse. This is your point, so write these numbers down.
 
 In a new terminal window run:
 
@@ -51,11 +51,11 @@ python ~/helloworld/go_to_specific_point_on_map.py
 
 {% include youtube.html youtubeid="K19iPas2te4" %}
 
-***NOTE:** As seen previously, TurtleBot will avoid obstacles on the way and will try to calculate a plausible path as long as the rospy.duration time limit hasn’t expired.*
+***NOTE:** As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the rospy.duration time limit hasn’t expired.*
 
 ## Accuracy
 
-As we remember from our dead reckoning experiments, accuracy is a major problem when relying only on speed and course. The good news with ROS’s move base algorithms is that TurtleBot continuously uses its surrounding to determine where it is on the map and therefore doesn’t get lost. To learn about this in detail [read about AMCL](http://wiki.ros.org/amcl).
+As we remember from our dead reckoning experiments, accuracy is a major problem when relying only on speed and course. The good news with ROS’s move base algorithms is that TurtleBot continuously uses its surroundings to determine where it is on the map and therefore doesn’t get lost. To learn about this in detail [read about AMCL](http://wiki.ros.org/amcl).
 
 ## Starting to See Our Goal
 
