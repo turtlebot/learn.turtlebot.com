@@ -52,11 +52,11 @@ these have occurred because Kinect isn’t compatible with USB 3.0. Plug it into
 
 We're going to disable USB 3.0 in the BIOS.
 
-1. Boot into BIOS by rebooting your computer and holding down the F2 key (it could be a different key on your computer)
-2. Go to the *advanced* tab
-3. This part varies depending on your computer.  If you have a USB option go there first.
-4. If your BIOS lists **xHCI** disable it.
-5. If you BIOS lists **USB Debugging** enable it.
+1. Boot into BIOS by rebooting your computer and holding down the F2 key (it could be a different key on your computer).
+2. Go to the *advanced* tab.
+3. This part varies depending on your computer. If you have a USB option go there first.
+4. If your BIOS lists **xHCI**, disable it.
+5. If you BIOS lists **USB Debugging**, enable it.
 6. Save and exit BIOS.
 
 #### If you still have trouble, check that the Kinect has power by running:
@@ -113,7 +113,7 @@ Under “Displays” check “Registered DepthCloud” and “Image”. Hold dow
 
 ***NOTE:** If you don’t see the display panel, scroll your mouse to the top of the screen and click “Panels”. Check the box next to “Display Panel” to enable it. 
 
-If you have trouble, here’s a YouTube walkthrough.
+If you have trouble, here’s a YouTube walkthrough:
 
 {% include youtube.html youtubeid="QRWObANzrCk" %}
 
