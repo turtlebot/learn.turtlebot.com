@@ -45,7 +45,7 @@ Select “2D Pose Estimate” and specify TurtleBot’s location. Leave **RViz**
 python ~/helloworld/goforward_and_avoid_obstacle.py
 {% endhighlight %}
 
-Try walking into the robot’s path while it is driving.
+Try walking into the robot’s path while it is driving to see how it responds.
 
 {% include youtube.html youtubeid="uOPvR9GvJK8" %}
 {% include youtube.html youtubeid="XFS5ZqvsXNo" %}
