@@ -34,7 +34,7 @@ So why is there a deadman axis button? Your joystick may not be perfectly center
 
 #### Updating the Deadman Axis Button
 
-When we first set up the joystick, the default button was #5 which wasn’t ideal for us. It’s possible that your joystick doesn’t even have a button #5, so we needed to change it.
+When we first set up the joystick, the default button was #5, which wasn’t ideal for us. It’s possible that your joystick doesn’t even have a button #5, so we needed to change it.
 
 The first thing to figure out is which buttons correspond to which numbers. In a terminal window run:
 
