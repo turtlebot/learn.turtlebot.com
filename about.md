@@ -32,3 +32,4 @@ If you’d like to contribute, email me your github username and feel free to ad
 * [Mark Silliman](https://github.com/markwsilliman)
 * [Austin Meyers](https://github.com/ak5a)
 * [Melissa Eaton](https://github.com/MustangSally12)
+* [ClearPath Robotics](https://github.com/clearpathrobotics)
