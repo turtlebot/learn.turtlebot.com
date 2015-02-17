@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Determining Coordinates for Customers"
+title:  "Determining Coordinates of Customers"
 date:   2015-02-01 13:46:20
 ---
 
