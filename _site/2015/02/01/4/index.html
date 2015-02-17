@@ -10,13 +10,13 @@
   <meta name="description" content="Ubuntu What?">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="//2015/02/01/4/">
-  <link rel="alternate" type="application/rss+xml" title="Learn TurtleBot and ROS" href="//feed.xml" />
+  <link rel="canonical" href="/2015/02/01/4/">
+  <link rel="alternate" type="application/rss+xml" title="Learn TurtleBot and ROS" href="/feed.xml" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//js/jquery.fitvids.js"></script>
+  <script src="/js/jquery.fitvids.js"></script>
   <script>
 	$(document).ready(function() {
 		$(".video_container").fitVids();
@@ -73,7 +73,7 @@
         
          
 				<div class="left"> 
-                <a href="//2015/02/01/3/" title="Previous Post: 
+                <a href="/2015/02/01/3/" title="Previous Post: 
 Hardware Setup">&laquo; Hardware Setup</a> 
 				</div>
          
@@ -81,7 +81,7 @@ Hardware Setup">&laquo; Hardware Setup</a>
 
         <div class="right"> 
          
-                <a href="//2015/02/01/5/" title="next Post: 
+                <a href="/2015/02/01/5/" title="next Post: 
 Installing ROS">Installing ROS &raquo; </a> 
          
         </div> 
@@ -109,7 +109,7 @@ Installing ROS">Installing ROS &raquo; </a>
 <!-- _includes/image.html -->
 <div class="image-wrapper">
     
-        <img src="//assets/lsb_release.png" />
+        <img src="/assets/lsb_release.png" />
     
     
         <p class="image-caption">Results of “lsb_release -a” in Terminal</p>
@@ -123,26 +123,26 @@ Installing ROS">Installing ROS &raquo; </a>
 <!-- _includes/image.html -->
 <div class="image-wrapper">
     
-        <img src="//assets/roscore.png" />
+        <img src="/assets/roscore.png" />
     
     
         <p class="image-caption">“roscore” runing in Terminal</p>
     
 </div>
 
-<p>If you look below the <strong>PARAMETERS</strong> heading, you’ll see <strong>/rosdistro:…</strong>. Whatever is written next is the name of your ROS distribution. In our case it’s indigo which is what we want.</p>
+<p>If you look below the <strong>PARAMETERS</strong> heading, you’ll see <strong>/rosdistro:…</strong>. Whatever is written next is the name of your ROS distribution. In our case it’s indigo, which is what we want.</p>
 
 <p>When we purchased our TurtleBot2 in September 2014 it shipped with Ubuntu 12 (12 being the version #) and ROS Hydro (Hydro being the distribution release’s name). The developers of ROS highly recommend using Ubuntu 14.04 LTS and ROS Indigo instead.</p>
 
-<h2 id="why-should-i-use-or-upgrade-to-ros-indigo--ubuntu-1404">Why should I use (or upgrade to) ROS Indigo &amp; Ubuntu 14.04?</h2>
+<h2 id="why-should-i-use-or-upgrade-to-ros-indigo-and-ubuntu-1404">Why Should I Use (or upgrade to) ROS Indigo and Ubuntu 14.04?</h2>
 
-<p>Both Ubuntu 14.04 and ROS Indigo are LTS (Long Term Support) meaning that you can depend on it for years.  ROS Indigo is specifically designed to work with Ubuntu 14.04.  </p>
+<p>Both Ubuntu 14.04 and ROS Indigo are LTS (Long Term Support), meaning that you can depend on it for years. ROS Indigo is specifically designed to work with Ubuntu 14.04.  </p>
 
 <p>ROS Hydro and earlier distributions are not LTS.</p>
 
 <h2 id="how-to-install-linux">How to Install Linux</h2>
 
-<p>We started with two Windows computers and installed Linux instead. As we <a href="//2015/02/01/2/">mentioned in a previous post</a>, you have the TurtleBot netbook and a workstation. You’ll install Ubuntu Desktop 14.04 LTS on both of them using the same process.</p>
+<p>We started with two Windows computers and installed Linux instead. As we <a href="/2015/02/01/2/">mentioned in a previous post</a>, you have the TurtleBot netbook and a workstation. You’ll install Ubuntu Desktop 14.04 LTS on both of them using the same process.</p>
 
 <h2 id="create-installation-usb-drive">Create Installation USB drive</h2>
 
@@ -160,7 +160,7 @@ Installing ROS">Installing ROS &raquo; </a>
 
 <p>If you’ve set the correct Boot Drive you should see a few different options. The first one is “Try Ubuntu”; skip this as we are going to commit! Select “Install Ubuntu”. In the “Installation Type” settings we recommend “Erase”. This will erase your current operating system and all data on it, but it will be the cleanest way to install the new OS.</p>
 
-<p>From here things are pretty much the same as installing any other OS. Select a timezone, language, keyboard layout, etc. On the TurtleBot netbook it’s traditional set the username and password to “turtlebot”. This isn’t mandatory but will help with following our tutorials.</p>
+<p>From here things are pretty much the same as installing any other OS. Select a timezone, language, keyboard layout, etc. On the TurtleBot netbook it’s traditional to set the username and password to “turtlebot”. This isn’t mandatory but will help with following our tutorials.</p>
 
 <h2 id="troubleshooting-you-only-see-a-black-screen-after-you-boot-ubuntu-for-the-first-time">Troubleshooting: You only see a black screen after you boot Ubuntu for the first time</h2>
 
@@ -168,11 +168,11 @@ Installing ROS">Installing ROS &raquo; </a>
 
 <p>This was because the intel graphics card wasn’t installed correctly by default.</p>
 
-<p>To fix this you have to boot Ubuntu in a “safe mode” to get past the graphics issues and load Ubuntu.  Then you can fix it.</p>
+<p>To fix this, you have to boot Ubuntu in a “safe mode” to get past the graphics issues and load Ubuntu, then you can fix it.</p>
 
 <ul>
-  <li><a href="http://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it">Read this forum thread</a> and scroll down to “Black/purple screen after you boot Ubuntu for the first time”.  Follow the “nomodeset” instructions so you can boot into Ubuntu.</li>
-  <li>Check if you are using a intel graphics card by running:</li>
+  <li><a href="http://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it">Read this forum thread</a> and scroll down to “Black/purple screen after you boot Ubuntu for the first time”. Follow the “nomodeset” instructions so you can boot into Ubuntu.</li>
+  <li>Check if you are using an intel graphics card by running:</li>
 </ul>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">lspci <span class="p">|</span> grep VGA</code></pre></div>
@@ -190,7 +190,7 @@ Installing ROS">Installing ROS &raquo; </a>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">sudo intel-linux-graphics-installer</code></pre></div>
 
-<p><em><strong>Tip:</strong> we tried running the installer in the ubuntu software center but this did not work.  We needed “sudo”.</em></p>
+<p><em><strong>Tip:</strong> we tried running the installer in the Ubuntu software center but this did not work. We needed “sudo”.</em></p>
 
 <ul>
   <li>reboot</li>
@@ -220,14 +220,14 @@ Installing ROS">Installing ROS &raquo; </a>
         
          
 				<div class="left"> 
-                <a href="//2015/02/01/3/" title="Previous Post: 
+                <a href="/2015/02/01/3/" title="Previous Post: 
 Hardware Setup">&laquo; Hardware Setup</a> 
 				</div>
          
 
         <div class="right"> 
          
-                <a href="//2015/02/01/5/" title="next Post: 
+                <a href="/2015/02/01/5/" title="next Post: 
 Installing ROS">Installing ROS &raquo; </a> 
          
         </div> 

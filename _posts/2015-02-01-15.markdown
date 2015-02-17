@@ -1,0 +1,89 @@
+---
+layout: post
+title:  "Monitor the Netbook’s Battery Status"
+date:   2015-02-01 13:46:17
+---
+
+Now that TurtleBot [can go to a specific location]({{ site.url }}{% post_url 2015-02-01-14 %}), we want to make sure it doesn’t run out of battery power on the way to or back from that location. Without charged batteries, TurtleBot’s Kobuki base and netbook are of little use. In an earlier article we discussed [auto-docking TurtleBot]({{ site.url }}{% post_url 2015-02-01-12 %}) , so if TurtleBot knows when the batteries are low, it can autonomously charge itself.
+
+## Monitoring the Netbook’s Battery Status.
+
+### ROS Threads
+
+ROS has a concept called “threads”. These threads are a lot like conference call lines. You can continuously listen to a conference line and whenever something is said on the line you can do something via a callback function. There is a “conference line” of sorts for the netbook’s battery status. You can listen to it and know every time the netbook’s battery increases or decreases charge.
+
+### Listing all Threads
+
+ROS & TurtleBot’s libraries publish lots of threads. Let’s have a look at a complete list of them. On TurtleBot, open a terminal window and run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch
+{% endhighlight %}
+
+On Work Station, open a terminal window and run:
+
+{% highlight sh %}
+rostopic list
+{% endhighlight %}
+
+The above will give us a list of current topics. You should see **/laptop_charge**, which gives us information about the netbook’s battery. Let’s trying listening to it:
+
+{% highlight sh %}
+rostopic echo /laptop_charge
+{% endhighlight %}
+
+Every second you’ll see a collection of information about the netbook’s battery including charge, percentage, charge state (1 == it’s charging, 0 == it’s not) and more.
+
+{% include youtube.html youtubeid="MpMN-8EyVmc" %}
+
+## Writing Code to Monitor the Netbook’s Battery Status
+
+If you haven’t cloned the git repo, do that first.
+
+{% highlight sh %}
+cd ~/helloworld/
+python netbook_battery.py
+{% endhighlight %}
+
+Press *ctrl + c* to stop it. Now let’s have a look at the code.
+
+{% include youtube.html youtubeid="BN3s1vheHoU" %}
+
+In the terminal window type and run:
+{% highlight sh %}
+gedit netbook_battery.py
+{% endhighlight %}
+You can also [view it on GitHub](https://github.com/markwsilliman/turtlebot/blob/master/netbook_battery.py) if you prefer.
+
+You’ll notice in the initialize function there is:
+{% highlight sh %}
+rospy.Subscriber("/laptop_charge/",SmartBatteryStatus,self.NetbookPowerEventCallback)
+{% endhighlight %}
+
+This means, “Every time new data is published on the thread **/laptop_charge/** call the function **self.NetbookPowerEventCallback**.”
+
+**SmartBetteryStatus** is the data type which the thread contains. This data type is defined in the include command (found near the top of the script):
+
+{% highlight sh %}
+from smart_battery_msgs.msg import SmartBatteryStatus
+{% endhighlight %}
+
+Now let’s have a look at the function **NetbookPowerEventCallback**. The data is passed to the function and the components can be printed like this:
+
+{% highlight sh %}
+print("Percent: " + str(data.percentage)) 
+{% endhighlight %}
+
+***IMPORTANT TIP:** Later on we’ll check if **data.percentage** is larger than 50 to see if we need to recharge. Python is very strict when it comes to comparing different types of data so always type cast using **int()**. Example:*
+
+{% highlight sh %}
+if (data.percentage < 50):
+{% endhighlight %}
+
+would result in an error but:
+
+{% highlight sh %}
+if(int(data.percentage) < 50):
+{% endhighlight %}
+
+will work perfectly.

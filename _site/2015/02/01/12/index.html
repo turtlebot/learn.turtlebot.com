@@ -10,13 +10,13 @@
   <meta name="description" content="Now let’s dive into the power of ROS. With ROS we have the ability to move TurtleBot (or any other robot) from one place to another while avoiding both stati...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="//2015/02/01/12/">
-  <link rel="alternate" type="application/rss+xml" title="Learn TurtleBot and ROS" href="//feed.xml" />
+  <link rel="canonical" href="/2015/02/01/12/">
+  <link rel="alternate" type="application/rss+xml" title="Learn TurtleBot and ROS" href="/feed.xml" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//js/jquery.fitvids.js"></script>
+  <script src="/js/jquery.fitvids.js"></script>
   <script>
 	$(document).ready(function() {
 		$(".video_container").fitVids();
@@ -73,7 +73,7 @@
         
          
 				<div class="left"> 
-                <a href="//2015/02/01/11/" title="Previous Post: 
+                <a href="/2015/02/01/11/" title="Previous Post: 
 Creating a Map">&laquo; Creating a Map</a> 
 				</div>
          
@@ -81,7 +81,7 @@ Creating a Map">&laquo; Creating a Map</a>
 
         <div class="right"> 
          
-                <a href="//2015/02/01/13/" title="next Post: 
+                <a href="/2015/02/01/13/" title="next Post: 
 Going Forward and Avoiding Obstacles with Code">Going Forward and Avoiding Obstacles with Code &raquo; </a> 
          
         </div> 
@@ -92,9 +92,9 @@ Going Forward and Avoiding Obstacles with Code">Going Forward and Avoiding Obsta
   <article class="post-content">
     <p>Now let’s dive into the power of ROS. With ROS we have the ability to move TurtleBot (or any other robot) from one place to another while avoiding both static and dynamic obstacles all with a few lines of code.</p>
 
-<p><em>**NOTE:</em> Make sure you have created your <a href="//2015/02/01/11/">map prior to starting this tutorial</a>.*</p>
+<p><em>**NOTE:</em> Make sure you have [created your map] prior to starting this tutorial(/2015/02/01/11/).*</p>
 
-<p>Stop everything from the previous tutorials on both the TurtleBot and the workstation, then on TurtleBot run:</p>
+<p>Stop everything from the previous tutorials on both the TurtleBot and the workstation. On TurtleBot run:</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_bringup minimal.launch
 roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span>/tmp/my_map.yaml</code></pre></div>
@@ -111,7 +111,7 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <p><strong>RViz</strong> should open showing your map. TurtleBot isn’t capable of estimating its pose on startup, though it can do this after you initialize its pose.</p>
 
-<p>Select “2D Pose Estimate” then click and hold on the location where the TurtleBot is on the map. An arrow will appear under the mouse pointer while you are holding the mouse button – use this to estimate its orientation.</p>
+<p>Select “2D Pose Estimate” then click and hold on the location where TurtleBot is on the map. An arrow will appear under the mouse pointer while you are holding the mouse button – use this to estimate its orientation.</p>
 
 <p>After setting the estimated pose, select “2D Nav Goal” and click the location where you want TurtleBot to go. You can also specify a goal orientation using the same technique we used with “2D Pose Estimate”.</p>
 
@@ -177,14 +177,14 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
         
          
 				<div class="left"> 
-                <a href="//2015/02/01/11/" title="Previous Post: 
+                <a href="/2015/02/01/11/" title="Previous Post: 
 Creating a Map">&laquo; Creating a Map</a> 
 				</div>
          
 
         <div class="right"> 
          
-                <a href="//2015/02/01/13/" title="next Post: 
+                <a href="/2015/02/01/13/" title="next Post: 
 Going Forward and Avoiding Obstacles with Code">Going Forward and Avoiding Obstacles with Code &raquo; </a> 
          
         </div> 
