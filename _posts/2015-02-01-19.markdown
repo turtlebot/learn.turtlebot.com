@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Determining Coordinates for Customers"
+date:   2015-02-01 13:46:20
+---
+
+We’ll be calling the users that ask TurtleBot to bring them coffee “customers”. Their poses are determined by X and Y values relative to the map that you load when starting TurtleBot (and loading amcl, which is required for autonomous navigation). We need to determine each customer’s location and tell them their X and Y coordinates before they can request coffee.
+
+The customers will prompt TurtleBot to come to their location using a browser extension detailed in a future article.
+
+## Collect a List of Plausible Poses
+
+On TurtleBot run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch
+{% endhighlight %}
+
+and in a separate tab run:
+
+{% highlight sh %}
+roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
+{% endhighlight %}
+
+On the workstation run:
+
+{% highlight sh %}
+roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
+{% endhighlight %}
+
+1. Click the “Publish Point” button on the top.
+2. Hover over any location on the map
+3. The X, Y, and Z coordinates are shown on the bottom left. The Z coordinate is relevant because TurtleBot operates in a planar environment.
+
+{% include youtube.html youtubeid="QF-5ISIDSJ4" %}
+
+## Create a List of Coordinates
+
+You’ll need a list of all potential coordinates for your customers. You’ll also need a coordinate approximately one meter in front of the docking station.
+
+## Why should the docking station pose be a meter away?
+
+TurtleBot must be able to detect the IR receivers. After the IR receivers are detected, TurtleBot will slowly approach the docking station using a special docking script provided by Kobuki. If its initial pose is too close, it may not successfully detect this script.
+
+***TIP:** Orientation: For the sake of simplicity of the demo we didn’t include orientation, but you could have customers pass this data as well and then modify the goal’s quaternion values.*
