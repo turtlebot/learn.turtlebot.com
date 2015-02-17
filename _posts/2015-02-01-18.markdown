@@ -1,0 +1,142 @@
+---
+layout: post
+title:  "Charging the Netbook"
+date:   2015-02-01 13:46:19
+---
+
+By default, when you dock to the charging station the Kobuki base will charge but the netbook will not charge. The Kobuki base includes a 19v 2a power rail that allows you to autonomously charge the netbook as well.
+
+{% include critical_pre.html title="Warning" %}
+
+We’ll reiterate ClearPath Robotics’s warning below: “WARNING: This action will most likely void the warranty on your computer. Tread carefully, and proceed at your own risk”.
+
+{% include critical_post.html %}
+
+{% include critical_pre.html title="Extremely Important" %}
+
+If you don’t check the polarity of your barrel plug you have a fifty percent chance of killing your laptop. Seriously!
+
+{% include critical_post.html %}
+
+## How to check the polarity:
+
+Make sure you check the polarity after you have modified your cable (explained in detail below).
+
+{% include youtube.html youtubeid="L_yDauVoVEI" %}
+
+You’ll need a multimeter (and potentially a thin wire if the positive lead is thicker than your netbook’s barrel plug).
+
+{% include image.html img="/assets/imag1038.jpg" title="A basic multimeter" %}
+
+## Special Thanks
+
+The rest of this article was written by Clearpath Robotics, who graciously provided us with permission to make a copy of their content. Some of the images were updated from the original document for clarity. The original document is available on [Clearpath Robotics website](http://www.clearpathrobotics.com/turtlebot_2/) where you can also buy prebuilt TurtleBot 2s (including the model we used to test this tutorial).
+
+## Modifying your laptop power cable
+
+*Copied with permission from Clearpath Robotics.*
+
+This section is aimed specifically at those users who bought a Parts Kit and have their own Laptop which they would like to use with their TurtleBot.
+
+***WARNING:** This action will most likely void the warranty on your computer. Tread carefully, and proceed at your own risk.*
+
+***NOTE:** The 19V power rail is powered only when the Kobuki is plugged in or docked for charging. The laptop cannot charge during operation; the Kobuki must be charging also.*
+
+The Robotsmiths strongly recommend that you read through the instructions **BEFORE** beginning, and that you follow along with the instructions as you modify your power cable.
+
+#### Tools Required
+
+* Side Cutters
+* Ruler
+* Wire Stripper
+* Terminal Crimper
+* Heat Gun
+* Soldering Iron
+
+#### Parts Required
+
+*If you do not have experience crimping wires, buying spares is recommended*
+
+* 1x Unmodified Laptop Power Cable
+* 1x Four position Male Molex Connector (Digikey P/N: WM3701IND)
+* 1x Four position Female Molex Connector (Digikey P/N: WM1018IND)
+* 2x Male Crimp Cable Ends (Digikey P/N: WM2502IND)
+* 2x Female Crimp Cable Ends (Digikey P/N: WM2501CTIND)
+* 2x Piece of Heat Shrink, 2” length ((Digikey P/N: EPS2316IND)
+
+{% include image.html img="/assets/imag1022_burst002.jpg" title="Wire Stripper / Crimper (left), Side Cutter (top, center) and unmodified laptop power cable (right)" %}
+
+{% include image.html img="/assets/imag1027.jpg" title="1x Four position Male Molex Connector (left) and 1x Four position Female Molex Connector (right)" %}
+
+{% include image.html img="/assets/imag1025.jpg" title="2x Male Crimp Cable Ends (top) and 2x Female Crimp Cable Ends (bottom)" %}
+
+{% include image.html img="/assets/imag1023.jpg" title="Heat Shrink (left) and Heat Gun (right)" %}
+
+To start, measure 2ft. from the ferrite bead shown in the picture below.
+
+***NOTE:** Our netbook shipped without a ferrite bead as shown below.*
+
+{% include image.html img="/assets/imag1028.jpg" title="Power cord" %}
+
+Snip the cord at 2f, shown below. You now have the Power Adaptor section and the Laptop section. The laptop section is the one with the barrel plug that is inserted into the Laptop.
+
+{% include image.html img="/assets/imag1029.jpg" title="Power cord and side cutter" %}
+
+Next, strip the sheath from approximately 1” of the wire, as shown below. Do this for both pieces.
+
+{% include image.html img="/assets/imag1030.jpg" title="Wire Stripper" %}
+
+You will see a white sheathed wire, and a bunch of bare wires. Aggregate the bare wires into a group and twist them together as shown below. Do this for both pieces.
+
+{% include image.html img="/assets/imag1032.jpg" title="Aggregate the bare wires" %}
+
+Use heat shrink to cover the twisted bunch of bare wires. Do this for both ends. In this step, the goal is to leave about ¼” exposed for crimping.
+
+Also, strip a ¼” of sheath from the white sheathed wire.
+
+{% include image.html img="/assets/imag1043-2.jpg" title="Heat shrink" %}
+
+Don’t forget to shrink it with your heat gun!
+
+It’s time to crimp the pins on each of the two pieces. The end that crimps around the sheathed wire is called the “insulation crimp”. You may have to trim the insulation crimps if they are too long. Good thing you bought spare parts!
+
+{% include image.html img="/assets/imag1040-1.jpg" title="Crimp cable end" %}
+
+Crimp the MALE pins to the Power Adaptor piece and the FEMALE pins to the Laptop piece. First, crimp the section closest to the pin around the bare leads, as shown below. This will require a small size on the crimp tool. Remember to perform a simple tug-test to ensure you have chosen the right crimp size. Because of the small size, we recommend soldering the wire crimp before crimping the insulation crimp.
+
+{% include image.html img="/assets/2015-02-06_1526a.png" title="Female crimp cable ends" %}
+
+Next, crimp the pins to the sheathed wire, as shown below. This will require a slightly larger size on the crimp tool.
+
+{% include image.html img="/assets/2015-02-06_1531.png" title="Female crimp cable ends" %}
+
+Now that each end is crimped, be sure to slide a piece of heat shrink over the pins and down the wire for later use. This step is shown below. Do this for both pieces.
+
+{% include image.html img="/assets/2015-02-06_1527.png" title="Heat shrink" %}
+
+Now the pins need to be inserted into the housings. The MALE housing with the clip (shown below) must go on the Laptop piece, while the FEMALE housing must go on the Power Adaptor piece. Please note the location of each of the pins with respect to the orientation of the housing, shown below for the Laptop piece. For the power adaptor piece it is a simple matter of aligning the housings and ensuring that black goes to black and white goes to white. **WHITE IS POSITIVE.**
+
+{% include image.html img="/assets/2015-02-06_1527b.png" title="Male Molex Connector" %}
+
+{% include critical_pre.html title="Warning!!!" %}
+
+BEFORE you plug in your laptop, it is recommended that you test your work. First, ensure continuity.
+
+{% include critical_post.html %}
+
+Verify that the positive wire is connected to the inside of the barrel plug. Next, verify that there is not a short between the pins. To test the voltage, plug the Laptop section into the Kuboki’s 19v port and power on. Don’t be alarmed that your housing doesn’t have 6 pins, it will still fit. The outside of the barrel plug should be ground. The inside should measure +19V. You’re done!
+
+#### Power Adaptor section:
+
+{% include image.html img="/assets/2015-02-06_1528.png" title="Female Molex Connector" %}
+
+#### Laptop section:
+
+{% include image.html img="/assets/2015-02-06_1528.png" title="Male Molex Connector" %}
+
+#### Final Mating Product!
+
+{% include image.html img="/assets/2015-02-06_1528c.png" title="Connected" %}
+
+
+

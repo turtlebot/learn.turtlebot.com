@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Monitor Kobuki’s Battery Status"
+date:   2015-02-01 13:46:18
+---
+
+{% include youtube.html youtubeid="f8JLDdrukPg" %}
+
+Now that we know how to monitor the netbook’s battery status we can use similar logic to monitor Kobuki’s battery status.
+
+On TurtleBot run:
+
+{% highlight sh %}
+roslaunch turtlebot_bringup minimal.launch
+{% endhighlight %}
+
+On the Workstation run:
+
+{% highlight sh %}
+cd ~/helloworld
+python kobuki_battery.py
+{% endhighlight %}
+
+Now, try manually moving TurtleBot on and off the docking station.
+
+## Determine the Maximum Charge Value of the Kobuki Base
+
+There are multiple batteries that are used in the Kobuki base. The percentage of power is calculated using a **fixed kobuki_base_max_charge** value in kobuki_battery.py.
+
+To determine your battery maximum, charge it to full by leaving it on the docking station for an extended period, then on TurtleBot run:
+
+{% highlight sh %}
+rostopic echo /mobile_base/sensors/core
+{% endhighlight %}
+
+Note the battery’s value, and edit kobuki_battery.py:
+
+{% highlight sh %}
+gedit kobuki_battery.py
+{% endhighlight %}
+
+Modify the **kobuki_base_max_charge** value. The percentage power will now calculate correctly.
+
+{% include youtube.html youtubeid="SdHQwpGSws0" %}
