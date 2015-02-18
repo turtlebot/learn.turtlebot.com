@@ -1,0 +1,170 @@
+---
+layout: post
+title:  "Configure CoffeeBot’s Web Server"
+date:   2015-02-01 13:46:20
+---
+
+***IMPORTANT:** The scripts provided in this article are not the recommended instance configurations because they have **literally no security**. Anyone in the world could technically request coffee or worse. We left out security configurations / API keys, etc., to keep the tutorial as simple as possible.*
+
+We need a way for customers to tell TurtleBot that they want coffee and manage the coffee queue if multiple people want coffee simultaneously. There are multiple ways to do this, but considering this series is targeted at web developers, we’ll use a LAMP stack.
+
+## What is LAMP?
+
+LAMP is an acronym for Linux, Apache, MySQL and PHP. In other words, it includes everything you need to run a web server and a database.
+
+## Creating a Web Server
+
+You could create a local web server and have customers connect to that. But, instead of converting an existing server to a web server, let’s spawn an instance in the cloud.
+
+Amazon web services (aka: “AWS”) offers free micro-size Ubuntu web servers for 1 year. You’ll need to type in your credit card number but as long as you cancel in the first year and don’t use [more resources than offered in their free plan](http://aws.amazon.com/free/) your card will not be charged.
+
+If you don’t already have an AWS account, click “Create Free Account” on [this page](http://aws.amazon.com/free/). Once you’ve finished signing up, click “Launch Management Console”.
+
+## Creating Your CoffeeBot’s AWS Instance
+
+{% include youtube.html youtubeid="mfOUJo_egNk" %}
+
+1. Log in to the AWS management console.
+2. Click “EC2″.
+3. “Launch Instance” button.
+4. Select “Ubuntu Server 14.04″. (Tip: This is the same distribution of Linux on your computers… so it should act similarly.)
+5. Select “t2 micro”. (Tip: make sure it says “free tier eligible” so you won’t be charged.)
+6. Next: “Configure Instance Details”.
+7. “Review and Launch”.
+8. By default HTTP is off. Without this no one can access your server via a web browser.
+ * Under “Security Groups” click “Edit Security Groups” and select “Add Rule”.
+ * From the pulldown menu select “HTTP”.
+ * “Review and launch”.
+9. “Launch”.
+10. A key pair will give you the credential file required to SSH into your server.
+ * Create a new key pair.
+ * Key pair name “turtlebot_new”
+ * “Download Key Pair”
+ * Save it in your downloads folder.
+11. “Launch Instances”
+12. “View Instances”
+
+## Determining Your Public DNS
+
+Your instance’s public DNS is how your customers (and TurtleBot) will connect to the server. Let’s go ahead and copy it for later use.
+
+{% include youtube.html youtubeid="L21oF-jLoFU" %}
+
+1. Log in to the AWS management console.
+2. Click “EC2″.
+3. Click “Running Instances”.
+4. Select the checkbox to the left of the instance.
+5. The “Public DNS” value is available at the bottom right.
+
+***TIP:** We haven’t installed the LAMP stack on your server yet, so if you call the IP, nothing will happen.*
+
+## SSH in to AWS Instance
+
+{% include youtube.html youtubeid="YsLlTyzYOzM" %}
+
+***IMPORTANT:** Change [PUBLIC_DNS] to the value you copied earlier.*
+
+In a terminal window run the following:
+
+{% highlight sh %}
+cd ~/Downloads
+chmod 400 turtlebot_new.pem
+ssh -i turtlebot_new.pem ubuntu@[PUBLIC_DNS]
+{% endhighlight %}
+
+When it prompts:
+
+{% highlight sh %}
+Are you sure you want to continue connecting (yes/no)?
+{% endhighlight %}
+
+Type **yes**.
+
+## Installing the LAMP Stack
+
+Shell (ssh) in to your server, then run the following commands:
+
+{% highlight sh %}
+sudo apt-get update
+{% endhighlight %}
+
+## Install Apache
+
+{% highlight sh %}
+sudo apt-get install apache2
+{% endhighlight %}
+
+## Install MySQL
+
+{% highlight sh %}
+sudo apt-get install mysql-server php5-mysql
+{% endhighlight %}
+
+When prompted, set the root password of MySQL to “turtlebot”.
+
+***TIP:** This is a terrible password, so feel free to set it to another value–but you’ll need to modify the config.php file cloned from github in a later step.*
+
+## Install PHP
+
+{% highlight sh %}
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+{% endhighlight %}
+
+## Give Ubuntu user rights to /var/www/
+
+{% highlight sh %}
+sudo adduser ubuntu www-data
+sudo chown -R www-data:www-data /var/www
+sudo chmod -R g+rw /var/www
+{% endhighlight %}
+
+## Restart Apache
+
+{% highlight sh %}
+service apache2 stop
+service apache2 start
+{% endhighlight %}
+
+***NOTE:** In the video I first tried “service apache2 restart” but this fails. Stop & start succeeds.*
+
+## Clone PHP files
+
+{% highlight sh %}
+cd /var/www/html
+sudo apt-get install git
+sudo git clone https://github.com/markwsilliman/turtlebot-server/
+{% endhighlight %}
+
+***NOTE:** In the video I first tried “git clone” without “sudo”; “sudo” is required.*
+
+{% include youtube.html youtubeid="nxkDeeiHvI8" %}
+
+## Clone Web App
+
+The web app is very similar to the browser extension but will allow your customers to request coffee directly from their smartphone. We’ll discuss this in more detail later but for convenience let’s go ahead and clone it as well.
+
+{% highlight sh %}
+cd /var/www/html
+sudo git clone https://github.com/markwsilliman/turtlebot-web-app/
+{% endhighlight %}
+
+## (Optional) Set MySQL root password
+
+The web app is very similar to the browser extension but will allow your customers to request coffee directly from their smartphone. We’ll discuss this in more detail later but for convenience let’s go ahead and clone it as well.
+
+{% highlight sh %}
+cd /var/www/html/turtlebot-server/
+nano config.php
+{% endhighlight %}
+
+Scroll down to:
+
+{% highlight sh %}
+$a["password"] = "turtlebot"; //mysql password
+{% endhighlight %}
+
+and update the value.
+
+Then *ctrl + x* to exit and y to save.
+
+
