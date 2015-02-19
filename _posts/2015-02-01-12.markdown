@@ -19,7 +19,7 @@ If you see *odom received!* you’re good to go.
 
 #### Troubleshooting
 
-If you receive a warning that starts with: **Waiting on transform...**, try restarting **minimal.launch** and then restarting **amcl_demo.lauch**.
+If you receive a warning that starts with: **Waiting on transform...**, try restarting **minimal.launch** and then restarting **amcl_demo.lauch**.  You may need to try restarting a few times.  Also turning off the Kobuki base and turning it back on may help.
 
 With everything running successfully on TurtleBot, go to the workstation and run:
 
@@ -41,11 +41,11 @@ TurtleBot should now be driving around autonomously based on your goals. Try spe
 
 ##TurtleBot Docking Station: Autonomous Charging
 
-It’s probably not too surprising to hear that TurtleBot knows when its battery is getting low, and with the docking station it can autonomously charge itself.
+It’s probably not too surprising to hear that TurtleBot [knows when its battery is getting low]({{ site.url }}{% post_url 2015-02-01-16 %}), and with the docking station it can autonomously charge itself.
 
 Make sure the docking station is plugged in (so the red light is on) and against a wall, otherwise TurtleBot may push the station around while trying to charge. Close all terminals on TurtleBot and the workstation.
 
-Place TurtleBot anywhere in line of sight up to 3 meters from the docking station. From there it can autonomously dock using its three IR receivers.
+Place TurtleBot anywhere in line of sight up to 3 meters from the docking station. From there it can autonomously dock using its [three IR receivers](http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking).
 
 On TurtleBot run:
 
@@ -75,3 +75,4 @@ Note that TurtleBot may rotate a full 360 degrees to determine the ideal path to
 ## Learn more at wiki.ros.org
 
 * [Autonomous Navigation of a Known Map with TurtleBot](http://wiki.ros.org/turtlebot_navigation/Tutorials/Autonomously%20navigate%20in%20a%20known%20map)
+* [Automatic Docking](http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking)

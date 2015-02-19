@@ -104,7 +104,7 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <h4 id="troubleshooting">Troubleshooting</h4>
 
-<p>If you receive a warning that starts with: <strong>Waiting on transform…</strong>, try restarting <strong>minimal.launch</strong> and then restarting <strong>amcl_demo.lauch</strong>.</p>
+<p>If you receive a warning that starts with: <strong>Waiting on transform…</strong>, try restarting <strong>minimal.launch</strong> and then restarting <strong>amcl_demo.lauch</strong>.  You may need to try restarting a few times.  Also turning off the Kobuki base and turning it back on may help.</p>
 
 <p>With everything running successfully on TurtleBot, go to the workstation and run:</p>
 
@@ -130,11 +130,11 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <h2 id="turtlebot-docking-station-autonomous-charging">TurtleBot Docking Station: Autonomous Charging</h2>
 
-<p>It’s probably not too surprising to hear that TurtleBot knows when its battery is getting low, and with the docking station it can autonomously charge itself.</p>
+<p>It’s probably not too surprising to hear that TurtleBot <a href="/2015/02/01/16/">knows when its battery is getting low</a>, and with the docking station it can autonomously charge itself.</p>
 
 <p>Make sure the docking station is plugged in (so the red light is on) and against a wall, otherwise TurtleBot may push the station around while trying to charge. Close all terminals on TurtleBot and the workstation.</p>
 
-<p>Place TurtleBot anywhere in line of sight up to 3 meters from the docking station. From there it can autonomously dock using its three IR receivers.</p>
+<p>Place TurtleBot anywhere in line of sight up to 3 meters from the docking station. From there it can autonomously dock using its <a href="http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking">three IR receivers</a>.</p>
 
 <p>On TurtleBot run:</p>
 
@@ -165,6 +165,7 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <ul>
   <li><a href="http://wiki.ros.org/turtlebot_navigation/Tutorials/Autonomously%20navigate%20in%20a%20known%20map">Autonomous Navigation of a Known Map with TurtleBot</a></li>
+  <li><a href="http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking">Automatic Docking</a></li>
 </ul>
 
   </article>
