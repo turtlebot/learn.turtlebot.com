@@ -18,7 +18,10 @@ Follow only the [“Network Time Protocol” instructions on the Post-Installati
 
 ## Shell into TurtleBot
 
-***NOTE:** This may affect the security of your TurtleBot computer. Don’t do this outside of a local network or if it contains confidential information.*
+{% include critical_pre.html title="Warning" %}
+This may affect the security of your TurtleBot computer. Don’t do this outside of a local network or if it contains confidential information.
+
+{% include critical_post.html %}
 
 Though you can always go find the TurtleBot and type in the commands directly, it’s more convenient to SSH into its computer and control it from there.
 
