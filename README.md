@@ -8,4 +8,4 @@
 
 Learn.TurtleBot.com is powered by [Jekyll](http://jekyllrb.com/) and [hosted on GitHub pages](https://pages.github.com/).
 
-***Friendly Tip for LAMP stack devs:** You don't need to know anything about Ruby to use Jekyll.*
+Friendly Tip for LAMP stack devs: You don't need to know anything about Ruby to use Jekyll.
