@@ -133,13 +133,15 @@ Installing ROS">Installing ROS &raquo; </a>
 
 <p>If you look below the <strong>PARAMETERS</strong> heading, you’ll see <strong>/rosdistro:…</strong>. Whatever is written next is the name of your ROS distribution. In our case it’s indigo, which is what we want.</p>
 
-<p>When we purchased our TurtleBot2 in September 2014 it shipped with Ubuntu 12 (12 being the version #) and ROS Hydro (Hydro being the distribution release’s name). The developers of ROS highly recommend using Ubuntu 14.04 LTS and ROS Indigo instead.</p>
+<p>When we purchased our TurtleBot 2 in September 2014 it shipped with Ubuntu 12 (12 being the version #) and ROS Hydro (Hydro being the distribution release’s name). The developers of ROS highly recommend using Ubuntu 14.04 LTS and ROS Indigo instead.</p>
 
 <h2 id="why-should-i-use-or-upgrade-to-ros-indigo-and-ubuntu-1404">Why Should I Use (or upgrade to) ROS Indigo and Ubuntu 14.04?</h2>
 
 <p>Both Ubuntu 14.04 and ROS Indigo are LTS (Long Term Support), meaning that you can depend on it for years. ROS Indigo is specifically designed to work with Ubuntu 14.04.  </p>
 
 <p>ROS Hydro and earlier distributions are not LTS.</p>
+
+<p><em><strong>TIP:</strong> The recently added “Jade” distribution is not LTS.</em></p>
 
 <h2 id="how-to-install-linux">How to Install Linux</h2>
 
@@ -148,6 +150,8 @@ Installing ROS">Installing ROS &raquo; </a>
 <h2 id="create-installation-usb-drive">Create Installation USB drive</h2>
 
 <p>First download <a href="http://www.ubuntu.com/download/desktop/">Ubuntu Desktop 14.04 LTS</a> on a Windows machine (virtually everyone will need the 64-bit version but if you are concerned <a href="http://windows.microsoft.com/en-us/windows/32-bit-and-64-bit-windows#1TC=windows-7">here are instructions on how to check if you are 64-bit or 32-bit</a>). Follow <a href="https://help.ubuntu.com/community/Installation/FromUSBStickQuick">these instructions</a> to create an Ubuntu-bootable USB drive.</p>
+
+<p><em><strong>TIP:</strong> Newer releases of Ubuntu Desktop (including 14.10) are not compatible with ROS.</em></p>
 
 <h2 id="boot-via-usb">Boot Via USB</h2>
 
@@ -159,7 +163,14 @@ Installing ROS">Installing ROS &raquo; </a>
 
 <h2 id="install">Install</h2>
 
-<p>If you’ve set the correct Boot Drive you should see a few different options. The first one is “Try Ubuntu”; skip this as we are going to commit! Select “Install Ubuntu”. In the “Installation Type” settings we recommend “Erase”. This will erase your current operating system and all data on it, but it will be the cleanest way to install the new OS.</p>
+<p>If you’ve set the correct Boot Drive you should see a few different options. The first one is “Try Ubuntu”; skip this as we are going to commit! Select “Install Ubuntu”. In the “Installation Type” settings we recommend “Erase”. </p>
+
+<div class="critical_warning">
+	<div class="critical_warning_title">Warning</div>
+
+This will erase your current operating system and all data on it, but it will be the cleanest way to install the new OS.
+
+</div>
 
 <p>From here things are pretty much the same as installing any other OS. Select a timezone, language, keyboard layout, etc. On the TurtleBot netbook it’s traditional to set the username and password to “turtlebot”. This isn’t mandatory but will help with following our tutorials.</p>
 

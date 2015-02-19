@@ -35,13 +35,15 @@ roscore
 
 If you look below the **PARAMETERS** heading, you’ll see **/rosdistro:...**. Whatever is written next is the name of your ROS distribution. In our case it’s indigo, which is what we want.
 
-When we purchased our TurtleBot2 in September 2014 it shipped with Ubuntu 12 (12 being the version #) and ROS Hydro (Hydro being the distribution release’s name). The developers of ROS highly recommend using Ubuntu 14.04 LTS and ROS Indigo instead.
+When we purchased our TurtleBot 2 in September 2014 it shipped with Ubuntu 12 (12 being the version #) and ROS Hydro (Hydro being the distribution release’s name). The developers of ROS highly recommend using Ubuntu 14.04 LTS and ROS Indigo instead.
 
 ## Why Should I Use (or upgrade to) ROS Indigo and Ubuntu 14.04?
 
 Both Ubuntu 14.04 and ROS Indigo are LTS (Long Term Support), meaning that you can depend on it for years. ROS Indigo is specifically designed to work with Ubuntu 14.04.  
 
 ROS Hydro and earlier distributions are not LTS.
+
+***TIP:** The recently added "Jade" distribution is not LTS.*
 
 ## How to Install Linux
 
@@ -50,6 +52,8 @@ We started with two Windows computers and installed Linux instead. As we [mentio
 ## Create Installation USB drive
 
 First download [Ubuntu Desktop 14.04 LTS](http://www.ubuntu.com/download/desktop/) on a Windows machine (virtually everyone will need the 64-bit version but if you are concerned [here are instructions on how to check if you are 64-bit or 32-bit](http://windows.microsoft.com/en-us/windows/32-bit-and-64-bit-windows#1TC=windows-7)). Follow [these instructions](https://help.ubuntu.com/community/Installation/FromUSBStickQuick) to create an Ubuntu-bootable USB drive.
+
+***TIP:** Newer releases of Ubuntu Desktop (including 14.10) are not compatible with ROS.*
 
 ## Boot Via USB
 
@@ -61,7 +65,13 @@ Another option if you are having trouble with the Boot Menu is to boot it into B
 
 ## Install
 
-If you’ve set the correct Boot Drive you should see a few different options. The first one is “Try Ubuntu”; skip this as we are going to commit! Select “Install Ubuntu”. In the “Installation Type” settings we recommend “Erase”. This will erase your current operating system and all data on it, but it will be the cleanest way to install the new OS.
+If you’ve set the correct Boot Drive you should see a few different options. The first one is “Try Ubuntu”; skip this as we are going to commit! Select “Install Ubuntu”. In the “Installation Type” settings we recommend “Erase”. 
+
+{% include critical_pre.html title="Warning" %}
+
+This will erase your current operating system and all data on it, but it will be the cleanest way to install the new OS.
+
+{% include critical_post.html %}
 
 From here things are pretty much the same as installing any other OS. Select a timezone, language, keyboard layout, etc. On the TurtleBot netbook it’s traditional to set the username and password to “turtlebot”. This isn’t mandatory but will help with following our tutorials.
 
