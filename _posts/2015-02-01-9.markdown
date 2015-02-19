@@ -30,7 +30,9 @@ The terminal prints out the keyboard commands for manually controlling TurtleBot
 
 By default TurtleBot works with Logitech joysticks but there’s a “gotcha” – they use a “deadman” button which must be held down at all times while operating the joystick, otherwise nothing will happen.
 
-So why is there a deadman axis button? Your joystick may not be perfectly centered when you start the launch file and TurtleBot may start moving slightly if a deadman axis wasn’t enforced.
+#### Why is there a deadman axis button? 
+
+Your joystick may not be perfectly centered when you start the launch file and TurtleBot may start moving slightly if a deadman axis wasn’t enforced.
 
 #### Updating the Deadman Axis Button
 
@@ -78,7 +80,7 @@ roslaunch turtlebot_teleop myjoystick.launch
 
 {% include youtube.html youtubeid="EjkEoZEUnz4" %}
 
-There are other values that can be customized, but at the time of this writing an Indigo specific ROS article wasn’t available. You can see these values on the [joystick ROS wiki page](http://wiki.ros.org/turtlebot_teleop/Tutorials/indigo/Joystick%20Teleop).
+You can see these values on the [joystick ROS wiki page](http://wiki.ros.org/turtlebot_teleop/Tutorials/indigo/Joystick%20Teleop).
 
 Teleoperation via joystick in your office, home, etc:
 
