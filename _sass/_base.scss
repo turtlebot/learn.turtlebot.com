@@ -65,6 +65,9 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: normal;
 /*   font-weight: 300; */ }
 
+  @media screen and (max-width: 660px) {
+h1, h2, h3, h4, h5, h6 {text-align:center;}
+	  }
 /**
  * Links
  */
@@ -180,13 +183,21 @@ pre {
 .page-navigation .left {
   margin-right: 20px;float:left; }
 
+
   @media screen and (max-width: 660px) {
+.page-navigation .page-navigation-title{
+	text-align:center;
+}
 	.page-navigation .left, .page-navigation .right {
   display: inline-block;
-    float:none;}
+    float:none;
+    width:100%;
+    text-align: center;}
 .page-navigation .left {
   margin-right: 20px;
-  float:none;}  
+  float:none;
+      width:100%;
+    text-align: center;}  
 	  }
 
 
