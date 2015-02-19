@@ -24,6 +24,10 @@ We created this article series to give a coherent, project-based introduction an
 1. [ROS by Example series Volume 1](http://www.lulu.com/shop/r-patrick-goebel/ros-by-example-indigo-volume-1/ebook/product-22015937.html) by Patrick Goebel - Example based overview of ROS.  Many examples were written for TurtleBot specifically. ***Tip:** Make sure you buy the Indigo version (as opposed to Groovy or earlier which Goebel wrote as well)!*
 2. [A Gentle Introduction to ROS](http://www.amazon.com/Gentle-Introduction-ROS-Jason-OKane/dp/1492143235/ref=sr_1_1?ie=UTF8&qid=1423007544&sr=8-1&keywords=ros+indigo&pebp=1423007546478&peasin=1492143235) by Jason O’Kane - An easy to read overview of the ROS environment.
 
+## Related Tools
+
+1. [Gazebo](http://gazebosim.org/) - Robot simulation made easy (powered by ROS).
+
 ## Upcoming Publications
 
 1. Volume 2 for Indigo of ROS by Example series by Patrick Goebel (A Groovy edition exists and is excellent)
