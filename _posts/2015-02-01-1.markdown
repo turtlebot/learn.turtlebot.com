@@ -32,7 +32,7 @@ Given that TurtleBot is a mobile base that can autonomously move around an envir
 
 We decided to have TurtleBot perform the *critical* task of making coffee available on-demand for our coworkers without needing to leave the comfort of their desks.
 
-After mounting a Keurig coffee maker and K-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via a Google Chrome extension on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker then plugged in the Keurig and made their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
+After mounting a Keurig coffee maker and K-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via a [Google Chrome extension]({{ site.url }}{% post_url 2015-02-01-21 %}). on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker then [plugged in the Keurig]({{ site.url }}{% post_url 2015-02-01-27 %}) and made their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
 
 ## Start Dreaming Beyond These Demos!
 
