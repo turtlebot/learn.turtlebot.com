@@ -179,6 +179,14 @@ pre {
 .page-navigation .left {
   margin-right: 20px;float:left; }
 
+  @media screen and (max-width: 660px) {
+	.page-navigation .left, .page-navigation .right {
+  display: inline-block;}
+.page-navigation .left {
+  margin-right: 20px;}  
+	  }
+
+
 .img_onrightoftext {
   float: right;
   display: inline;
@@ -247,7 +255,7 @@ pre {
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
-      top: 9px;
+      top: 19px;
       right: 30px;
       background-color: #fdfdfd;
       border: 1px solid #e8e8e8;
@@ -312,7 +320,7 @@ pre {
 
 .footer-col-3 {
   width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
+  width: calc(65% - (30px / 2)); }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
