@@ -8,12 +8,12 @@ To follow this tutorial line-by-line you will need:
 
 1. **TurtleBot:** A [TurtleBot 2](http://www.turtlebot.com/) with a Kobuki base. We used a pre-built one from [Clearpath Robotics](http://www.clearpathrobotics.com/turtlebot_2/).
 2. **TurtleBot’s Netbook:** Clearpath sells TurtleBots with compatible netbooks.  If you want to purchase your own netbook, be aware that your netbook must be less than 21 cm wide to fit in the shelf.
-3. **Docking Station:** We recommend purchasing the docking station as well so TurtleBot can autonomously charge itself when it detects that it needs power.  This is listed as an option when purchasing a TurtleBot2 from Clearpath.
+3. **Docking Station:** We recommend purchasing the docking station as well so TurtleBot can autonomously charge itself when it detects that it needs power.  This is listed as an option when purchasing a TurtleBot 2 from Clearpath.
 4. **The Workstation:** A second computer with a decent graphics card and sufficient RAM for 3D simulations (4 GB+).
 5. **Router:** A wireless router allows the workstation and TurtleBot to communicate via local IPs.
 
 
-*Tip: Throughout this tutorial we’ll refer to TurtleBot but we’re always using the TurtleBot2 with a Kobuki base.  This tutorial series is not compatible with the original TurtleBot or TurtleBots using iRobot’s Create base.*
+*Tip: Throughout this tutorial we’ll refer to TurtleBot but we’re always using the TurtleBot 2 with a Kobuki base.  This tutorial series is not compatible with the original TurtleBot or TurtleBots using iRobot’s Create base.*
 
 ## Why Two Computers?
 
