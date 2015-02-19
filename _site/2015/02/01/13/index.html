@@ -112,13 +112,15 @@ Going to a Specific Location on Your Map Using Code">Going to a Specific Locatio
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_bringup minimal.launch
 roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span>/tmp/my_map.yaml</code></pre></div>
 
-<p>TurtleBot can’t reliably determine its initial pose (where it is) so we’ll give it a hint. After you initialize TurtleBot it can reliably know where it is even while traveling.</p>
-
 <p>On the workstation run:</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_rviz_launchers view_navigation.launch --screen</code></pre></div>
 
-<p>Select “2D Pose Estimate” and specify TurtleBot’s location. Leave <strong>RViz</strong> open so we can monitor its path planning. In a separate terminal run:</p>
+<p>TurtleBot can’t reliably determine its initial pose (where it is) so <a href="/2015/02/01/12/">we’ll give it a hint</a> by using “2D Pose Estimate”. Select “2D Pose Estimate” and specify TurtleBot’s location. Leave <strong>RViz</strong> open so we can monitor its path planning. </p>
+
+<p><em><strong>TIP:</strong> After you estimate TurtleBot’s pose it can reliably know where it is even while traveling.</em></p>
+
+<p>In a separate terminal run:</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">python ~/helloworld/goforward_and_avoid_obstacle.py</code></pre></div>
 
@@ -135,14 +137,12 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <h2 id="why-does-it-go-in-circles">Why Does It Go in Circles?</h2>
 
-<p>TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Another YouTube user created an excellent video on TurtleBot localization:</p>
+<p>TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Here’s is an excellent video on TurtleBot localization created by Melonee Wise:</p>
 
 <div style="margin-bottom: 1.5em;">
 	
 	<div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/Mv1mbsMfbmI?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe></div>
 </div>
-
-<p><em><strong>Note:</strong> The above video was created by Melonee Wise.</em></p>
 
 <h2 id="lets-have-a-look-at-the-code">Let’s have a look at the code:</h2>
 
@@ -152,6 +152,12 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <p>Note that instead of saying “go forward for a few seconds” we’re saying “we want to end up at the location 3 meters forward regardless of what path takes us there”. TurtleBot can take up to 60 seconds to try and find a path to this location all with a few lines of code.</p>
 
+<h2 id="learn-more-at-wikirosorg">Learn more at wiki.ros.org</h2>
+
+<ul>
+  <li><a href="http://wiki.ros.org/amcl">amcl - probabilistic localization system for a robot moving in 2D</a></li>
+  <li><a href="http://wiki.ros.org/rviz">RViz - 3D visualization tool</a></li>
+</ul>
 
   </article>
 
