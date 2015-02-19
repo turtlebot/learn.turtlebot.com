@@ -6,13 +6,15 @@ date:   2015-02-01 13:46:10
 
 We need to install ROS and TurtleBot packages on both the work station and TurtleBot. There are different distributions of ROS and they are named in alphabetical order from oldest to newest (e.g. Groovy came before Hydro which came before Indigo).
 
-We want to install the long term support, or LTS, version called **Indigo**.
+We want to install the long term support, or LTS, distribution called **Indigo**.
+
+***TIP:** The recently added "Jade" distribution is not LTS.*
 
 ## Installing ROS (Workstation and TurtleBot)
 
 For your reference, [The ROS Wiki page](http://wiki.ros.org/indigo/Installation/Ubuntu) on installing Indigo is excellent. Follow it completely and use all the recommended options such as installing the desktop full version.
 
-**TIP:* If you followed our [Installing Ubuntu tutorial]({{ site.url }}{% post_url 2015-02-01-4%}) you have Ubuntu 14.04.*
+***TIP:** If you followed our [Installing Ubuntu tutorial]({{ site.url }}{% post_url 2015-02-01-4%}) you have Ubuntu 14.04.*
 
 ***TIP:** All of these commands should be copied and pasted into a terminal. Use ctrl + alt + t to launch a terminal.*
 
