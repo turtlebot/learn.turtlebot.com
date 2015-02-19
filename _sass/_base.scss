@@ -162,7 +162,8 @@ pre {
     margin-top: 1.5em; }
   .image-wrapper .image-caption {
     color: #828282;
-    margin-top: 10px; }
+    margin-top: 26px;
+    font-style: italic; }
 
 .page-navigation{
 
@@ -181,9 +182,11 @@ pre {
 
   @media screen and (max-width: 660px) {
 	.page-navigation .left, .page-navigation .right {
-  display: inline-block;}
+  display: inline-block;
+    float:none;}
 .page-navigation .left {
-  margin-right: 20px;}  
+  margin-right: 20px;
+  float:none;}  
 	  }
 
 
