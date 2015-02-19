@@ -17,7 +17,6 @@ Through software packages like the [Robot Operating System (ROS)](http://www.ros
 
 1. A mobile base is the heart of a modular/interoperability model of robotics. Without a shared base, parts such as robotic arms, sensors, and other tools could not find or get to their location. Even at their desired location, each would require an independent “brain” to know what to do, which would in turn require interpretation between each of the components.
 2. The [Kiva robot system](http://www.kivasystems.com/), which is essentially a really strong TurtleBot (a robot that autonomously moves objects on top of it around an environment), was purchased by Amazon for $775 million to manage products in their massive warehouses.
-Regardless of whether you support the all-in-one or modular/interoperable design theses, or you want to build anything from laundryBots to a fleet of waiters for hire, TurtleBot’s open source hardware, driven by the open source ROS software, is an ideal starting point for any developer transitioning into robotics.
 
 Regardless of whether you support the all-in-one or modular/interoperable design theses, or you want to build anything from laundryBots to a fleet of waiters for hire, TurtleBot’s open source hardware, driven by the open source ROS software, is an ideal starting point for any developer transitioning into robotics.
 
