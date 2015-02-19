@@ -51,3 +51,7 @@ sudo ./install.sh
 ## Prevent TurtleBot from Turning Off When You Close the Lid (TurtleBot Only)
 
 It’s a lot more practical to close the lid of TurtleBot’s netbook when driving around. To prevent it from turning off go to: System Settings (gear icon on left finder bar) > Search (top right) for *“power” > Power > “When lid is closed” set to “Do Nothing”* for both *“On battery power” & “When plugged in”*.
+
+## Learn more at wiki.ros.org
+
+* [Getting Started with ROS](http://wiki.ros.org/ROS/StartGuide)

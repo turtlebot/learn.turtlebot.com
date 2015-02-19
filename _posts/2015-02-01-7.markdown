@@ -99,3 +99,7 @@ Try driving around from the workstation. This is what you should see on the work
 And this is what you should see in your office, home, etc:
 
 {% include youtube.html youtubeid="gvtBXeJxghk" %}
+
+## Learn more at wiki.ros.org
+
+* [Network Configuration](http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration)

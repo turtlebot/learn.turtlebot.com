@@ -67,3 +67,7 @@ After this script has completely launched, instructions for controlling TurtleBo
 {% include youtube.html youtubeid="_jsd5xDYvmg" %}
 
 ***NOTE:** This terminal window must be in focus/active (as opposed to another terminal window or program) for these commands to work.*
+
+## Learn more at wiki.ros.org
+
+* [TurtleBot's technical documentation](http://wiki.ros.org/Robots/TurtleBot)
