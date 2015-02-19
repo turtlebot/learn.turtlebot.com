@@ -18,4 +18,4 @@ Finally, locate the On/Off button on the side of the Kobuki base, turn TurtleBot
 
 {% include image.html img="/assets/kobuki-onoff-2.jpg" title="Kobuki base on/off button" %}
 
-**EXTRA CREDIT:** The laptop uses its own battery power, not TurtleBot’s. The kit comes with the ability to plug the laptop into the Kobuki base so that it charges up when TurtleBot is charging. [Information on setting this up is here](http://www.clearpathrobotics.com/turtlebot_2/downloads/).
+**EXTRA CREDIT:** The laptop uses its own battery power, not TurtleBot’s. The kit comes with the ability to plug the laptop into the Kobuki base so that it charges up when TurtleBot is charging. [Information on setting this up is here]({{ site.url }}{% post_url 2015-02-01-18 %}).

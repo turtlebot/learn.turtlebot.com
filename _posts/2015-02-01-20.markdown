@@ -141,7 +141,7 @@ sudo git clone https://github.com/markwsilliman/turtlebot-server/
 
 ## Clone Web App
 
-The web app is very similar to the browser extension but will allow your customers to request coffee directly from their smartphone. We’ll discuss this in more detail later but for convenience let’s go ahead and clone it as well.
+The web app is very similar to the [browser extension]({{ site.url }}{% post_url 2015-02-01-21 %}) but will allow your customers to request coffee directly from their smartphone. We’ll [discuss this in more detail later]({{ site.url }}{% post_url 2015-02-01-24 %}) but for convenience let’s go ahead and clone it as well.
 
 {% highlight sh %}
 cd /var/www/html

@@ -55,7 +55,7 @@ You’ve already installed [the web app]({{ site.url }}{% post_url 2015-02-01-24
 
 {% include youtube.html youtubeid="yIY3ZzgvVEE" %}
 
-After CoffeeBot arrives it will wait until the customer presses B0. Since there isn’t a way (yet!) for CoffeeBot to know when the customer is finished brewing coffee, B0 is a way for the customer to say “I’m finished, you can go elsewhere”.
+After CoffeeBot arrives it will wait until the customer presses B0. Since there isn’t a way ([yet!]({{ site.url }}{% post_url 2015-02-01-27 %})) for CoffeeBot to know when the customer is finished brewing coffee, B0 is a way for the customer to say “I’m finished, you can go elsewhere”.
 
 After B0 is pressed CoffeeBot will check if there are other pending coffee requests. If no additional requests exist, it will return to the docking station.
 
