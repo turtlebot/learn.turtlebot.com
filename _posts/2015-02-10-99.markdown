@@ -1,8 +1,30 @@
 ---
 layout: post
-title:  "Further Reading"
+title:  "What to Read Next"
 date:   2015-02-10 13:46:14
 ---
 
-Books will be here.  Pending
+We created this article series to give a coherent, project-based introduction and overview of ROS without having to learn all the nitty-gritty details. We left out and glossed over hundreds of powerful tools, many of which deserve their own series! Now that you’ve finished this series, more sophisticated and powerful approaches to ROS await you:
 
+## Join the Community
+
+1. [TurtleBot user mailing list](https://groups.google.com/forum/#!forum/ros-sig-turtlebot) - Mailing list for TurtleBot users
+2. [ROS Answers](http://answers.ros.org/questions/) - General forum for ROS users
+
+## Online References
+
+1. [Getting Started Guide - ROS](http://wiki.ros.org/ROS/StartGuide) - Overview of the ROS Environment (we skipped over lots of best practices so this is a must)
+2. [TurtleBot - ROS](http://wiki.ros.org/Robots/TurtleBot) - Technical reference for TurtleBot
+3. [Kobuki - ROS](http://wiki.ros.org/kobuki) - Technical reference for Kobuki
+4. [Kobuki Auto Docking - ROS](http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking) - How automatic docking works
+5. [ROS' Wiki](http://wiki.ros.org/) - The core documentation for ROS
+
+## Books
+
+1. [ROS by Example series Volume 1](http://www.lulu.com/shop/r-patrick-goebel/ros-by-example-indigo-volume-1/ebook/product-22015937.html) by Patrick Goebel - Example based overview of ROS.  Many examples were written for TurtleBot specifically. ***Tip:** Make sure you buy the Indigo version (as opposed to Groovy or earlier which Goebel wrote as well)!*
+2. [A Gentle Introduction to ROS](http://www.amazon.com/Gentle-Introduction-ROS-Jason-OKane/dp/1492143235/ref=sr_1_1?ie=UTF8&qid=1423007544&sr=8-1&keywords=ros+indigo&pebp=1423007546478&peasin=1492143235) by Jason O’Kane - An easy to read overview of the ROS environment.
+
+## Upcoming Publications
+
+1. Volume 2 for Indigo of ROS by Example series by Patrick Goebel (A Groovy edition exists and is excellent)
+2. [Programming Robots With ROS](http://www.amazon.com/Programming-Robots-ROS-Morgan-Quigley/dp/1449323898/ref=sr_1_fkmr0_3?ie=UTF8&qid=1424369410&sr=8-3-fkmr0&keywords=ROS+indigo) by Morgan Quigley, Brian Gerkey & William Smart

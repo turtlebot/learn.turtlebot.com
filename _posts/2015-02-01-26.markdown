@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Setting Optimal Angles for Customers"
+date:   2015-02-01 13:46:27
+---
+
+For simplicity, our tutorial applications include only the X and Y coordinates for your customers and do not include the angle TurtleBot should face when it arrives at the customer’s location. Keep in mind that ROS is developed for robots that work in 3D environments like drones, so orientation is fairly complex. For those who want to take their application to the next level and allow custom angles, here are some tips:
+
+If we [view coffee_bot.py’s code](https://github.com/markwsilliman/turtlebot/blob/master/coffee_bot.py) search for “Quaternion”, this is what controls your orientation (aka: the angle). Let’s modify our code to accept one value. We will use degrees because your customers will likely understand this better than radians. The degree value is relative to the map that you load into amcl_demo.py.
+
+Add two additional includes to your scripts:
+
+{% highlight python %}
+from tf import transformations
+import math
+{% endhighlight %}
+
+Now we are going to convert the degrees value to radians, creating an Euler angle which we’ll then convert into a Quaternion. Basically, we need to take a few steps to convert degrees to the format that ROS wants.
+
+{% highlight python %}
+#90 degrees.  You can this specify this to whatever your customer wants
+turtlebot_orientation_in_degrees = 90
+#convert euler to quaternion and save in new variable quat
+quat = transformations.quaternion_from_euler(0, 0, math.radians(turtlebot_orientation_in_degrees))
+#pass quaternion values to pose
+goal.target_pose.pose = Pose(Point(-0.73, -0.9, 0.000), Quaternion(quat[0], quat[1], quat[2], quat[3]))
+{% endhighlight %}
