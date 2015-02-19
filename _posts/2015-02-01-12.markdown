@@ -6,7 +6,7 @@ date:   2015-02-01 13:46:15
 
 Now let’s dive into the power of ROS. With ROS we have the ability to move TurtleBot (or any other robot) from one place to another while avoiding both static and dynamic obstacles all with a few lines of code.
 
-***NOTE:* Make sure you have [created your map] prior to starting this tutorial({{ site.url }}{% post_url 2015-02-01-11 %}).*
+***NOTE:** Make sure you have [created your map]({{ site.url }}{% post_url 2015-02-01-11 %}) prior to starting this tutorial.*
 
 Stop everything from the previous tutorials on both the TurtleBot and the workstation. On TurtleBot run:
 
