@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Respawning the Auto-Docking Server"
+date:   2015-02-01 13:46:23
+---
+
+Our auto-docking script that allows CoffeeBot to auto-dock requires an auto-docking server. During our testing this crashed fairly often. That said, ROS provides launch files that can automatically spawn nodes that crash.
+
+We’ll modify the auto-docking server launch file so it auto-spawns. We will be using this in the final demo.
+
+Open a terminal window and run:
+
+{% highlight sh %}
+roscd kobuki_auto_docking/launch/
+cp minimal.launch coffeebot.launch
+gedit coffeebot.launch
+{% endhighlight %}
+
+In the editor, replace this line:
+
+{% highlight xml %}
+<node pkg="nodelet" type="nodelet" name="dock_drive" args="load kobuki_auto_docking/AutoDockingNodelet mobile_base_nodelet_manager">
+{% endhighlight %}
+
+with this:
+
+{% highlight xml %}
+<node pkg="nodelet" type="nodelet" name="dock_drive" args="load kobuki_auto_docking/AutoDockingNodelet mobile_base_nodelet_manager" respawn="true">
+{% endhighlight %}
+
+Save & exit.
