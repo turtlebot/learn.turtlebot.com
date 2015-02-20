@@ -26,9 +26,9 @@ We created this article series to give a coherent, project-based introduction an
 
 ## Related Tools
 
-1. [Gazebo](http://gazebosim.org/) - Robot simulation made easy (powered by ROS).
+1. [Gazebo](http://gazebosim.org/) - Robot simulation made easy (powered by [ROS](http://www.lulu.com/shop/r-patrick-goebel/ros-by-example-volume-2-hydro/ebook/product-21837577.html)).
 
 ## Upcoming Publications
 
-1. Volume 2 for Indigo of ROS by Example series by Patrick Goebel (A Groovy edition exists)
+1. Volume 2 for Indigo of ROS by Example series by Patrick Goebel (A Groovy edition exists here)
 2. [Programming Robots With ROS](http://www.amazon.com/Programming-Robots-ROS-Morgan-Quigley/dp/1449323898/ref=sr_1_fkmr0_3?ie=UTF8&qid=1424369410&sr=8-3-fkmr0&keywords=ROS+indigo) by Morgan Quigley, Brian Gerkey & William Smart
