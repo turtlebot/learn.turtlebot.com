@@ -30,5 +30,5 @@ We created this article series to give a coherent, project-based introduction an
 
 ## Upcoming Publications
 
-1. Volume 2 for Indigo of ROS by Example series by Patrick Goebel (A Groovy edition exists and is excellent)
+1. Volume 2 for Indigo of ROS by Example series by Patrick Goebel (A Groovy edition exists)
 2. [Programming Robots With ROS](http://www.amazon.com/Programming-Robots-ROS-Morgan-Quigley/dp/1449323898/ref=sr_1_fkmr0_3?ie=UTF8&qid=1424369410&sr=8-3-fkmr0&keywords=ROS+indigo) by Morgan Quigley, Brian Gerkey & William Smart
