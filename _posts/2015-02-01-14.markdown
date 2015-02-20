@@ -10,7 +10,7 @@ Let’s try this out by telling TurtleBot to go near our docking station.
 
 In this article we’re assuming that [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) and [created a map (saved at /tmp/mymap)]({{ site.url }}{% post_url 2015-02-01-11 %}). If you haven’t, follow the steps in those articles and return to this one.
 
-First, we need to load the map into **RViz** and update the script with a pose that is close to our docking station. About one meter away from the station is perfect.
+First, we need to load the map and update the script with a pose that is close to our docking station. About one meter away from the station is perfect.
 
 On TurtleBot, open a terminal window and run:
 
@@ -29,6 +29,8 @@ In **RViz**, select “2D Pose Estimate” and click the map approximately where
 
 Next, select “Publish Point” and hover over your map (but don’t click) where you’d like TurtleBot to go when you run your script. On the bottom left corner of the screen next to “select this point” you’ll notice three numbers which change when you move the mouse. This is your point, so write these numbers down.
 
+***TIP:** The third number is altitude.  It may show a number that isn't perfectly 0 but regardless of what it says use 0.*
+
 In a new terminal window run:
 
 {% highlight sh %}
@@ -41,7 +43,7 @@ Look for this line of code (line 30):
 goal.target_pose.pose = Pose((Point(2.18, -1.7, 0.000), Quaternion(0.000, 0.000, 0.892, -1.500)).
 {% endhighlight %}
 
-Overwrite the three values of **Point()** with the numbers you wrote down earlier when doing “publish point”. Save and exit.
+Overwrite the first two values of **Point()** with the numbers you wrote down earlier when doing “publish point”. Save and exit.
 
 Then run:
 
@@ -53,10 +55,12 @@ python ~/helloworld/go_to_specific_point_on_map.py
 
 ***NOTE:** As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the rospy.duration time limit hasn’t expired.*
 
+***TIP:** If you view the terminal where you are running amcl_demo.launch it'll show a report that will tell you when TurtleBot has given up attempting to reach a goal.*
+
 ## Accuracy
 
-As we remember from our dead reckoning experiments, accuracy is a major problem when relying only on speed and course. The good news with ROS’s move base algorithms is that TurtleBot continuously uses its surroundings to determine where it is on the map and therefore doesn’t get lost. To learn about this in detail [read about AMCL](http://wiki.ros.org/amcl).
+As we remember from our dead reckoning experiments ([draw_a_square.py]({{ site.url }}{% post_url 2015-02-01-10 %})), accuracy is a major problem when relying only on speed and course. The good news with ROS’s move base algorithms is that TurtleBot continuously uses its surroundings to determine where it is on the map and therefore doesn’t get lost. To learn about this in detail [read about AMCL](http://wiki.ros.org/amcl).
 
 ## Starting to See Our Goal
 
-In the mission of making a coffee delivery robot, you can start to think of people’s desks as a list of known points. You can even geek out and set the orientation for everyone’s desks so it points perfectly toward them by modifying the Quaternion() value. *The last thing we want is for our coworkers to have to turn the robot a little to make coffee!*
+In the mission of making a coffee delivery robot, you can start to think of people’s desks as a list of known points. You can even geek out and set the orientation for everyone’s desks so it points perfectly toward them by [modifying the Quaternion() value]({{ site.url }}{% post_url 2015-02-01-26 %}). *The last thing we want is for our coworkers to have to turn the robot a little to make coffee!*

@@ -97,7 +97,7 @@ Monitor the Netbook’s Battery Status">Monitor the Netbook’s Battery Status &
 
 <p>In this article we’re assuming that <a href="/2015/02/01/10/">you’ve cloned the github repository</a> and <a href="/2015/02/01/11/">created a map (saved at /tmp/mymap)</a>. If you haven’t, follow the steps in those articles and return to this one.</p>
 
-<p>First, we need to load the map into <strong>RViz</strong> and update the script with a pose that is close to our docking station. About one meter away from the station is perfect.</p>
+<p>First, we need to load the map and update the script with a pose that is close to our docking station. About one meter away from the station is perfect.</p>
 
 <p>On TurtleBot, open a terminal window and run:</p>
 
@@ -112,6 +112,8 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <p>Next, select “Publish Point” and hover over your map (but don’t click) where you’d like TurtleBot to go when you run your script. On the bottom left corner of the screen next to “select this point” you’ll notice three numbers which change when you move the mouse. This is your point, so write these numbers down.</p>
 
+<p><em><strong>TIP:</strong> The third number is altitude.  It may show a number that isn’t perfectly 0 but regardless of what it says use 0.</em></p>
+
 <p>In a new terminal window run:</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">gedit ~/helloworld/go_to_specific_point_on_map.py</code></pre></div>
@@ -120,7 +122,7 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">goal.target_pose.pose <span class="o">=</span> Pose<span class="o">((</span>Point<span class="o">(</span>2.18, -1.7, 0.000<span class="o">)</span>, Quaternion<span class="o">(</span>0.000, 0.000, 0.892, -1.500<span class="o">))</span>.</code></pre></div>
 
-<p>Overwrite the three values of <strong>Point()</strong> with the numbers you wrote down earlier when doing “publish point”. Save and exit.</p>
+<p>Overwrite the first two values of <strong>Point()</strong> with the numbers you wrote down earlier when doing “publish point”. Save and exit.</p>
 
 <p>Then run:</p>
 
@@ -133,13 +135,15 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <p><em><strong>NOTE:</strong> As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the rospy.duration time limit hasn’t expired.</em></p>
 
+<p><em><strong>TIP:</strong> If you view the terminal where you are running amcl_demo.launch it’ll show a report that will tell you when TurtleBot has given up attempting to reach a goal.</em></p>
+
 <h2 id="accuracy">Accuracy</h2>
 
-<p>As we remember from our dead reckoning experiments, accuracy is a major problem when relying only on speed and course. The good news with ROS’s move base algorithms is that TurtleBot continuously uses its surroundings to determine where it is on the map and therefore doesn’t get lost. To learn about this in detail <a href="http://wiki.ros.org/amcl">read about AMCL</a>.</p>
+<p>As we remember from our dead reckoning experiments (<a href="/2015/02/01/10/">draw_a_square.py</a>), accuracy is a major problem when relying only on speed and course. The good news with ROS’s move base algorithms is that TurtleBot continuously uses its surroundings to determine where it is on the map and therefore doesn’t get lost. To learn about this in detail <a href="http://wiki.ros.org/amcl">read about AMCL</a>.</p>
 
 <h2 id="starting-to-see-our-goal">Starting to See Our Goal</h2>
 
-<p>In the mission of making a coffee delivery robot, you can start to think of people’s desks as a list of known points. You can even geek out and set the orientation for everyone’s desks so it points perfectly toward them by modifying the Quaternion() value. <em>The last thing we want is for our coworkers to have to turn the robot a little to make coffee!</em></p>
+<p>In the mission of making a coffee delivery robot, you can start to think of people’s desks as a list of known points. You can even geek out and set the orientation for everyone’s desks so it points perfectly toward them by <a href="/2015/02/01/26/">modifying the Quaternion() value</a>. <em>The last thing we want is for our coworkers to have to turn the robot a little to make coffee!</em></p>
 
   </article>
 
