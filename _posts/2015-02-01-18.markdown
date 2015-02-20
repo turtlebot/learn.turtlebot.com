@@ -18,6 +18,12 @@ If you don’t check the polarity of your barrel plug you have a fifty percent c
 
 {% include critical_post.html %}
 
+{% include critical_pre.html title="Warning #2" %}
+
+If your netbook requires more than 2 amps don't plug it into Kobuki!  If it requires 2 amps or less it should be fine.
+
+{% include critical_post.html %}
+
 ## How to Check the Polarity:
 
 Make sure you check the polarity after you have modified your cable. This is explained in detail below.
