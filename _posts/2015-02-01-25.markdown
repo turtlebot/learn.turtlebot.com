@@ -69,7 +69,7 @@ http://[your_public_dns]/turtlebot-server/coffee_queue.php?printqueue
 
 ***TIP:** a “status” value of 0 is pending, 1 is success and 2 is failed.*
 
-f you specified an invalid X and Y coordinate (i.e. a pose that TurtleBot could never reach), you can manually remove it by finding its ID in the **printqueue** (above) and then passing that value to the update call:
+If you specified an invalid X and Y coordinate (i.e. a pose that TurtleBot could never reach), you can manually remove it by finding its ID in the **printqueue** (above) and then passing that value to the update call:
 
 {% highlight sh %}
 http://[your_public_dns]/turtlebot-server/coffee_queue.php?update&id=[ID_OF_INVALID_REQUEST]&status=failed
