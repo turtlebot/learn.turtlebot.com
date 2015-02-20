@@ -4,7 +4,7 @@ title:  "Installing the Chrome Browser Extension"
 date:   2015-02-01 13:46:21
 ---
 
-We know we love ordering coffee from the terminal, but we suspect your customers won’t. Give them the CoffeeBot Chrome Extension so they can order in style.
+We might love ordering coffee from the terminal, but we suspect your customers won’t. Give them the CoffeeBot Chrome Extension so they can order in style.
 
 Here’s the goal:
 

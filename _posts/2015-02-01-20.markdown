@@ -4,9 +4,12 @@ title:  "Configure CoffeeBot’s Web Server"
 date:   2015-02-01 13:46:20
 ---
 
-***IMPORTANT:** The scripts provided in this article are not the recommended instance configurations because they have **literally no security**. Anyone in the world could technically request coffee or worse. We left out security configurations / API keys, etc., to keep the tutorial as simple as possible.*
+{% include critical_pre.html title="Important" %}
+The scripts provided in this article are not the recommended instance configurations because they have literally no security.  Anyone in the world could technically request coffee or worse. We left out security configurations / API keys, etc., to keep the tutorial as simple as possible.
 
-We need a way for customers to tell TurtleBot that they want coffee and manage the coffee queue if multiple people want coffee simultaneously. There are multiple ways to do this, but considering this series is targeted at web developers, we’ll use a LAMP stack.
+{% include critical_post.html %}
+
+We need a way for customers to tell TurtleBot that they want coffee and manage the coffee queue if multiple people want coffee simultaneously. There are multiple ways to do this, but considering this series is targeted at web developers, we’ll use a [LAMP stack](http://en.wikipedia.org/wiki/LAMP_%28software_bundle%29).
 
 ## What is LAMP?
 
@@ -14,7 +17,7 @@ LAMP is an acronym for Linux, Apache, MySQL and PHP. In other words, it includes
 
 ## Creating a Web Server
 
-You could create a local web server and have customers connect to that. But, instead of converting an existing server to a web server, let’s spawn an instance in the cloud.
+You could create a local web server and have customers connect to that. But, instead of converting an existing computer to a web server, let’s spawn an instance in the cloud.
 
 Amazon web services (aka: “AWS”) offers free micro-size Ubuntu web servers for 1 year. You’ll need to type in your credit card number but as long as you cancel in the first year and don’t use [more resources than offered in their free plan](http://aws.amazon.com/free/) your card will not be charged.
 
@@ -150,7 +153,7 @@ sudo git clone https://github.com/markwsilliman/turtlebot-web-app/
 
 ## (Optional) Set MySQL root password
 
-The web app is very similar to the browser extension but will allow your customers to request coffee directly from their smartphone. We’ll discuss this in more detail later but for convenience let’s go ahead and clone it as well.
+If you didn’t set the MySQL root password to “turtlebot”, you need to edit the configuration file. If you did set the MySQL root password to “turtlebot”, skip this section.
 
 {% highlight sh %}
 cd /var/www/html/turtlebot-server/
