@@ -4,17 +4,17 @@ title:  "Monitor the Netbook’s Battery Status"
 date:   2015-02-01 13:46:17
 ---
 
-Now that TurtleBot [can go to a specific location]({{ site.url }}{% post_url 2015-02-01-14 %}), we want to make sure it doesn’t run out of battery power on the way to or back from that location. Without charged batteries, TurtleBot’s Kobuki base and netbook are of little use. In an earlier article we discussed [auto-docking TurtleBot]({{ site.url }}{% post_url 2015-02-01-12 %}) , so if TurtleBot knows when the batteries are low, it can autonomously charge itself.
+Now that TurtleBot [can go to a specific location]({{ site.url }}{% post_url 2015-02-01-14 %}), we want to make sure it doesn’t run out of battery power. In an earlier article we discussed [auto-docking TurtleBot]({{ site.url }}{% post_url 2015-02-01-12 %}) , so if TurtleBot knows when the batteries are low, it can autonomously charge itself.
 
 ## Monitoring the Netbook’s Battery Status.
 
-### ROS Threads
+### ROS Topics
 
-ROS has a concept called “threads”. These threads are a lot like conference call lines. You can continuously listen to a conference line and whenever something is said on the line you can do something via a callback function. There is a “conference line” of sorts for the netbook’s battery status. You can listen to it and know every time the netbook’s battery increases or decreases charge.
+ROS has a concept called “topics”. These topics are a lot like conference call lines. You can continuously listen to a conference line and whenever something is said on the line you can do something via a callback function. There is a “conference line” of sorts for the netbook’s battery status. You can listen to it and know every time the netbook’s battery increases or decreases charge.
 
-### Listing all Threads
+### Listing all Topics
 
-ROS & TurtleBot’s libraries publish lots of threads. Let’s have a look at a complete list of them. On TurtleBot, open a terminal window and run:
+ROS & TurtleBot’s libraries publish lots of topics. Let’s have a look at a complete list of them. On TurtleBot, open a terminal window and run:
 
 {% highlight sh %}
 roslaunch turtlebot_bringup minimal.launch
@@ -87,3 +87,7 @@ if(int(data.percentage) < 50):
 {% endhighlight %}
 
 will work perfectly.
+
+## Learn more at wiki.ros.org
+
+* [Understanding Topics](http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
