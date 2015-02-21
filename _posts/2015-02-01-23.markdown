@@ -28,4 +28,4 @@ with this:
 <node pkg="nodelet" type="nodelet" name="dock_drive" args="load kobuki_auto_docking/AutoDockingNodelet mobile_base_nodelet_manager" respawn="true">
 {% endhighlight %}
 
-Save & exit.
+Save and exit.
