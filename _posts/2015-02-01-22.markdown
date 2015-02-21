@@ -19,9 +19,9 @@ Scroll down and find:
 
 There are four values you should change:
 
-1. **server_public_dns** – Set this to your EC2 account’s public DNS. Make sure you start with http://
-2. **near_dock_station_x** – Set this to the ‘x’ value near your docking station
-3. **near_dock_station_y** – Set this to the ‘y’ value near your docking station
+1. **server_public_dns** – Set this to your EC2 account’s public DNS. Make sure you start with http://.
+2. **near_dock_station_x** – Set this to the ‘x’ value near your docking station.
+3. **near_dock_station_y** – Set this to the ‘y’ value near your docking station.
 4. **kobuki_base_max_charge** – Set this to the maximum battery charge of your kobuki base.
 
 Save your changes and exit the editor.
