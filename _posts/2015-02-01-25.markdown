@@ -43,7 +43,7 @@ python coffee_bot.py
 
 ## Initial Results
 
-After CoffeeBot checks if anyone needs coffee five times, it will return to the docking station to charge while waiting for another request.
+After CoffeeBot checks five times if anyone needs coffee, it will return to the docking station to charge while waiting for another request.
 
 ***NOTE:** Once it starts the docking procedure, CoffeeBot will complete it prior to checking for coffee again.*
 
@@ -57,7 +57,7 @@ You’ve already installed [the web app]({{ site.url }}{% post_url 2015-02-01-24
 
 After CoffeeBot arrives it will wait until the customer presses B0. Since there isn’t a way ([yet!]({{ site.url }}{% post_url 2015-02-01-27 %})) for CoffeeBot to know when the customer is finished brewing coffee, B0 is a way for the customer to say “I’m finished, you can go elsewhere”.
 
-After B0 is pressed CoffeeBot will check if there are other pending coffee requests. If no additional requests exist, it will return to the docking station.
+After B0 is pressed, CoffeeBot will check if there are other pending coffee requests. If no additional requests exist, it will return to the docking station.
 
 ## Troubleshooting
 
@@ -67,7 +67,7 @@ To view a dump of the last 100 coffee requests go to:
 http://[your_public_dns]/turtlebot-server/coffee_queue.php?printqueue
 {% endhighlight %}
 
-***TIP:** a “status” value of 0 is pending, 1 is success and 2 is failed.*
+***TIP:** A “status” value of 0 is pending, 1 is success and 2 is failed.*
 
 If you specified an invalid X and Y coordinate (i.e. a pose that TurtleBot could never reach), you can manually remove it by finding its ID in the **printqueue** (above) and then passing that value to the update call:
 
