@@ -21,7 +21,7 @@ Install Chrome by [downloading it](google.com/chrome/) then opening the Ubuntu S
 Still on the workstation:
 
 * Open Chrome.
-* Settings > More Tools > Extensions
+* Go to Settings > More Tools > Extensions.
 * Check “Developer Mode” checkbox at the top of the page.
 
 {% include youtube.html youtubeid="xJ7vPsNGsWg" %}
@@ -57,14 +57,14 @@ Save and close.
 
 Back in Chrome:
 
-* Settings > More Tools > Extensions
-* Press the “Load unpacked extension…” button
-* Select the turtlebot-chrome-extension folder and “open”
-* You should now have a coffee cup on the top/right of your browser
+* Go to Settings > More Tools > Extensions.
+* Press the “Load unpacked extension…” button.
+* Select the turtlebot-chrome-extension folder and “open”.
+* You should now have a coffee cup on the top/right of your browser.
 
 {% include youtube.html youtubeid="a9sQMWgivDc" %}
 
 Once we’ve finished the demo, you can order coffee right from the browser!
 
-***TIP:** You can share the modified browser extension folder with all of your customers and have them install it using the above instructions. (This works on Mac, PC and anything that can install Chrome).*
+***TIP:** You can share the modified browser extension folder with all of your customers and have them install it using the above instructions. (This works on Mac, PC and anything that can install Chrome.)*
 
