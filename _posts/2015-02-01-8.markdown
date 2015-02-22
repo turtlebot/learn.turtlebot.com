@@ -20,7 +20,7 @@ Then open another terminal window and run:
 roslaunch openni_launch openni.launch 
 {% endhighlight %}
 
-If you get a collection of lines that start with **process[camera...** everything is perfect and you can skip the troubleshooting section below and move on to the “View Image Data” section. Leave the two terminal windows open.
+If you get a collection of lines that start with `process[camera...` everything is perfect and you can skip the troubleshooting section below and move on to the “View Image Data” section. Leave the two terminal windows open.
 
 {% include youtube.html youtubeid="QjFBrZZki-E" %}
 
@@ -65,7 +65,7 @@ We're going to disable USB 3.0 in the BIOS.
 lsusb
 {% endhighlight %}
 
-and verify that there are three lines about **Microsoft Corp.,** two of which are regarding **XBox NUI**. If you only have one line or none, Kinect may not be plugged in or is lacking power.
+and verify that there are three lines about `Microsoft Corp.`, two of which are regarding `XBox NUI`. If you only have one line or none, Kinect may not be plugged in or is lacking power.
 
 ## View Image Data (Workstation)
 

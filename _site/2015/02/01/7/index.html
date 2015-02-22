@@ -117,7 +117,7 @@ This may affect the security of your TurtleBot computer. Don’t do this outside
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">sudo service ssh status</code></pre></div>
 
-<p>If you receive <strong>ssh: unrecognized service</strong>, install the SSH server via:</p>
+<p>If you receive <code>ssh: unrecognized service</code>, install the SSH server via:</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">sudo apt-get install openssh-server</code></pre></div>
 
@@ -131,9 +131,9 @@ sudo /etc/init.d/ssh restart</code></pre></div>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">ifconfig</code></pre></div>
 
-<p>After <strong>wlan0 (not “lo”)</strong> you’ll see an <strong>inet addr:</strong>. That is TurtleBot’s IP.</p>
+<p>After <code>wlan0</code> (not “lo”) you’ll see an <code>inet addr:</code>. That is TurtleBot’s IP.</p>
 
-<p><strong>TIP:</strong> If it starts with 127, it’s probable the IP for <strong>lo</strong> is the wrong one.</p>
+<p><em><strong>TIP:</strong> If it starts with 127, it’s probable the IP for <code>lo</code> is the wrong one.</em></p>
 
 <div style="margin-bottom: 1.5em;">
 	
@@ -144,7 +144,7 @@ sudo /etc/init.d/ssh restart</code></pre></div>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">ssh turtlebot@<span class="o">[</span>ip_of_turtlebot<span class="o">]</span></code></pre></div>
 
-<p>NOTE: Replace <strong>[ip_of_turtlebot]</strong> with TurtleBot’s IP and <strong>turtlebot</strong> with its username if you chose a name different from “turtlebot”.</p>
+<p>NOTE: Replace <code>[ip_of_turtlebot]</code> with TurtleBot’s IP and <code>turtlebot</code> with its username if you chose a name different from “turtlebot”.</p>
 
 <p>Now you can SSH into TurtleBot to run scripts including the start-up script:</p>
 
@@ -152,7 +152,7 @@ sudo /etc/init.d/ssh restart</code></pre></div>
 
 <p>…without having to walk over to TurtleBot!</p>
 
-<p><em><strong>TIP:</strong> The password is the same password you use to log in to the TurtleBot computer (default: <strong>turtlebot</strong>).</em></p>
+<p><em><strong>TIP:</strong> The password is the same password you use to log in to the TurtleBot computer (default: <code>turtlebot</code>).</em></p>
 
 <div style="margin-bottom: 1.5em;">
 	
@@ -167,7 +167,7 @@ sudo /etc/init.d/ssh restart</code></pre></div>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_bringup minimal.launch</code></pre></div>
 
-<p><em><strong>NOTE:</strong> turtlebot_bringup is the way of “booting up” TurtleBot. This must be run remotely on TurtleBot, never directly on the workstation</em></p>
+<p><em><strong>NOTE:</strong> <code>turtlebot_bringup</code> is the way of “booting up” TurtleBot. This must be run remotely on TurtleBot, never directly on the workstation</em></p>
 
 <p>On the workstation, run:</p>
 

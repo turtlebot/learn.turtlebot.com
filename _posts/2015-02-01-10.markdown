@@ -34,8 +34,6 @@ gedit goforward.py
 
 You can also [view it on GitHub](https://github.com/markwsilliman/turtlebot/blob/master/goforward.py) if you prefer.
 
-***NOTE:** If you haven’t looked at Python code before, Learning Python by Mark Lutz is a good resource.*
-
 If you scroll all the way to the bottom you’ll see:
 
 
@@ -45,7 +43,9 @@ if __name__ ==  '__main__':
         GoForward()
 {% endhighlight %}
 
-This simply means “when we start this script try running GoForward's __init__ (initialize) function”. From here the documentation in the code is pretty straightforward but not designed to be all-inclusive. To fully understand the publisher, etc., we’ve linked to [some great books]({{ site.url }}{% post_url 2015-02-10-99 %}).
+***NOTE:** If you haven’t looked at Python code before, [Learning Python by Mark Lutz](http://shop.oreilly.com/product/0636920028154.do) is a good resource.*
+
+The code above simply means “when we start this script try running GoForward's __init__ (initialize) function”. From here the documentation in the code is pretty straightforward but not designed to be all-inclusive. To fully understand the publisher, etc., we’ve linked to [some great books]({{ site.url }}{% post_url 2015-02-10-99 %}).
 
 For fun let’s modify the command so TurleBot goes in circles. In a terminal window run:
 

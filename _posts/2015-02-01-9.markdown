@@ -56,7 +56,7 @@ cp logitech.launch myjoystick.launch
 gedit myjoystick.launch
 {% endhighlight %}
 
-***TIP:** Notice roscd is similar to cd (change directory) but is configured to automatically find the correct location’s ROS file. This is much more convenient than typing out cd ~/turtlebot/src/turtlebot_apps/turtlebot_teleop/launch*
+***TIP:** Notice `roscd` is similar to `cd` (change directory) but is configured to automatically find the correct location’s ROS file. This is much more convenient than typing out `cd ~/turtlebot/src/turtlebot_apps/turtlebot_teleop/launch`*
 
 In the text editor go to the line immediately after:
 

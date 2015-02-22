@@ -31,7 +31,7 @@ Check if SSH service exists by running on TurtleBot:
 sudo service ssh status
 {% endhighlight %}
 
-If you receive **ssh: unrecognized service**, install the SSH server via:
+If you receive `ssh: unrecognized service`, install the SSH server via:
 
 {% highlight sh %}
 sudo apt-get install openssh-server
@@ -51,9 +51,9 @@ Find TurtleBot’s IP by running the following on TurtleBot’s computer:
 ifconfig
 {% endhighlight %}
 
-After **wlan0 (not "lo")** you’ll see an **inet addr:**. That is TurtleBot’s IP.
+After `wlan0` (not "lo") you’ll see an `inet addr:`. That is TurtleBot’s IP.
 
-**TIP:** If it starts with 127, it’s probable the IP for **lo** is the wrong one.
+***TIP:** If it starts with 127, it’s probable the IP for `lo` is the wrong one.*
 
 {% include youtube.html youtubeid="ihhEnFwffDE" %}
 
@@ -63,7 +63,7 @@ On the workstation, open a terminal and run:
 ssh turtlebot@[ip_of_turtlebot]
 {% endhighlight %}
 
-NOTE: Replace **[ip_of_turtlebot]** with TurtleBot’s IP and **turtlebot** with its username if you chose a name different from “turtlebot”.
+NOTE: Replace `[ip_of_turtlebot]` with TurtleBot’s IP and `turtlebot` with its username if you chose a name different from “turtlebot”.
 
 Now you can SSH into TurtleBot to run scripts including the start-up script:
 
@@ -73,7 +73,7 @@ roslaunch turtlebot_bringup minimal.launch
 
 …without having to walk over to TurtleBot!
 
-***TIP:** The password is the same password you use to log in to the TurtleBot computer (default: **turtlebot**).*
+***TIP:** The password is the same password you use to log in to the TurtleBot computer (default: `turtlebot`).*
 
 {% include youtube.html youtubeid="RcYim7laT_c" %}
 
@@ -87,7 +87,7 @@ Run:
 roslaunch turtlebot_bringup minimal.launch
 {% endhighlight %}
 
-***NOTE:** turtlebot_bringup is the way of “booting up” TurtleBot. This must be run remotely on TurtleBot, never directly on the workstation*
+***NOTE:** `turtlebot_bringup` is the way of “booting up” TurtleBot. This must be run remotely on TurtleBot, never directly on the workstation*
 
 On the workstation, run:
 
