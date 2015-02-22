@@ -33,7 +33,7 @@ roscore
 
 {% include image.html img="/assets/roscore.png" title="“roscore” runing in Terminal" %}
 
-If you look below the **PARAMETERS** heading, you’ll see **/rosdistro:...**. Whatever is written next is the name of your ROS distribution. In our case it’s indigo, which is what we want.
+If you look below the `PARAMETERS` heading, you’ll see `/rosdistro:...`. Whatever is written next is the name of your ROS distribution. In our case it’s indigo, which is what we want.
 
 When we purchased our TurtleBot 2 in September 2014 it shipped with Ubuntu 12 (12 being the version #) and ROS Hydro (Hydro being the distribution release’s name). The developers of ROS highly recommend using Ubuntu 14.04 LTS and ROS Indigo instead.
 

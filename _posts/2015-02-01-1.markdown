@@ -8,12 +8,12 @@ Practical and accessible robotics is upon us, ready to move from government and 
 
 Through software packages like the [Robot Operating System (ROS)](http://www.ros.org/), the intense research and expertise of engineers, computer scientists and more get distilled into ready-to-use development environments and function calls. Year by year, the barriers to entry come down and as web, mobile and maker developers transition into the field, the walls come down even faster.
 
-**The goal of this article series is to get web, mobile, and maker developers programming with ROS via the development platform Turtlebot.** We hope you will see the amazing possibilities and opportunities, dive in and never look back.
+**The goal of this article series is to get web, mobile, and maker developers programming with ROS via the Turtlebot development platform.** We hope you will see the amazing possibilities and opportunities, dive in and never look back.
 
 ## What is TurtleBot and What Does it Do?
 {% include image_onrightoftext.html img="/assets/turtlebot_2_lg.png" width="225" %}
 
-**TurtleBot is an open source hardware platform and mobile base. When powered by ROS software, TurtleBot can handle vision, localization, communication and mobility. It can autonomously move anything on top of it to wherever that item needs to go, avoiding obstacles along the way.** This may not seem terribly exciting at first glance, but consider two things:
+TurtleBot is an open source hardware platform and mobile base. When powered by ROS software, TurtleBot can handle vision, localization, communication and mobility. It can autonomously move anything on top of it to wherever that item needs to go, avoiding obstacles along the way. This may not seem terribly exciting at first glance, but consider two things:
 
 1. A mobile base is the heart of a modular/interoperability model of robotics. Without a shared base, parts such as robotic arms, sensors, and other tools could not find or get to their location. Even at their desired location, each would require an independent “brain” to know what to do, which would in turn require interpretation between each of the components.
 2. The [Kiva robot system](http://www.kivasystems.com/), which is essentially a really strong TurtleBot (a robot that autonomously moves objects on top of it around an environment), was purchased by Amazon for $775 million to manage products in their massive warehouses.
@@ -32,7 +32,11 @@ Given that TurtleBot is a mobile base that can autonomously move around an envir
 
 We decided to have TurtleBot perform the *critical* task of making coffee available on-demand for our coworkers without needing to leave the comfort of their desks.
 
+<<<<<<< Updated upstream
 After mounting a Keurig coffee maker and K-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via a [Google Chrome extension]({{ site.url }}{% post_url 2015-02-01-21 %}). on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker then [plugged in the Keurig]({{ site.url }}{% post_url 2015-02-01-27 %}) and made their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
+=======
+After mounting a Keurig coffee maker and K-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via web app or a Google Chrome extension on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker then plugged in the Keurig and made their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
+>>>>>>> Stashed changes
 
 ## Start Dreaming Beyond These Demos!
 
