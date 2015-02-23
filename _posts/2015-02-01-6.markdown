@@ -42,7 +42,7 @@ Close any open terminals, then open a new terminal window and run:
 roslaunch turtlebot_bringup minimal.launch 
 {% endhighlight %}
 
-{% include youtube.html youtubeid="ZAnfkpanUA0" %}
+{% include youtube.html youtubeid="ZAnfkpanUA0" youtubetitle="ROS turtlebot_bringup minimal.launch"%}
 
 TurtleBot will chime, letting you know that it’s booting up.
 
@@ -60,11 +60,11 @@ Open another terminal tab and run:
 roslaunch turtlebot_teleop keyboard_teleop.launch
 {% endhighlight %}
 
-{% include youtube.html youtubeid="a71oSx9HNY0" %}
+{% include youtube.html youtubeid="a71oSx9HNY0" youtubetitle="ROS turtlebot_teleop keyboard_teleop.launch"%}
 
 After this script has completely launched, instructions for controlling TurtleBot will be printed to the window. Press “i” to move forward.
 
-{% include youtube.html youtubeid="_jsd5xDYvmg" %}
+{% include youtube.html youtubeid="_jsd5xDYvmg" youtubetitle="ROS TurtleBot 2 Teleop Example"%}
 
 ***NOTE:** This terminal window must be in focus/active (as opposed to another terminal window or program) for these commands to work.*
 

@@ -108,7 +108,7 @@ Reboot.
 
 If you’re not familiar with opening and adding new terminal windows, we’ve prepared a short video tutorial to get you started:
 
-{% include youtube.html youtubeid="mZD8NrC373Y" %}
+{% include youtube.html youtubeid="mZD8NrC373Y" youtubetitle="Ubuntu Linux 14.04 - Add Terminal to Launcher"%}
 
 
 ## Quick Course on Commands
