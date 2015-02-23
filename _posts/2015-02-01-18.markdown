@@ -63,7 +63,7 @@ The Robotsmiths strongly recommend that you read through the instructions **BEFO
 
 #### Parts Required
 
-*If you do not have experience crimping wires, buying spares is recommended*
+*If you do not have experience crimping wires, buying spares is recommended.*
 
 * 1x Unmodified Laptop Power Cable
 * 1x Four position Male Molex Connector (Digikey P/N: WM3701IND)
