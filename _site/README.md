@@ -1,4 +1,4 @@
-## A "getting started" guide for developers interested in robotics
+## A "Getting Started" Guide for Developers Interested in Robotics
 
 [Learn TurtleBot] (http://learn.turtlebot.com/) is an open source getting started guide for web, mobile and maker developers interested in robotics.
 
