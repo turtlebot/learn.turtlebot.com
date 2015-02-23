@@ -84,6 +84,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media (max-width: 600px) { .img_onrightoftext { display: block; float: none; } }
 .video_container { text-align: center; border: 1px solid #ececec; border-radius: 2px; margin-bottom: 1.5em; padding: 20px; max-width: 100%; /*   max-width: 90%;  */ }
 
+.video_container p.video_caption { color: #828282; margin-top: 26px; font-style: italic; margin-bottom: 0; }
+
 /*
 * For the charging the netbook via the kobuki base article (because it can cause damage)
 */
