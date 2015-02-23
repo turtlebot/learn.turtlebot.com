@@ -20,9 +20,9 @@ Install Chrome by [downloading it](http://www.google.com/chrome/) then opening t
 
 Still on the workstation:
 
-* Open Chrome.
-* Go to Settings > More Tools > Extensions.
-* Check “Developer Mode” checkbox at the top of the page.
+1. Open Chrome.
+2. Go to Settings > More Tools > Extensions.
+3. Check “Developer Mode” checkbox at the top of the page.
 
 {% include youtube.html youtubeid="xJ7vPsNGsWg" youtubetitle="Enable Chrome Extension Developer Mode" %}
 
@@ -57,10 +57,10 @@ Save and close.
 
 Back in Chrome:
 
-* Go to Settings > More Tools > Extensions.
-* Press the “Load unpacked extension…” button.
-* Select the turtlebot-chrome-extension folder and “open”.
-* You should now have a coffee cup on the top/right of your browser.
+1. Go to Settings > More Tools > Extensions.
+2. Press the “Load unpacked extension…” button.
+3. Select the turtlebot-chrome-extension folder and “open”.
+4. You should now have a coffee cup on the top/right of your browser.
 
 {% include youtube.html youtubeid="a9sQMWgivDc" youtubetitle="Load Unpacked Extension" %}
 

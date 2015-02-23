@@ -12,12 +12,12 @@ Open http://[YourPublicDNS]({{ site.url }}{% post_url 2015-02-01-20 %})/turtlebo
 
 On IOS:
 
-* Click the bookmark tool
-* Add to Homescreen
+1. Click the bookmark tool
+2. Add to Homescreen
 
 On Android:
 
-* Click “more” (three vertical dots)
-* Select “add to homescreen”
+1. Click “more” (three vertical dots)
+2. Select “add to homescreen”
 
 Whether Android or iOS, the CoffeeBot icon is now on your homescreen. When the app first runs you will need to specify your position using [your coordinates]({{ site.url }}{% post_url 2015-02-01-19 %}).

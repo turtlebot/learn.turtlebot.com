@@ -89,7 +89,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /*
 * For the charging the netbook via the kobuki base article (because it can cause damage)
 */
-.critical_warning { background: #d00000; color: #fff !important; margin-bottom: 2em; padding: 1.5em; border-radius: 5px; }
+.critical_warning { background: #d00000; color: #fff !important; margin-bottom: 2em; padding: 1.5em; border-radius: 2px; }
 
 .critical_warning .critical_warning_title { font-size: 2em; margin-bottom: .5em; font-weight: bold; }
 
