@@ -19,6 +19,8 @@ Simply put: Robots are awesome. None of us can bring about this revolution singl
 
 Change the world,
 
+![Signature](/assets/sig.png)
+
 Mark Silliman
 
 [Contact information is available on my GitHub page](https://github.com/markwsilliman)
