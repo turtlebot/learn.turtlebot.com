@@ -32,7 +32,7 @@ RViz should open showing your map. TurtleBot isn’t reliably capable of estimat
 
 Click and hold on the location where the TurtleBot is on the map.  An arrow will appear while you are holding. Use this to estimate its orientation.
 
-## On workstation, run coffee_bot.py
+## Run the final script on your workstation
 
 By now you’ve [cloned the repository]({{ site.url }}{% post_url 2015-02-01-10 %}) and [updated **coffee_bot.py** settings]({{ site.url }}{% post_url 2015-02-01-22 %}).
 
