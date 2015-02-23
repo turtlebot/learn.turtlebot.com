@@ -22,7 +22,7 @@ roslaunch kobuki_auto_docking TurtleBot.launch
 roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
 {% endhighlight %}
 
-***TIP:** `TurtleBot.launch` was created in a [previous tutorial]({{ site.url }}{% post_url 2015-02-01-23 %}).*
+***TIP:** `coffebot.launch` was created in a [previous tutorial]({{ site.url }}{% post_url 2015-02-01-23 %}).*
 
 ## Set TurtleBot’s Initial Pose
 

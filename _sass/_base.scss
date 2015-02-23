@@ -24,7 +24,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure,hr,
 .highlight {
   margin-bottom: 26px; }
 
@@ -229,9 +229,8 @@ pre {
   background: #d00000;
   color: #fff !important;
   margin-bottom: 2em;
-  margin-left: .5em;
-  margin-right: .5em;
-  padding: 1.5em; }
+  padding: 1.5em; 
+  border-radius:5px;}
   .critical_warning .critical_warning_title {
     font-size: 2em;
     margin-bottom: .5em;
@@ -380,16 +379,25 @@ pre {
 margin-bottom: 72px;
 margin-top: 48px;}
 
+
+
 .post-title {
   font-size: 42px;
   /* letter-spacing: -1px; */
-  line-height: 1; }
+  line-height: 1.2em; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
 
 .post-content {
   margin-bottom: 30px; }
+  .post-content h1 {
+    font-size: 42px;
+    line-height: 1.2em; }
+    @media screen and (max-width: 800px) {
+      .post-content h1 {
+        font-size: 36px;
+        line-height: 1.2em; } }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {

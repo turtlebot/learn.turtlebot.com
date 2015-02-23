@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; font-weight: 300; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 26px; }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, hr, .highlight { margin-bottom: 26px; }
 
 /** Images */
 img { max-width: 100%; vertical-align: middle; }
@@ -87,7 +87,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /*
 * For the charging the netbook via the kobuki base article (because it can cause damage)
 */
-.critical_warning { background: #d00000; color: #fff !important; margin-bottom: 2em; margin-left: .5em; margin-right: .5em; padding: 1.5em; }
+.critical_warning { background: #d00000; color: #fff !important; margin-bottom: 2em; padding: 1.5em; border-radius: 5px; }
 
 .critical_warning .critical_warning_title { font-size: 2em; margin-bottom: .5em; font-weight: bold; }
 
@@ -149,11 +149,14 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Posts */
 .post-header { margin-bottom: 72px; margin-top: 48px; }
 
-.post-title { font-size: 42px; /* letter-spacing: -1px; */ line-height: 1; }
+.post-title { font-size: 42px; /* letter-spacing: -1px; */ line-height: 1.2em; }
 
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
 .post-content { margin-bottom: 30px; }
 
+.post-content h1 { font-size: 42px; line-height: 1.2em; }
+
+@media screen and (max-width: 800px) { .post-content h1 { font-size: 36px; line-height: 1.2em; } }
 .post-content h2 { font-size: 32px; }
 
 @media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
