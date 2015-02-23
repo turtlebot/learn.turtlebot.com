@@ -51,7 +51,7 @@ Then run:
 python ~/helloworld/go_to_specific_point_on_map.py
 {% endhighlight %}
 
-{% include youtube.html youtubeid="K19iPas2te4" %}
+{% include youtube.html youtubeid="K19iPas2te4" youtubetitle="Autonomous Navigation to Specific Pose" %}
 
 ***NOTE:** As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the `rospy.duration` time limit hasn’t expired.*
 

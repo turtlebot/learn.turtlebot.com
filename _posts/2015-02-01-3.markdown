@@ -4,7 +4,7 @@ title:  "Hardware Setup"
 date:   2015-02-01 13:46:08
 ---
 
-{% include youtube.html youtubeid="dzZGsZPW4aY" youtubetitle="TurtleBot 2 Hardware Setup"%}
+{% include youtube.html youtubeid="dzZGsZPW4aY" youtubetitle="TurtleBot Hardware Setup"%}
 
 TurtleBot comes pre-built; you simply need to plug in the cables.
 

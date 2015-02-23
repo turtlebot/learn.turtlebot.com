@@ -24,7 +24,7 @@ roslaunch turtlebot_teleop keyboard_teleop.launch
 
 The terminal prints out the keyboard commands for manually controlling TurtleBot’s position, rotation and more.
 
-{% include youtube.html youtubeid="BfpXhVCLosY" %}
+{% include youtube.html youtubeid="BfpXhVCLosY" youtubetitle="Keyboard Teleoperation" %}
 
 ## Joystick
 
@@ -46,7 +46,7 @@ jstest /dev/input/js0
 
 Note that on the left are the axes and on the right are the buttons. When you press down each button, the corresponding number will change from off to on. Experiment until you find the best button for your joystick; we chose #0, which is the primary trigger button on our joystick.
 
-{% include youtube.html youtubeid="J7zqPiDh4BQ" %}
+{% include youtube.html youtubeid="J7zqPiDh4BQ" youtubetitle="Joystick Control" %}
 
 Now that you’ve selected which button you want to be your deadman axis, let’s make a new custom launch file. Navigate to the folder where logitech.launch is located and make a copy that we can edit by running:
 
@@ -78,13 +78,13 @@ Open a new terminal window and start teleoperation with our new launch file:
 roslaunch turtlebot_teleop myjoystick.launch
 {% endhighlight %}
 
-{% include youtube.html youtubeid="EjkEoZEUnz4" %}
+{% include youtube.html youtubeid="EjkEoZEUnz4" youtubetitle="Customize Joystick for TurtleBot" %}
 
 You can see these values on the [joystick ROS wiki page](http://wiki.ros.org/turtlebot_teleop/Tutorials/indigo/Joystick%20Teleop).
 
 Teleoperation via joystick in your office, home, etc:
 
-{% include youtube.html youtubeid="3Q-tbrb2l4A" %}
+{% include youtube.html youtubeid="3Q-tbrb2l4A" youtubetitle="Teleoperation via Joystick" %}
 
 ## Learn more at wiki.ros.org
 

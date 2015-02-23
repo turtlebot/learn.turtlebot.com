@@ -24,7 +24,7 @@ python goforward.py
 
 TurtleBot should be moving forward now. Press CTRL + C to stop it.
 
-{% include youtube.html youtubeid="nzBSbr3r7ow" %}
+{% include youtube.html youtubeid="nzBSbr3r7ow" youtubetitle="First Python Script goforward.py"%}
 
 Now let’s have a look at the code. Open it by running:
 

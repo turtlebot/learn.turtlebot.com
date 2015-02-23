@@ -28,7 +28,7 @@ roslaunch turtlebot_teleop keyboard_teleop.launch
 
 Now using teleoperation, navigate TurtleBot around the entire area you wish to map.
 
-{% include youtube.html youtubeid="9efBzYAi1QI" %}
+{% include youtube.html youtubeid="9efBzYAi1QI" youtubetitle="Building Your First Map" %}
 
 On TurtleBot, open a terminal window and run:
 

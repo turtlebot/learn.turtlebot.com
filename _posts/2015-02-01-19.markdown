@@ -32,7 +32,7 @@ roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
 2. Hover over any location on the map
 3. The X, Y, and Z coordinates are shown on the bottom left. The Z coordinate is irrelevant because TurtleBot operates in a planar environment.
 
-{% include youtube.html youtubeid="QF-5ISIDSJ4" %}
+{% include youtube.html youtubeid="QF-5ISIDSJ4" youtubetitle="Determine Coordinates of Customers" %}
 
 ## Create a List of Coordinates
 

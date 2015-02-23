@@ -47,13 +47,13 @@ After TurtleBot checks five times if anyone needs coffee, it will return to the 
 
 ***NOTE:** Once it starts the docking procedure, TurtleBot will complete it prior to checking for coffee again.*
 
-{% include youtube.html youtubeid="yS-06NDjgII" %}
+{% include youtube.html youtubeid="yS-06NDjgII" youtubetitle="coffee_bot.py" %}
 
 ## Open the Web App
 
 You’ve already installed [the web app]({{ site.url }}{% post_url 2015-02-01-24 %}) and/or [browser extension]({{ site.url }}{% post_url 2015-02-01-21 %}) and specified valid X and Y coordinates. Go ahead and open one of them. Press “order”. After a couple of seconds, TurtleBot should head towards the coordinates you specified in the app/extension!
 
-{% include youtube.html youtubeid="yIY3ZzgvVEE" %}
+{% include youtube.html youtubeid="yIY3ZzgvVEE" youtubetitle="CoffeeBot Results" %}
 
 After TurtleBot arrives it will wait until the customer presses B0. Since there isn’t a way ([yet!]({{ site.url }}{% post_url 2015-02-01-27 %})) for TurtleBot to know when the customer is finished brewing coffee, B0 is a way for the customer to say “I’m finished, you can go elsewhere”.
 

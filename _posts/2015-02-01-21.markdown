@@ -8,7 +8,7 @@ We might love ordering coffee from the terminal, but we suspect your customers w
 
 Here’s the goal:
 
-{% include youtube.html youtubeid="XP7ZG5fi-gE" %}
+{% include youtube.html youtubeid="XP7ZG5fi-gE" youtubetitle="Browser Extension Results" %}
 
 ## Install Chrome
 
@@ -16,7 +16,7 @@ On the workstation:
 
 Install Chrome by [downloading it](http://www.google.com/chrome/) then opening the Ubuntu Software Center. (Search for “google-chrome-stable” and install.)
 
-{% include youtube.html youtubeid="_q6zpcZlQZQ" %}
+{% include youtube.html youtubeid="_q6zpcZlQZQ" youtubetitle="Install Chrome on Ubuntu 14.04" %}
 
 Still on the workstation:
 
@@ -24,7 +24,7 @@ Still on the workstation:
 * Go to Settings > More Tools > Extensions.
 * Check “Developer Mode” checkbox at the top of the page.
 
-{% include youtube.html youtubeid="xJ7vPsNGsWg" %}
+{% include youtube.html youtubeid="xJ7vPsNGsWg" youtubetitle="Enable Chrome Extension Developer Mode" %}
 
 ## Clone and Modify the Extension
 
@@ -36,7 +36,7 @@ cd ~/coffebot_chrome_ext
 git clone https://github.com/markwsilliman/turtlebot-chrome-extension
 {% endhighlight %}
 
-{% include youtube.html youtubeid="XUaY0Pc6rh0" %}
+{% include youtube.html youtubeid="XUaY0Pc6rh0" youtubetitle="Clone Chrome Browser Extension Repo" %}
 
 Modify the Public DNS variable:
 
@@ -62,7 +62,7 @@ Back in Chrome:
 * Select the turtlebot-chrome-extension folder and “open”.
 * You should now have a coffee cup on the top/right of your browser.
 
-{% include youtube.html youtubeid="a9sQMWgivDc" %}
+{% include youtube.html youtubeid="a9sQMWgivDc" youtubetitle="Load Unpacked Extension" %}
 
 Once we’ve finished the demo, you can order coffee right from the browser!
 

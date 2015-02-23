@@ -30,7 +30,7 @@ python kobuki_buttons.py
 
 Now try pressing B0.
 
-{% include youtube.html youtubeid="t7xCanbk5VI" %}
+{% include youtube.html youtubeid="t7xCanbk5VI" youtubetitle="Kobuki Button Events"%}
 
 Let’s have a look at the code.
 

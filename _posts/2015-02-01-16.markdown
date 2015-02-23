@@ -4,7 +4,7 @@ title:  "Monitor Kobuki’s Battery Status"
 date:   2015-02-01 13:46:18
 ---
 
-{% include youtube.html youtubeid="f8JLDdrukPg" %}
+{% include youtube.html youtubeid="f8JLDdrukPg" youtubetitle="Mobile Base Battery Value"%}
 
 Now that we know how to monitor the netbook’s battery status we can use similar logic to monitor Kobuki’s battery status.
 
@@ -41,4 +41,4 @@ gedit kobuki_battery.py
 
 Modify the `kobuki_base_max_charge` value. The percentage power will now calculate correctly.
 
-{% include youtube.html youtubeid="SdHQwpGSws0" %}
+{% include youtube.html youtubeid="SdHQwpGSws0" youtubetitle="Kobuki Battery Status"%}

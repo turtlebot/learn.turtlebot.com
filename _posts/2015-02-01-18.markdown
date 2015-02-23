@@ -28,7 +28,7 @@ If your netbook requires more than 2 amps don't plug it into Kobuki!  If it requ
 
 Make sure you check the polarity after you have modified your cable. This is explained in detail below.
 
-{% include youtube.html youtubeid="L_yDauVoVEI" %}
+{% include youtube.html youtubeid="L_yDauVoVEI" youtubetitle="Checking Polarity of Barrel Plug to Laptop" %}
 
 You’ll need a multimeter (and potentially a thin wire if the positive lead is thicker than your netbook’s barrel plug).
 

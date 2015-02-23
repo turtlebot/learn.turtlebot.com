@@ -34,7 +34,7 @@ rostopic echo /laptop_charge
 
 Every second you’ll see a collection of information about the netbook’s battery including charge, percentage, charge state (1 == it’s charging, 0 == it’s not) and more.
 
-{% include youtube.html youtubeid="MpMN-8EyVmc" %}
+{% include youtube.html youtubeid="MpMN-8EyVmc" youtubetitle="/laptop_charge/ battery status" %}
 
 ## Writing Code to Monitor the Netbook’s Battery Status
 
@@ -47,7 +47,7 @@ python netbook_battery.py
 
 Press *ctrl + c* to stop it. Now let’s have a look at the code.
 
-{% include youtube.html youtubeid="BN3s1vheHoU" %}
+{% include youtube.html youtubeid="BN3s1vheHoU" youtubetitle="Script to Monitor the Netbook's Power Status" %}
 
 In the terminal window type and run:
 {% highlight sh %}

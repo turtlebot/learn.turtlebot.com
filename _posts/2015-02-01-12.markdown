@@ -35,9 +35,9 @@ After setting the estimated pose, select “2D Nav Goal” and click the locatio
 
 TurtleBot should now be driving around autonomously based on your goals. Try specifying a goal and walking in front of it to see how it reacts to dynamic obstacles.
 
-{% include youtube.html youtubeid="iGZPWjddans" %}
+{% include youtube.html youtubeid="iGZPWjddans" youtubetitle="Autonomous Navigation" %}
 
-{% include youtube.html youtubeid="ocGi069nyt4" %}
+{% include youtube.html youtubeid="ocGi069nyt4" youtubetitle="Autonomous Results" %}
 
 ##TurtleBot Docking Station: Autonomous Charging
 
@@ -69,8 +69,8 @@ Note that TurtleBot may rotate a full 360 degrees to determine the ideal path to
 
 [Learn more about how this works](http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking).
 
-{% include youtube.html youtubeid="GYoF5XFVEJg" %}
-{% include youtube.html youtubeid="qJvxQ5k0oRg" %}
+{% include youtube.html youtubeid="GYoF5XFVEJg" youtubetitle="Automatic Docking (Autonomous Charging)" %}
+{% include youtube.html youtubeid="qJvxQ5k0oRg" youtubetitle="Automatic Docking Results" %}
 
 ## Learn more at wiki.ros.org
 

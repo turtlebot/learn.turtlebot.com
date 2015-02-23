@@ -22,7 +22,7 @@ roslaunch openni_launch openni.launch
 
 If you get a collection of lines that start with `process[camera...` everything is perfect and you can skip the troubleshooting section below and move on to the “View Image Data” section. Leave the two terminal windows open.
 
-{% include youtube.html youtubeid="QjFBrZZki-E" %}
+{% include youtube.html youtubeid="QjFBrZZki-E" youtubetitle="TurtleBot Bringup & Openni for Kinect" %}
 
 ## Troubleshooting
 
@@ -89,7 +89,7 @@ You should see a grayscale video stream where objects closer to the Kinect appea
 
 Press ‘q’ to quit the depth image.
 
-{% include youtube.html youtubeid="9xN7zRUZsIw" %}
+{% include youtube.html youtubeid="9xN7zRUZsIw" youtubetitle="Kinect RGB & Depth Images" %}
 
 ## Stop Openni (TurtleBot)
 
@@ -99,7 +99,7 @@ Go to the terminal on TurtleBot where **openni** is running. Press ctrl + C to s
 roslaunch turtlebot_bringup 3dsensor.launch
 {% endhighlight %}
 
-{% include youtube.html youtubeid="-eGh2QJF398" %}
+{% include youtube.html youtubeid="-eGh2QJF398" youtubetitle="3dsensor.launch" %}
 
 ## RViz (Workstation)
 
@@ -115,7 +115,7 @@ Under “Displays” check “Registered DepthCloud” and “Image”. Hold dow
 
 If you have trouble, here’s a YouTube walkthrough:
 
-{% include youtube.html youtubeid="QRWObANzrCk" %}
+{% include youtube.html youtubeid="QRWObANzrCk" youtubetitle="RVIZ Display Panel" %}
 
 ## Learn more at wiki.ros.org
 

@@ -25,7 +25,7 @@ If you don’t already have an AWS account, click “Create Free Account” on [
 
 ## Creating Your CoffeeBot’s AWS Instance
 
-{% include youtube.html youtubeid="mfOUJo_egNk" %}
+{% include youtube.html youtubeid="mfOUJo_egNk" youtubetitle="Uubuntu Instance on AWS" %}
 
 1. Log in to the AWS management console.
 2. Click “EC2″.
@@ -51,7 +51,7 @@ If you don’t already have an AWS account, click “Create Free Account” on [
 
 Your instance’s public DNS is how your customers (and TurtleBot) will connect to the server. Let’s go ahead and copy it for later use.
 
-{% include youtube.html youtubeid="L21oF-jLoFU" %}
+{% include youtube.html youtubeid="L21oF-jLoFU" youtubetitle="Determing Your EC2 Instance's Public DNS" %}
 
 1. Log in to the AWS management console.
 2. Click “EC2″.
@@ -63,7 +63,7 @@ Your instance’s public DNS is how your customers (and TurtleBot) will connect 
 
 ## SSH in to AWS Instance
 
-{% include youtube.html youtubeid="YsLlTyzYOzM" %}
+{% include youtube.html youtubeid="YsLlTyzYOzM" youtubetitle="Web Server (EC2 + Ubuntu)" %}
 
 ***IMPORTANT:** Change `[PUBLIC_DNS]` to the value you copied earlier.*
 
@@ -140,7 +140,7 @@ sudo git clone https://github.com/markwsilliman/turtlebot-server/
 
 ***NOTE:** In the video I first tried “git clone” without “sudo”; “sudo” is required.*
 
-{% include youtube.html youtubeid="nxkDeeiHvI8" %}
+{% include youtube.html youtubeid="nxkDeeiHvI8" youtubetitle="Install LAMP Stack on TurtleBot Server" %}
 
 ## Clone Web App
 
