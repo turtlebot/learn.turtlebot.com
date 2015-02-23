@@ -4,11 +4,11 @@ title:  "Going Forward and Avoiding Obstacles with Code"
 date:   2015-02-01 13:46:15
 ---
 
-By this point [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) for this article series and successfully [created a map (saved at /tmp/mymap)]({{ site.url }}{% post_url 2015-02-01-11 %}) of your current location. (If you have changed locations since the map generation article, create a new map.)
+By this point [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) for this article series and successfully [created a map]({{ site.url }}{% post_url 2015-02-01-11 %}) (saved at `/tmp/mymap`) of your current location. (If you have changed locations since the map generation article, create a new map.)
 
 ## TurtleBot Without Obstacle Avoidance
 
-Let’s run our first script again. On TurtleBot run:
+Let’s run our first script again. On TurtleBot:
 
 {% highlight sh %}
 roslaunch turtlebot_bringup minimal.launch
@@ -56,7 +56,7 @@ Try walking into the robot’s path while it is driving to see how it responds.
 
 ## Why Does It Go in Circles?
 
-TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Here's is an excellent video on TurtleBot localization created by Melonee Wise:
+TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Here's is an excellent video on TurtleBot localization created by [Melonee Wise](http://www.meloneewise.com):
 
 {% include youtube.html youtubeid="Mv1mbsMfbmI" %}
 

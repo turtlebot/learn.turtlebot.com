@@ -8,7 +8,7 @@ Now that you’ve found that TurtleBot can go to a specific relative pose (pose 
 
 Let’s try this out by telling TurtleBot to go near our docking station.
 
-In this article we’re assuming that [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) and [created a map (saved at /tmp/mymap)]({{ site.url }}{% post_url 2015-02-01-11 %}). If you haven’t, follow the steps in those articles and return to this one.
+In this article we’re assuming that [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) and [created a map]({{ site.url }}{% post_url 2015-02-01-11 %}) (saved at `/tmp/mymap`). If you haven’t, follow the steps in those articles and return to this one.
 
 First, we need to load the map and update the script with a pose that is close to our docking station. About one meter away from the station is perfect.
 
@@ -43,7 +43,7 @@ Look for this line of code (line 30):
 goal.target_pose.pose = Pose((Point(2.18, -1.7, 0.000), Quaternion(0.000, 0.000, 0.892, -1.500)).
 {% endhighlight %}
 
-Overwrite the first two values of **Point()** with the numbers you wrote down earlier when doing “publish point”. Save and exit.
+Overwrite the first two values of `Point()` with the numbers you wrote down earlier when doing “publish point”. Save and exit.
 
 Then run:
 
@@ -53,9 +53,9 @@ python ~/helloworld/go_to_specific_point_on_map.py
 
 {% include youtube.html youtubeid="K19iPas2te4" %}
 
-***NOTE:** As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the rospy.duration time limit hasn’t expired.*
+***NOTE:** As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the `rospy.duration` time limit hasn’t expired.*
 
-***TIP:** If you view the terminal where you are running amcl_demo.launch it'll show a report that will tell you when TurtleBot has given up attempting to reach a goal.*
+***TIP:** If you view the terminal where you are running `amcl_demo.launch` it'll show a report that will tell you when TurtleBot has given up attempting to reach a goal.*
 
 ## Accuracy
 

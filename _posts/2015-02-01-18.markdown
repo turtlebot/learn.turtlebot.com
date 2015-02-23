@@ -38,7 +38,9 @@ You’ll need a multimeter (and potentially a thin wire if the positive lead is 
 
 The rest of this article was written by Clearpath Robotics, who graciously provided us with permission to make a copy of their content. Some of the images were updated from the original document for clarity. The original document is available on [Clearpath Robotics website](http://www.clearpathrobotics.com/turtlebot_2/) where you can also buy prebuilt TurtleBot 2s (including the model we used to test this tutorial).
 
-## Modifying Your Laptop Power Cable
+---
+
+# Modifying Your Laptop Power Cable
 
 *Copied with permission from Clearpath Robotics.*
 

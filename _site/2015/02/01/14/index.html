@@ -95,7 +95,7 @@ Monitor the Netbook’s Battery Status">Monitor the Netbook’s Battery Status &
 
 <p>Let’s try this out by telling TurtleBot to go near our docking station.</p>
 
-<p>In this article we’re assuming that <a href="/2015/02/01/10/">you’ve cloned the github repository</a> and <a href="/2015/02/01/11/">created a map (saved at /tmp/mymap)</a>. If you haven’t, follow the steps in those articles and return to this one.</p>
+<p>In this article we’re assuming that <a href="/2015/02/01/10/">you’ve cloned the github repository</a> and <a href="/2015/02/01/11/">created a map</a> (saved at <code>/tmp/mymap</code>). If you haven’t, follow the steps in those articles and return to this one.</p>
 
 <p>First, we need to load the map and update the script with a pose that is close to our docking station. About one meter away from the station is perfect.</p>
 
@@ -122,7 +122,7 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">goal.target_pose.pose <span class="o">=</span> Pose<span class="o">((</span>Point<span class="o">(</span>2.18, -1.7, 0.000<span class="o">)</span>, Quaternion<span class="o">(</span>0.000, 0.000, 0.892, -1.500<span class="o">))</span>.</code></pre></div>
 
-<p>Overwrite the first two values of <strong>Point()</strong> with the numbers you wrote down earlier when doing “publish point”. Save and exit.</p>
+<p>Overwrite the first two values of <code>Point()</code> with the numbers you wrote down earlier when doing “publish point”. Save and exit.</p>
 
 <p>Then run:</p>
 
@@ -133,9 +133,9 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:<span class="o">=</span
 	<div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/K19iPas2te4?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe></div>
 </div>
 
-<p><em><strong>NOTE:</strong> As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the rospy.duration time limit hasn’t expired.</em></p>
+<p><em><strong>NOTE:</strong> As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the <code>rospy.duration</code> time limit hasn’t expired.</em></p>
 
-<p><em><strong>TIP:</strong> If you view the terminal where you are running amcl_demo.launch it’ll show a report that will tell you when TurtleBot has given up attempting to reach a goal.</em></p>
+<p><em><strong>TIP:</strong> If you view the terminal where you are running <code>amcl_demo.launch</code> it’ll show a report that will tell you when TurtleBot has given up attempting to reach a goal.</em></p>
 
 <h2 id="accuracy">Accuracy</h2>
 

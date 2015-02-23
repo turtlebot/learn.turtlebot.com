@@ -15,11 +15,11 @@ roslaunch turtlebot_bringup minimal.launch
 roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
 {% endhighlight %}
 
-If you see *odom received!* you’re good to go.
+If you see `odom received!` you’re good to go.
 
-#### Troubleshooting
+### Troubleshooting
 
-If you receive a warning that starts with: **Waiting on transform...**, try restarting **minimal.launch** and then restarting **amcl_demo.lauch**.  You may need to try restarting a few times.  Also turning off the Kobuki base and turning it back on may help.
+If you receive a warning that starts with: `Waiting on transform...`, try restarting `minimal.launch` and then restarting `amcl_demo.lauch`.  You may need to try restarting a few times.  Also turning off the Kobuki base and turning it back on may help.
 
 With everything running successfully on TurtleBot, go to the workstation and run:
 

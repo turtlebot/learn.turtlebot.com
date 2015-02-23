@@ -14,7 +14,7 @@ On TurtleBot run:
 roslaunch turtlebot_bringup minimal.launch
 {% endhighlight %}
 
-On the Workstation run:
+On the workstation run:
 
 {% highlight sh %}
 cd ~/helloworld
@@ -25,7 +25,7 @@ Now, try manually moving TurtleBot on and off the docking station.
 
 ## Determine the Maximum Charge Value of the Kobuki Base
 
-There are multiple batteries that are used in the Kobuki base. The percentage of power is calculated using a **fixed kobuki_base_max_charge** value in kobuki_battery.py.
+There are multiple batteries that are used in the Kobuki base. The percentage of power is calculated using a `fixed kobuki_base_max_charge` value in **kobuki_battery.py**.
 
 To determine your battery maximum, charge it to full by leaving it on the docking station for an extended period, then on TurtleBot run:
 
@@ -33,12 +33,12 @@ To determine your battery maximum, charge it to full by leaving it on the dockin
 rostopic echo /mobile_base/sensors/core
 {% endhighlight %}
 
-Note the battery’s value, and edit kobuki_battery.py:
+Note the battery’s value, and edit **kobuki_battery.py**:
 
 {% highlight sh %}
 gedit kobuki_battery.py
 {% endhighlight %}
 
-Modify the **kobuki_base_max_charge** value. The percentage power will now calculate correctly.
+Modify the `kobuki_base_max_charge` value. The percentage power will now calculate correctly.
 
 {% include youtube.html youtubeid="SdHQwpGSws0" %}

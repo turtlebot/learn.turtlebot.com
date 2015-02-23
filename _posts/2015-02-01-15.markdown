@@ -20,13 +20,13 @@ ROS & TurtleBot’s libraries publish lots of topics. Let’s have a look at a c
 roslaunch turtlebot_bringup minimal.launch
 {% endhighlight %}
 
-On Work Station, open a terminal window and run:
+On the workstation, open a terminal window and run:
 
 {% highlight sh %}
 rostopic list
 {% endhighlight %}
 
-The above will give us a list of current topics. You should see **/laptop_charge**, which gives us information about the netbook’s battery. Let’s trying listening to it:
+The above will give us a list of current topics. You should see `/laptop_charge`, which gives us information about the netbook’s battery. Let’s trying listening to it:
 
 {% highlight sh %}
 rostopic echo /laptop_charge
@@ -38,7 +38,7 @@ Every second you’ll see a collection of information about the netbook’s batt
 
 ## Writing Code to Monitor the Netbook’s Battery Status
 
-If you haven’t cloned the git repo, do that first.
+If you haven’t cloned the [GitHub repo](https://github.com/markwsilliman/turtlebot/), do that first.
 
 {% highlight sh %}
 cd ~/helloworld/
@@ -60,33 +60,33 @@ You’ll notice in the initialize function there is:
 rospy.Subscriber("/laptop_charge/",SmartBatteryStatus,self.NetbookPowerEventCallback)
 {% endhighlight %}
 
-This means, “Every time new data is published on the thread **/laptop_charge/** call the function **self.NetbookPowerEventCallback**.”
+This means, “Every time new data is published on the thread `/laptop_charge/` call the function `self.NetbookPowerEventCallback`.”
 
-**SmartBetteryStatus** is the data type which the thread contains. This data type is defined in the include command (found near the top of the script):
+`SmartBetteryStatus` is the data type which the thread contains. This data type is defined in the include command (found near the top of the script):
 
 {% highlight sh %}
 from smart_battery_msgs.msg import SmartBatteryStatus
 {% endhighlight %}
 
-Now let’s have a look at the function **NetbookPowerEventCallback**. The data is passed to the function and the components can be printed like this:
+Now let’s have a look at the function `NetbookPowerEventCallback`. The data is passed to the function and the components can be printed like this:
 
 {% highlight sh %}
 print("Percent: " + str(data.percentage)) 
 {% endhighlight %}
 
-***IMPORTANT TIP:** Later on we’ll check if **data.percentage** is larger than 50 to see if we need to recharge. Python is very strict when it comes to comparing different types of data so always type cast using **int()**. Example:*
+***IMPORTANT TIP:** Later on we’ll check if `data.percentage` is larger than 50 to see if we need to recharge. Python is very strict when it comes to comparing different types of data so always type cast using `int()`. Example:*
 
 {% highlight sh %}
 if (data.percentage < 50):
 {% endhighlight %}
 
-would result in an error but:
+*would result in an error but:*
 
 {% highlight sh %}
 if(int(data.percentage) < 50):
 {% endhighlight %}
 
-will work perfectly.
+*will work perfectly.*
 
 ## Learn more at wiki.ros.org
 
