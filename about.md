@@ -13,7 +13,7 @@ To state the obvious, bringing robots to the mainstream will require a massive n
 
 We all started somewhere and this is our attempt at giving developers somewhere to start.
 
-Help me bring this dream to reality! [Fork the project](https://github.com/markwsilliman/turtlebot-tutorial), distribute it, commit changes, add articles and dream big. All content, videos & images are available for you to use as you see fit.
+Help us bring this dream to reality! [Fork the project](https://github.com/markwsilliman/turtlebot-tutorial), distribute it, commit changes, add articles and dream big. All content, videos & images are available for you to use as you see fit.
 
 Simply put: Robots are awesome. None of us can bring about this revolution single-handedly.  This is the time to start hacking robots!
 
