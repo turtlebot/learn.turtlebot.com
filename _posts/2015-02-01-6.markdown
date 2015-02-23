@@ -20,7 +20,7 @@ ROS is installed correctly if you see:
 started core service [/rosout]
 {% endhighlight %}
 
-{% include image.html img="/assets/roscore-2.png" title="“roscore” running, “started core service [/rosout]” shows us ROS is installed correctly" %}
+{% include image.html img="/assets/roscore-2.png" title="“roscore” Running, “started core service [/rosout]” Shows Us ROS is Installed Correctly" %}
 
 If you see this, close this window.
 
@@ -30,11 +30,11 @@ If you don’t see *started core service [/rosout]*, there is a problem with you
 
 Make sure TurtleBot’s Kobuki base is turned on (on/off switch is on the side).
 
-{% include image.html img="/assets/kobuki-onoff.jpg" title="Kobuki base on/off switch, turned “on”" %}
+{% include image.html img="/assets/kobuki-onoff.jpg" title="Kobuki Base On/Off Switch, Turned “On”" %}
 
 The Kobuki base status light will turn green if you have sufficient battery power.
 
-{% include image.html img="/assets/kobuki-status-light.jpg" title="Kobuki base showing that we have sufficient battery power" %}
+{% include image.html img="/assets/kobuki-status-light.jpg" title="Kobuki Base Showing that We Have Sufficient Battery Power" %}
 
 Close any open terminals, then open a new terminal window and run:
 

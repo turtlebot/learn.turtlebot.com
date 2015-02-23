@@ -32,7 +32,7 @@ Make sure you check the polarity after you have modified your cable. This is exp
 
 You’ll need a multimeter (and potentially a thin wire if the positive lead is thicker than your netbook’s barrel plug).
 
-{% include image.html img="/assets/imag1038.jpg" title="A basic multimeter" %}
+{% include image.html img="/assets/imag1038.jpg" title="A Basic Multimeter" %}
 
 ## Special Thanks
 
@@ -72,23 +72,23 @@ The Robotsmiths strongly recommend that you read through the instructions **BEFO
 * 2x Female Crimp Cable Ends (Digikey P/N: WM2501CTIND)
 * 2x Piece of Heat Shrink, 2” length ((Digikey P/N: EPS2316IND)
 
-{% include image.html img="/assets/imag1022_burst002.jpg" title="Wire Stripper / Crimper (left), Side Cutter (top, center) and unmodified laptop power cable (right)" %}
+{% include image.html img="/assets/imag1022_burst002.jpg" title="Wire Stripper / Crimper (Left), Side Cutter (top, center) and Unmodified Laptop Power Cable (Right)" %}
 
-{% include image.html img="/assets/imag1027.jpg" title="1x Four position Male Molex Connector (left) and 1x Four position Female Molex Connector (right)" %}
+{% include image.html img="/assets/imag1027.jpg" title="1x Four Position Male Molex Connector (Left) and 1x Four Position Female Molex Connector (Right)" %}
 
-{% include image.html img="/assets/imag1025.jpg" title="2x Male Crimp Cable Ends (top) and 2x Female Crimp Cable Ends (bottom)" %}
+{% include image.html img="/assets/imag1025.jpg" title="2x Male Crimp Cable Ends (Top) and 2x Female Crimp Cable Ends (Bottom)" %}
 
-{% include image.html img="/assets/imag1023.jpg" title="Heat Shrink (left) and Heat Gun (right)" %}
+{% include image.html img="/assets/imag1023.jpg" title="Heat Shrink (Left) and Heat Gun (Right)" %}
 
 To start, measure 2ft. from the ferrite bead shown in the picture below.
 
 ***NOTE:** Our netbook shipped without a ferrite bead as shown below.*
 
-{% include image.html img="/assets/imag1028.jpg" title="Power cord" %}
+{% include image.html img="/assets/imag1028.jpg" title="Power Cord" %}
 
 Snip the cord at 2f, shown below. You now have the Power Adaptor section and the Laptop section. The laptop section is the one with the barrel plug that is inserted into the Laptop.
 
-{% include image.html img="/assets/imag1029.jpg" title="Power cord and side cutter" %}
+{% include image.html img="/assets/imag1029.jpg" title="Power Cord and Side Cutter" %}
 
 Next, strip the sheath from approximately 1” of the wire, as shown below. Do this for both pieces.
 
@@ -96,31 +96,31 @@ Next, strip the sheath from approximately 1” of the wire, as shown below. Do t
 
 You will see a white sheathed wire, and a bunch of bare wires. Aggregate the bare wires into a group and twist them together as shown below. Do this for both pieces.
 
-{% include image.html img="/assets/imag1032.jpg" title="Aggregate the bare wires" %}
+{% include image.html img="/assets/imag1032.jpg" title="Aggregate the Bare Wires" %}
 
 Use heat shrink to cover the twisted bunch of bare wires. Do this for both ends. In this step, the goal is to leave about ¼” exposed for crimping.
 
 Also, strip a ¼” of sheath from the white sheathed wire.
 
-{% include image.html img="/assets/imag1043-2.jpg" title="Heat shrink" %}
+{% include image.html img="/assets/imag1043-2.jpg" title="Heat Shrink" %}
 
 Don’t forget to shrink it with your heat gun!
 
 It’s time to crimp the pins on each of the two pieces. The end that crimps around the sheathed wire is called the “insulation crimp”. You may have to trim the insulation crimps if they are too long. Good thing you bought spare parts!
 
-{% include image.html img="/assets/imag1040-1.jpg" title="Crimp cable end" %}
+{% include image.html img="/assets/imag1040-1.jpg" title="Crimp Cable End" %}
 
 Crimp the MALE pins to the Power Adaptor piece and the FEMALE pins to the Laptop piece. First, crimp the section closest to the pin around the bare leads, as shown below. This will require a small size on the crimp tool. Remember to perform a simple tug-test to ensure you have chosen the right crimp size. Because of the small size, we recommend soldering the wire crimp before crimping the insulation crimp.
 
-{% include image.html img="/assets/2015-02-06_1526a.png" title="Female crimp cable ends" %}
+{% include image.html img="/assets/2015-02-06_1526a.png" title="Female Crimp Cable Ends" %}
 
 Next, crimp the pins to the sheathed wire, as shown below. This will require a slightly larger size on the crimp tool.
 
-{% include image.html img="/assets/2015-02-06_1531.png" title="Female crimp cable ends" %}
+{% include image.html img="/assets/2015-02-06_1531.png" title="Female Crimp Cable Ends" %}
 
 Now that each end is crimped, be sure to slide a piece of heat shrink over the pins and down the wire for later use. This step is shown below. Do this for both pieces.
 
-{% include image.html img="/assets/2015-02-06_1527.png" title="Heat shrink" %}
+{% include image.html img="/assets/2015-02-06_1527.png" title="Heat Shrink" %}
 
 Now the pins need to be inserted into the housings. The MALE housing with the clip (shown below) must go on the Laptop piece, while the FEMALE housing must go on the Power Adaptor piece. Please note the location of each of the pins with respect to the orientation of the housing, shown below for the Laptop piece. For the power adaptor piece it is a simple matter of aligning the housings and ensuring that black goes to black and white goes to white. **WHITE IS POSITIVE.**
 

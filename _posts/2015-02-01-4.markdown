@@ -31,7 +31,7 @@ roscore
 {% endhighlight %}
 
 
-{% include image.html img="/assets/roscore.png" title="“roscore” runing in Terminal" %}
+{% include image.html img="/assets/roscore.png" title="“roscore” Runing in Terminal" %}
 
 If you look below the `PARAMETERS` heading, you’ll see `/rosdistro:...`. Whatever is written next is the name of your ROS distribution. In our case it’s indigo, which is what we want.
 
@@ -100,7 +100,7 @@ If yes:
 sudo intel-linux-graphics-installer
 {% endhighlight %}
 
-***Tip:** we tried running the installer in the Ubuntu software center but this did not work. We needed "sudo".*
+***TIP:** we tried running the installer in the Ubuntu software center but this did not work. We needed "sudo".*
 
 Reboot.
 
