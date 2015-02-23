@@ -65,7 +65,7 @@ Your instance’s public DNS is how your customers (and TurtleBot) will connect 
 
 {% include youtube.html youtubeid="YsLlTyzYOzM" %}
 
-***IMPORTANT:** Change [PUBLIC_DNS] to the value you copied earlier.*
+***IMPORTANT:** Change `[PUBLIC_DNS]` to the value you copied earlier.*
 
 In a terminal window run the following:
 
@@ -105,7 +105,7 @@ sudo apt-get install mysql-server php5-mysql
 
 When prompted, set the root password of MySQL to “turtlebot”.
 
-***TIP:** This is a terrible password, so feel free to set it to another value–but you’ll need to modify the config.php file cloned from github in a later step.*
+***TIP:** This is a terrible password, so feel free to set it to another value–but you’ll need to modify the [**config.php**](https://github.com/markwsilliman/turtlebot-server/blob/master/config.php) file cloned from github in a later step.*
 
 ## Install PHP
 
@@ -128,7 +128,7 @@ service apache2 stop
 service apache2 start
 {% endhighlight %}
 
-***NOTE:** In the video I first tried “service apache2 restart” but this fails. Stop & start succeeds.*
+***NOTE:** In the video we tried `service apache2 restart` but this fails. `stop` and `start` succeeds.*
 
 ## Clone PHP files
 

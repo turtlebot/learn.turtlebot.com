@@ -6,8 +6,6 @@ date:   2015-02-01 13:46:24
 
 When when we [set up the web server]({{ site.url }}{% post_url 2015-02-01-20 %}), we also installed a web app that makes it convenient for users to order from their smartphones.
 
-Open a terminal window and run:
-
 {% include image.html img="/assets/coffeebot-web-app.png" title="CoffeeBot's web app" %}
 
 Open http://[YourPublicDNS]({{ site.url }}{% post_url 2015-02-01-20 %})/turtlebot-web-app/ in the smartphone’s browser.

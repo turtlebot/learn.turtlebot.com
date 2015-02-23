@@ -18,11 +18,11 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
 On the workstation, open a terminal and run:
 
 {% highlight sh %}
-roslaunch kobuki_auto_docking coffeebot.launch
+roslaunch kobuki_auto_docking TurtleBot.launch
 roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
 {% endhighlight %}
 
-***TIP:** [coffeebot.launch was created in a previous tutorial]({{ site.url }}{% post_url 2015-02-01-23 %}).*
+***TIP:** `TurtleBot.launch` was created in a [previous tutorial]({{ site.url }}{% post_url 2015-02-01-23 %}).*
 
 ## Set TurtleBot’s Initial Pose
 
@@ -34,7 +34,7 @@ Click and hold on the location where the TurtleBot is on the map.  An arrow will
 
 ## On workstation, run coffee_bot.py
 
-By now you’ve [cloned the repository]({{ site.url }}{% post_url 2015-02-01-10 %}) and [updated coffee_bot.py settings]({{ site.url }}{% post_url 2015-02-01-22 %}).
+By now you’ve [cloned the repository]({{ site.url }}{% post_url 2015-02-01-10 %}) and [updated **coffee_bot.py** settings]({{ site.url }}{% post_url 2015-02-01-22 %}).
 
 {% highlight sh %}
 cd ~/helloworld
@@ -43,21 +43,21 @@ python coffee_bot.py
 
 ## Initial Results
 
-After CoffeeBot checks five times if anyone needs coffee, it will return to the docking station to charge while waiting for another request.
+After TurtleBot checks five times if anyone needs coffee, it will return to the docking station to charge while waiting for another request.
 
-***NOTE:** Once it starts the docking procedure, CoffeeBot will complete it prior to checking for coffee again.*
+***NOTE:** Once it starts the docking procedure, TurtleBot will complete it prior to checking for coffee again.*
 
 {% include youtube.html youtubeid="yS-06NDjgII" %}
 
 ## Open the Web App
 
-You’ve already installed [the web app]({{ site.url }}{% post_url 2015-02-01-24 %}) and/or [browser extension]({{ site.url }}{% post_url 2015-02-01-21 %}) and specified valid X and Y coordinates. Go ahead and open one of them. Press “order”. After a couple of seconds, CoffeeBot should head towards the coordinates you specified in the app/extension!
+You’ve already installed [the web app]({{ site.url }}{% post_url 2015-02-01-24 %}) and/or [browser extension]({{ site.url }}{% post_url 2015-02-01-21 %}) and specified valid X and Y coordinates. Go ahead and open one of them. Press “order”. After a couple of seconds, TurtleBot should head towards the coordinates you specified in the app/extension!
 
 {% include youtube.html youtubeid="yIY3ZzgvVEE" %}
 
-After CoffeeBot arrives it will wait until the customer presses B0. Since there isn’t a way ([yet!]({{ site.url }}{% post_url 2015-02-01-27 %})) for CoffeeBot to know when the customer is finished brewing coffee, B0 is a way for the customer to say “I’m finished, you can go elsewhere”.
+After TurtleBot arrives it will wait until the customer presses B0. Since there isn’t a way ([yet!]({{ site.url }}{% post_url 2015-02-01-27 %})) for TurtleBot to know when the customer is finished brewing coffee, B0 is a way for the customer to say “I’m finished, you can go elsewhere”.
 
-After B0 is pressed, CoffeeBot will check if there are other pending coffee requests. If no additional requests exist, it will return to the docking station.
+After B0 is pressed, TurtleBot will check if there are other pending coffee requests. If no additional requests exist, it will return to the docking station.
 
 ## Troubleshooting
 
@@ -69,7 +69,7 @@ http://[your_public_dns]/turtlebot-server/coffee_queue.php?printqueue
 
 ***TIP:** A “status” value of 0 is pending, 1 is success and 2 is failed.*
 
-If you specified an invalid X and Y coordinate (i.e. a pose that TurtleBot could never reach), you can manually remove it by finding its ID in the **printqueue** (above) and then passing that value to the update call:
+If you specified an invalid X and Y coordinate (i.e. a pose that TurtleBot could never reach), you can manually remove it by finding its ID in the `printqueue` (above) and then passing that value to the update call:
 
 {% highlight sh %}
 http://[your_public_dns]/turtlebot-server/coffee_queue.php?update&id=[ID_OF_INVALID_REQUEST]&status=failed

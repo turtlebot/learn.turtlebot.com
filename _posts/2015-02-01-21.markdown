@@ -14,7 +14,7 @@ Here’s the goal:
 
 On the workstation:
 
-Install Chrome by [downloading it](google.com/chrome/) then opening the Ubuntu Software Center. (Search for “google-chrome-stable” and install.)
+Install Chrome by [downloading it](http://www.google.com/chrome/) then opening the Ubuntu Software Center. (Search for “google-chrome-stable” and install.)
 
 {% include youtube.html youtubeid="_q6zpcZlQZQ" %}
 
