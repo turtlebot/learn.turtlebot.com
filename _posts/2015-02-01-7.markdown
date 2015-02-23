@@ -87,7 +87,7 @@ Run:
 roslaunch turtlebot_bringup minimal.launch
 {% endhighlight %}
 
-***NOTE:** `turtlebot_bringup` is the way of “booting up” TurtleBot. This must be run remotely on TurtleBot, never directly on the workstation*
+***NOTE:** `turtlebot_bringup` is the way of “booting up” TurtleBot. This must be run remotely on TurtleBot, never directly on the workstation.*
 
 On the workstation, run:
 
