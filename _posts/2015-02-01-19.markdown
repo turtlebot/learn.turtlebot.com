@@ -38,7 +38,7 @@ roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
 
 You’ll need a list of all potential coordinates for your customers. You’ll also need a coordinate approximately one meter in front of the docking station.
 
-### Why should the docking station pose be a meter away?
+#### Why should the docking station pose be a meter away?
 
 TurtleBot must be able to detect the IR receivers. After the IR receivers are detected, TurtleBot will slowly approach the docking station using a [special docking script provided by Kobuki](http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking). If its initial pose is too close, it may not successfully detect this script.
 
