@@ -11,7 +11,7 @@ To state the obvious, bringing robots to the mainstream will require a massive n
 3. High school language level - to support developers of all ages
 4. Example-based articles - so developers can quickly create real world solutions
 
-We all started somewhere and this is my attempt at giving developers somewhere to start.
+We all started somewhere and this is our attempt at giving developers somewhere to start.
 
 Help me bring this dream to reality! [Fork the project](https://github.com/markwsilliman/turtlebot-tutorial), distribute it, commit changes, add articles and dream big. All content, videos & images are available for you to use as you see fit.
 
