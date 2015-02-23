@@ -149,7 +149,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-link { display: block; font-size: 20px; }
 
 /** Posts */
-.post-header { margin-bottom: 72px; margin-top: 48px; }
+.post-header { margin-bottom: 60px; margin-top: 48px; }
 
 .post-title { font-size: 42px; /* letter-spacing: -1px; */ line-height: 1.2em; }
 
