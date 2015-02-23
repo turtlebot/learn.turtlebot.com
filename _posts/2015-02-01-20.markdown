@@ -29,23 +29,23 @@ If you don’t already have an AWS account, click “Create Free Account” on [
 
 1. Log in to the AWS management console.
 2. Click “EC2″.
-3. “Launch Instance” button.
-4. Select “Ubuntu Server 14.04″. (Tip: This is the same distribution of Linux on your computers… so it should act similarly.)
-5. Select “t2 micro”. (Tip: make sure it says “free tier eligible” so you won’t be charged.)
+3. Click “Launch Instance” button.
+4. Select “Ubuntu Server 14.04″. (Tip: This is the same distribution of Linux on your computers, so it should act similarly.)
+5. Select “t2 micro”. (Tip: Make sure it says “free tier eligible” so you won’t be charged.)
 6. Next: “Configure Instance Details”.
 7. “Review and Launch”.
 8. By default HTTP is off. Without this no one can access your server via a web browser.
  * Under “Security Groups” click “Edit Security Groups” and select “Add Rule”.
  * From the pulldown menu select “HTTP”.
- * “Review and launch”.
-9. “Launch”.
+ * Click “Review and launch”.
+9. Select “Launch”.
 10. A key pair will give you the credential file required to SSH into your server.
  * Create a new key pair.
  * Key pair name “turtlebot_new”
  * “Download Key Pair”
  * Save it in your downloads folder.
-11. “Launch Instances”
-12. “View Instances”
+11. Click “Launch Instances”.
+12. Select “View Instances”.
 
 ## Determining Your Public DNS
 
@@ -144,7 +144,7 @@ sudo git clone https://github.com/markwsilliman/turtlebot-server/
 
 ## Clone Web App
 
-The web app is very similar to the [browser extension]({{ site.url }}{% post_url 2015-02-01-21 %}) but will allow your customers to request coffee directly from their smartphone. We’ll [discuss this in more detail later]({{ site.url }}{% post_url 2015-02-01-24 %}) but for convenience let’s go ahead and clone it as well.
+The web app is very similar to the [browser extension]({{ site.url }}{% post_url 2015-02-01-21 %}) but will allow your customers to request coffee directly from their smartphone. We’ll [discuss this in more detail later]({{ site.url }}{% post_url 2015-02-01-24 %}), but for convenience let’s go ahead and clone it as well.
 
 {% highlight sh %}
 cd /var/www/html
