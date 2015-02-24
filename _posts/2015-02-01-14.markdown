@@ -29,7 +29,7 @@ In **RViz**, select “2D Pose Estimate” and click the map approximately where
 
 Next, select “Publish Point” and hover over your map (but don’t click) where you’d like TurtleBot to go when you run your script. On the bottom left corner of the screen next to “select this point” you’ll notice three numbers which change when you move the mouse. This is your point, so write these numbers down.
 
-***TIP:** The third number is altitude.  It may show a number that isn't perfectly 0 but regardless of what it says use 0.*
+***TIP:** The third number is altitude. It may show a number that isn't perfectly 0, but regardless of what it says, use 0.*
 
 In a new terminal window run:
 
@@ -55,7 +55,7 @@ python ~/helloworld/go_to_specific_point_on_map.py
 
 ***NOTE:** As seen previously, TurtleBot will avoid obstacles and will try to calculate a plausible path as long as the `rospy.duration` time limit hasn’t expired.*
 
-***TIP:** If you view the terminal where you are running `amcl_demo.launch` it'll show a report that will tell you when TurtleBot has given up attempting to reach a goal.*
+***TIP:** If you view the terminal where you are running `amcl_demo.launch` it will show a report that tells you when TurtleBot has given up attempting to reach a goal.*
 
 ## Accuracy
 
