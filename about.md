@@ -4,20 +4,18 @@ title: About
 permalink: /about/
 ---
 
-To state the obvious, bringing robots to the mainstream will require a massive number of people passionately developing robots. To date, robotic development has had a fairly high technical barrier to entry. Let’s tear down the barriers and allow any developer who wants to program a robot to start learning how now with:
+For robots to enter the mainstream, a massive number of developers will be needed. Not just developers with lots of funding and years of training, but students, hobbyists and other casual users working alongside seasoned veterans and academics. Formerly insurmountable barriers to entry (money, education, manufacturing, etc.) are rapidly coming down and if we focus on a few specific goals, this collaborative, crowd-sourced, cross-discipline dream can come true:
 
-1. Minimal cost - many developers will be purchasing their own equipment
-2. Open source software - to support collaborative development
-3. High school language level - to support developers of all ages
-4. Example-based articles - so developers can quickly create real world solutions
+- **Minimal Cost**: Many developers will need to purchase they're own equipment
+- **Open-Source Software**: For collaborative development and shared knowledge
+- **High-School Level Language**:  Supporting a wide range of developer backgrounds and nationalities
+- **Example-Based Articles**: Teaching quickly through real world solutions
 
-We all started somewhere and this is our attempt at giving developers somewhere to start.
+In this article series we wanted to target these four points and give developers a place to start with robotic development. [Fork the project](https://github.com/markwsilliman/turtlebot-tutorial), distribute it, commit changes, add articles and dream big. All content, videos & images are available for you to use as you see fit.
 
-Help us bring this dream to reality! [Fork the project](https://github.com/markwsilliman/turtlebot-tutorial), distribute it, commit changes, add articles and dream big. All content, videos & images are available for you to use as you see fit.
+Simply put... Robots are awesome! None of us can do this alone (or even in isolated clusters). Join together and lets start hacking robots!
 
-Simply put: Robots are awesome. None of us can bring about this revolution single-handedly.  This is the time to start hacking robots!
-
-Change the world,
+Change the world, 
 
 ![Signature](/assets/sig.png)
 
