@@ -19,7 +19,7 @@ If you see `odom received!` you’re good to go.
 
 ### Troubleshooting
 
-If you receive a warning that starts with: `Waiting on transform...`, try restarting `minimal.launch` and then restarting `amcl_demo.lauch`.  You may need to try restarting a few times.  Also turning off the Kobuki base and turning it back on may help.
+If you receive a warning that starts with: `Waiting on transform...`, try restarting `minimal.launch` and then restarting `amcl_demo.lauch`.  You may need to try restarting a few times. Also, turning off the Kobuki base and turning it back on may help.
 
 With everything running successfully on TurtleBot, go to the workstation and run:
 
