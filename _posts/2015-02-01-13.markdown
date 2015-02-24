@@ -56,7 +56,7 @@ Try walking into the robot’s path while it is driving to see how it responds.
 
 ## Why Does It Go in Circles?
 
-TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Here's is an excellent video on TurtleBot localization created by [Melonee Wise](http://www.meloneewise.com):
+TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Here's an excellent video on TurtleBot localization created by [Melonee Wise](http://www.meloneewise.com):
 
 {% include youtube.html youtubeid="Mv1mbsMfbmI" youtubetitle="TurtleBot Localization Primer by Melonee Wise" %}
 
