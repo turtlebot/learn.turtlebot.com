@@ -8,7 +8,7 @@ For robots to enter the mainstream, a massive number of developers will be neede
 
 - **Minimal Cost**: Many developers will need to purchase they're own equipment
 - **Open-Source Software**: For collaborative development and shared knowledge
-- **High-School Level Language**:  Supporting a wide range of developer backgrounds and nationalities
+- **High-School Level Language**:  Supporting a wide range of developer backgrounds
 - **Example-Based Articles**: Teaching quickly through real world solutions
 
 In this article series we wanted to target these four points and give developers a place to start with robotic development. [Fork the project](https://github.com/markwsilliman/turtlebot-tutorial), distribute it, commit changes, add articles and dream big. All content, videos & images are available for you to use as you see fit.
