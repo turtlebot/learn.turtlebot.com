@@ -18,6 +18,7 @@ We created this article series to give a coherent, project-based introduction an
 - [Kobuki - ROS](http://wiki.ros.org/kobuki) - Technical reference for Kobuki
 - [Kobuki Auto Docking - ROS](http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking) - How automatic docking works
 - [ROS' Wiki](http://wiki.ros.org/) - The core documentation for ROS
+- [Clearpath's TurtleBot Getting Started Guide](https://support.clearpathrobotics.com/hc/en-us/categories/200165795-TurtleBot)
 
 ## Books
 
