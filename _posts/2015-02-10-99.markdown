@@ -15,13 +15,13 @@ We created this article series to give a coherent, project-based introduction an
 
 - [Getting Started Guide - ROS](http://wiki.ros.org/ROS/StartGuide) - Overview of the ROS Environment (We skipped over lots of best practices, so this is a must.)
 - [TurtleBot - ROS](http://wiki.ros.org/Robots/TurtleBot) - Technical reference for TurtleBot
-- [A Gentle Introduction to ROS](http://www.cse.sc.edu/~jokane/agitr/) by Jason O’Kane - An easy-to-read overview of the ROS environment.
 - [Kobuki - ROS](http://wiki.ros.org/kobuki) - Technical reference for Kobuki
 - [Kobuki Auto Docking - ROS](http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking) - How automatic docking works
 - [ROS' Wiki](http://wiki.ros.org/) - The core documentation for ROS
 
 ## Books
 
+- [A Gentle Introduction to ROS](http://www.cse.sc.edu/~jokane/agitr/) by Jason O’Kane - Online PDF version is free.  An easy-to-read overview of the ROS environment.
 - [ROS by Example series Volume 1](http://www.lulu.com/shop/r-patrick-goebel/ros-by-example-indigo-volume-1/ebook/product-22015937.html) by Patrick Goebel - Example-based overview of ROS. Many examples were written for TurtleBot specifically. ***Tip:** Make sure you buy the Indigo version! (As opposed to Groovy or earlier which Goebel wrote as well.)*
 
 ## Related Tools
