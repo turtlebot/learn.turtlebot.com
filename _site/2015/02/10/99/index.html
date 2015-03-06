@@ -17,6 +17,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="/js/jquery.fitvids.js"></script>
+  <script src="/js/jquery.answer.ros.org.js"></script>
   <script>
 	$(document).ready(function() {
 		$(".video_container").fitVids();
@@ -111,15 +112,16 @@ Pending Challenges">&laquo; Pending Challenges</a>
 <ul>
   <li><a href="http://wiki.ros.org/ROS/StartGuide">Getting Started Guide - ROS</a> - Overview of the ROS Environment (We skipped over lots of best practices, so this is a must.)</li>
   <li><a href="http://wiki.ros.org/Robots/TurtleBot">TurtleBot - ROS</a> - Technical reference for TurtleBot</li>
-  <li><a href="http://www.cse.sc.edu/~jokane/agitr/">A Gentle Introduction to ROS</a> by Jason O’Kane - An easy-to-read overview of the ROS environment.</li>
   <li><a href="http://wiki.ros.org/kobuki">Kobuki - ROS</a> - Technical reference for Kobuki</li>
   <li><a href="http://wiki.ros.org/kobuki/Tutorials/Testing%20Automatic%20Docking">Kobuki Auto Docking - ROS</a> - How automatic docking works</li>
   <li><a href="http://wiki.ros.org/">ROS’ Wiki</a> - The core documentation for ROS</li>
+  <li><a href="https://support.clearpathrobotics.com/hc/en-us/categories/200165795-TurtleBot">Clearpath’s TurtleBot Getting Started Guide</a> - Setup guide, tutorials &amp; FAQ</li>
 </ul>
 
 <h2 id="books">Books</h2>
 
 <ul>
+  <li><a href="http://www.cse.sc.edu/~jokane/agitr/">A Gentle Introduction to ROS</a> by Jason O’Kane - Online PDF version is free.  An easy-to-read overview of the ROS environment.</li>
   <li><a href="http://www.lulu.com/shop/r-patrick-goebel/ros-by-example-indigo-volume-1/ebook/product-22015937.html">ROS by Example series Volume 1</a> by Patrick Goebel - Example-based overview of ROS. Many examples were written for TurtleBot specifically. <em><strong>Tip:</strong> Make sure you buy the Indigo version! (As opposed to Groovy or earlier which Goebel wrote as well.)</em></li>
 </ul>
 
@@ -167,14 +169,29 @@ Pending Challenges">&laquo; Pending Challenges</a>
 
     <!--<h2 class="footer-heading">Learn TurtleBot and ROS</h2>-->
 	<div style="margin-bottom:1.5em;">
-	<h4><a href="https://groups.google.com/forum/#!forum/ros-sig-turtlebot" target="_blank">Questions / comments?  Post them on TurtleBot's Group</a></h4>
+	<!--<h4><a href="https://groups.google.com/forum/#!forum/ros-sig-turtlebot" target="_blank">Questions / comments?  Post them on TurtleBot's Group</a></h4>-->
+	<div id="answerrosorg_title">
+		<div id="answerrosorg_title_main">ROS Answers Related to TurtleBot</div>
+		
+		<div id="answerrosorg_title_leftmargin">
+			<div id="answerrosorg_title_sublinks">
+				<a target="_blank" href="http://answers.ros.org/questions/tags:turtlebot/">View all Questions</a>  &#183; <a target="_blank" href="http://answers.ros.org/questions/ask/?tags=turtlebot">Ask your Question</a>
+			</div>
+			<div id="answerrosorg_title_sub">
+				Recent Questions
+			</div>
+			<div id="answerrosorg"></div>
+		</div>
+	</div>
+	
+	
 	</div>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>Learn TurtleBot and ROS</li>
-          <li><a href="mailto:mwsilliman@gmail.com">mwsilliman@gmail.com</a></li>
+          <!--<li><a href="mailto:mwsilliman@gmail.com">mwsilliman@gmail.com</a></li>-->
            
           <li>
             <a href="https://github.com/markwsilliman">
