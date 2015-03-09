@@ -1,6 +1,33 @@
 $( document ).ready(function() {
-	parseAnswerRosOrg("turtlebot");
+	parseAnswerRosOrg(return_tag_AnswerRosOrg());
+	$("#askyourquestion_footer").click(function() {
+		AskAnswerRosOrg();
+	});
+	
+	$("#viewallquestions_footer").click(function() {
+		ViewAllAnswerRosOrg();
+	});
 });
+
+//ViewAllAnswerRosOrg
+function ViewAllAnswerRosOrg() {
+	var tag = return_tag_AnswerRosOrg();
+	var url = 'http://answers.ros.org/questions/tags:' + encodeURIComponent(tag) + '/';
+	window.open(url, '_blank');	
+}
+//end ViewAllAnswerRosOrg
+
+//AskAnswerRosOrg
+function AskAnswerRosOrg() {
+	var tag = return_tag_AnswerRosOrg();
+	var url = 'http://answers.ros.org/questions/ask/?tags=' + encodeURIComponent(tag);
+	window.open(url, '_blank');	
+}
+//end AskAnswerRosOrg
+
+function return_tag_AnswerRosOrg() {
+	return window.location.href;
+}
 
 //parseAnswerRosOrg
 //inspired from Andrew's reply on http://stackoverflow.com/questions/226663/parse-rss-with-jquery
@@ -63,6 +90,10 @@ function parseAnswerRosOrg_callback(data) {
 	     	});
 			tmp_html = tmp_html.concat("</ul>");
 			$("#answerrosorg").html(tmp_html);
+			
+			if(count == 0) {
+				$(".answerrosorg_hideifnoquestionsexist").hide();				
+			}
 		}
     }
 	catch (err) {
