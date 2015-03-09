@@ -37,14 +37,16 @@ function return_tag_AnswerRosOrg() {
 //inspired from Andrew's reply on http://stackoverflow.com/questions/226663/parse-rss-with-jquery
 function parseAnswerRosOrg(tag) {
   url = 'http://answers.ros.org/feeds/rss/?tags=' + encodeURIComponent(tag)
-
   try {
   	$.ajax({
-    	url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
+    	url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&callback=?&num=10&q=' + encodeURIComponent(url),
     	dataType: 'json',
     	success: function(data) {
-      	parseAnswerRosOrg_callback(data);
-    	}
+      		parseAnswerRosOrg_callback(data);
+    	},
+		error: function(data) {
+			
+		}
   	});
   }
   catch (err) {
@@ -94,7 +96,7 @@ function parseAnswerRosOrg_callback(data) {
 	     	});
 			tmp_html = tmp_html.concat("</ul>");
 			$("#answerrosorg").html(tmp_html);
-			
+
 			if(count == 0) {
 				$(".answerrosorg_hideifnoquestionsexist").hide();				
 			}
