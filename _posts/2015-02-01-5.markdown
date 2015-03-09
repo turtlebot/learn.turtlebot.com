@@ -2,6 +2,7 @@
 layout: post
 title:  "Installing ROS"
 date:   2015-02-01 13:46:10
+answerrostag: "install_ros"
 ---
 
 We need to install ROS and TurtleBot packages on both the work station and TurtleBot. There are different distributions of ROS and they are named in alphabetical order from oldest to newest (e.g. Groovy came before Hydro which came before Indigo).

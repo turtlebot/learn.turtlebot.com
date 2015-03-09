@@ -423,6 +423,13 @@ pre > code {
   margin-left: 10px;
   margin-right: 10px; }
 
+.rosanswertag {
+  margin-top: 100px;
+  font-style: italic;
+  font-size: 0.8em;
+  text-align: center;
+  color: #828282; }
+
 .post-title {
   font-size: 42px;
   /* letter-spacing: -1px; */

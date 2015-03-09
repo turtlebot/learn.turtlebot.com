@@ -20,13 +20,17 @@ function ViewAllAnswerRosOrg() {
 //AskAnswerRosOrg
 function AskAnswerRosOrg() {
 	var tag = return_tag_AnswerRosOrg();
+	tag = tag + ",turtlebot";
 	var url = 'http://answers.ros.org/questions/ask/?tags=' + encodeURIComponent(tag);
 	window.open(url, '_blank');	
 }
 //end AskAnswerRosOrg
 
 function return_tag_AnswerRosOrg() {
-	return window.location.href;
+	if($("#answerrostag_hidden").length <= 0) {
+		return "learn_turtlebot_default"; //safety in case it wasn't set
+	}
+	return "learn_turtlebot_" + $("#answerrostag_hidden").val();
 }
 
 //parseAnswerRosOrg

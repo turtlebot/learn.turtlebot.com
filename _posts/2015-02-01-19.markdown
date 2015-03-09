@@ -2,6 +2,7 @@
 layout: post
 title:  "Determining Coordinates of Customers"
 date:   2015-02-01 13:46:20
+answerrostag: "coordinates"
 ---
 
 We’ll be calling the users that ask TurtleBot to bring them coffee “customers”. Their poses are determined by X and Y values relative to the map that you load when starting TurtleBot (and loading amcl, which is required for autonomous navigation). We need to determine each customer’s location and tell them their X and Y coordinates before they can request coffee.

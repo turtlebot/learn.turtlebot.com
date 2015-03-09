@@ -2,6 +2,7 @@
 layout: post
 title:  "Autonomous Driving"
 date:   2015-02-01 13:46:15
+answerrostag: "autonomous"
 ---
 
 Now let’s dive into the power of ROS. With ROS we have the ability to move TurtleBot (or any other robot) from one place to another while avoiding both static and dynamic obstacles all with a few lines of code.

@@ -2,6 +2,7 @@
 layout: post
 title:  "Setting Up Networking"
 date:   2015-02-01 13:46:12
+answerrostag: "networking"
 ---
 
 Now that we’ve chased [TurtleBot around while pressing keys on the netbook]({{ site.url }}{% post_url 2015-02-01-6 %}), we can really appreciate the workstation. This allows you to control TurtleBot from the comfort of your chair.

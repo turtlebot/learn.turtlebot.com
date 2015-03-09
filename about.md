@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+answerrostag: "about"
 ---
 
 For robots to enter the mainstream, a massive number of developers will be needed. Not just developers with lots of funding and years of training, but students, hobbyists and other casual users working alongside seasoned veterans and academics. Formerly insurmountable barriers to entry (money, education, manufacturing, etc.) are rapidly coming down and if we focus on a few specific goals, this collaborative, crowd-sourced, cross-discipline dream can come true:

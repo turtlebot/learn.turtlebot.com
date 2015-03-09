@@ -2,6 +2,7 @@
 layout: post
 title:  "What to Read Next"
 date:   2015-02-10 13:46:14
+answerrostag: "read_next"
 ---
 
 We created this article series to give a coherent, project-based introduction and overview of ROS without having to learn all the nitty-gritty details. We left out and glossed over hundreds of powerful tools, many of which deserve their own series. Now that you’ve finished these tutorials, more sophisticated and powerful approaches to ROS await you:

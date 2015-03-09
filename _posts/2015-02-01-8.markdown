@@ -2,6 +2,7 @@
 layout: post
 title:  "Testing Kinect"
 date:   2015-02-01 13:46:13
+answerrostag: "test_kinect"
 ---
 
 In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBot “sees” its environment. We’ve already [installed the drivers for Kinect]({{ site.url }}{% post_url 2015-02-01-5 %}) so now we’ll test it to make sure it works.

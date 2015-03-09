@@ -2,6 +2,7 @@
 layout: post
 title:  "Monitor Kobuki’s Battery Status"
 date:   2015-02-01 13:46:18
+answerrostag: "kobuki_battery"
 ---
 
 {% include youtube.html youtubeid="f8JLDdrukPg" youtubetitle="Mobile Base Battery Value"%}

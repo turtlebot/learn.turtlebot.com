@@ -2,6 +2,7 @@
 layout: post
 title:  "Monitor the Netbook’s Battery Status"
 date:   2015-02-01 13:46:17
+answerrostag: "netbook_battery"
 ---
 
 Now that TurtleBot [can go to a specific location]({{ site.url }}{% post_url 2015-02-01-14 %}), we want to make sure it doesn’t run out of battery power. In an earlier article we discussed [auto-docking TurtleBot]({{ site.url }}{% post_url 2015-02-01-12 %}) , so if TurtleBot knows when the batteries are low, it can autonomously charge itself.

@@ -2,6 +2,7 @@
 layout: post
 title:  "Going to a Specific Location on Your Map Using Code"
 date:   2015-02-01 13:46:16
+answerrostag: "specific_location"
 ---
 
 Now that you’ve found that TurtleBot can go to a specific relative pose (pose = location + orientation), it’s probably not surprising to learn that it can go to a specific location on a map.
