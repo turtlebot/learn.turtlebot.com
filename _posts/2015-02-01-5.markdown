@@ -38,7 +38,11 @@ Follow the [TurtleBot installation instructions](http://wiki.ros.org/turtlebot/T
 
 ## Install Kinect Driver (TurtleBot only)
 
-TurtleBot uses a Microsoft Kinect. To use the Kinect you need to install its driver. Do this by copying and pasting the following lines into a terminal:
+TurtleBot uses a Microsoft Kinect. To use the Kinect you need to install its driver. 
+
+***TIP:** Notice that the command below that starts with "tar xvjf" mentions "x64".  If you are using a 86-bit processor change this to "x86" and do the same things for the following line starting with "cd".  [View a complete list of options.](https://github.com/avin2/SensorKinect/tree/unstable/Bin)*
+
+Do this by copying and pasting the following lines into a terminal:
 
 {% highlight sh %}
 mkdir ~/kinectdriver 

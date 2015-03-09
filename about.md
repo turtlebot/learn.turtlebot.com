@@ -33,3 +33,4 @@ If you’d like to contribute, email me your github username and feel free to ad
 * [Austin Meyers (AK5A)](https://github.com/ak5a)
 * [Melissa Eaton](https://github.com/MustangSally12)
 * [ClearPath Robotics](https://github.com/clearpathrobotics)
+* [Erico Guizzo](https://twitter.com/ericoguizzo)

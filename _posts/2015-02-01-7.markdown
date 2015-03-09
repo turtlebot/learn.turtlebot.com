@@ -92,7 +92,7 @@ roslaunch turtlebot_bringup minimal.launch
 On the workstation, run:
 
 {% highlight sh %}
-roslaunch turtlebot_keyboard keyboard_teleop.launch
+roslaunch turtlebot_teleop keyboard_teleop.launch
 {% endhighlight %}
 
 Try driving around from the workstation. This is what you should see on the workstation’s screen:

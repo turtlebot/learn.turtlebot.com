@@ -120,6 +120,9 @@ If you have trouble, here’s a YouTube walkthrough:
 ## Learn more at wiki.ros.org
 
 * [3D Visualization](http://wiki.ros.org/turtlebot_bringup/Tutorials/indigo/3D%20Visualisation)
+* [Follower Demo](http://wiki.ros.org/turtlebot_follower/Tutorials/Demo) - Have TurtleBot follow you around.
+
+***TIP:** To complete the follower demo you may need to [install libfreenect as mentioned on ROS Answers](http://answers.ros.org/question/196455/kinect-installation-and-setup-on-ros-updated/).*
 
 ## Troubleshooting
 
