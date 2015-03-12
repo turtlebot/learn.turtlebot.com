@@ -35,3 +35,4 @@ If you’d like to contribute, email me your github username and feel free to ad
 * [Melissa Eaton](https://github.com/MustangSally12)
 * [ClearPath Robotics](https://github.com/clearpathrobotics)
 * [Erico Guizzo](https://twitter.com/ericoguizzo)
+* [Tarik Kelestemur](https://github.com/tkelestemur)
