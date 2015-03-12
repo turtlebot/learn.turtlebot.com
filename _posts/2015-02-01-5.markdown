@@ -35,7 +35,7 @@ When this article was written, the deb format wasn’t available yet so we had t
 
 ***UPDATE:** Since writing this, a deb is available but OSRF still recommends installing the source installation while they fix some final bugs (2/11/15).*
 
-Follow the [TurtleBot installation instructions](http://wiki.ros.org/turtlebot/Tutorials/indigo/Installation) by copying every line below “Source Installation” into a terminal.
+Follow the [TurtleBot installation instructions](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation) by copying every line below “Source Installation” into a terminal.
 
 ## Install Kinect Driver (TurtleBot only)
 
