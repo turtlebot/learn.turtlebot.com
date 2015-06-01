@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:29
 answerrostag: "simulation"
 ---
 
-This article was graciously written by [Tarik Kelestemur](https://github.com/tkelestemur).
+*This article was graciously written by [Tarik Kelestemur](https://github.com/tkelestemur).*
 
 Working inside a simulation simplifies and speeds up testing new applications and algorithms by virtualizing TurtleBot and its environment. In this tutorial we will use the [Gazebo](http://gazebosim.org/) simulation platform that supports ROS and maintained by [OSRFoundation](http://www.osrfoundation.org/).
 
