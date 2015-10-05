@@ -60,6 +60,15 @@ We're going to disable USB 3.0 in the BIOS.
 5. If you BIOS lists **USB Debugging**, enable it.
 6. Save and exit BIOS.
 
+#### Troubleshooting: Kinect's USB connection is dropping randomly
+
+On some GNU/Linux systems, specific power settings may drop the USB connection of Kinect. In order to
+prevent this, run this command, plug Kinect out and in:
+
+{% highlight sh %}
+sudo bash -c 'echo -1 > /sys/module/usbcore/parameters/autosuspend'
+{% endhighlight %}
+
 #### If you still have trouble, check that the Kinect has power by running:
 
 {% highlight sh %}

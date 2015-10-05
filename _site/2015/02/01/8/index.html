@@ -151,6 +151,13 @@ Teleoperation">Teleoperation &raquo; </a>
   <li>Save and exit BIOS.</li>
 </ol>
 
+<h4 id="troubleshooting-kinects-usb-connection-is-dropping-randomly">Troubleshooting: Kinect’s USB connection is dropping randomly</h4>
+
+<p>On some GNU/Linux systems, specific power settings may drop the USB connection of Kinect. In order to
+prevent this, run this command, plug Kinect out and in:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">sudo bash -c <span class="s1">&#39;echo -1 &gt; /sys/module/usbcore/parameters/autosuspend&#39;</span></code></pre></div>
+
 <h4 id="if-you-still-have-trouble-check-that-the-kinect-has-power-by-running">If you still have trouble, check that the Kinect has power by running:</h4>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">lsusb</code></pre></div>
