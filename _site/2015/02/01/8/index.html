@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Testing Kinect</title>
-  <meta name="description" content="In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBot “sees” its environment. We’ve already installed the drivers for Kinect so n... 	 - learn_turtlebot_test_kinect ">
+  <meta name="description" content="In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBot “sees” its environment. We’ve already installed the drivers for Kinect so n...   - learn_turtlebot_test_kinect ">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="/2015/02/01/8/">
@@ -19,9 +19,9 @@
   <script src="/js/jquery.fitvids.js"></script>
   <script src="/js/jquery.answer.ros.org.js"></script>
   <script>
-	$(document).ready(function() {
-		$(".video_container").fitVids();
-	});
+  $(document).ready(function() {
+    $(".video_container").fitVids();
+  });
   </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -74,11 +74,11 @@
       <div class="wrapper">
         <div class="post">
 <div class="page-navigation"> 
-	   
-				<div class="left"> 
+     
+        <div class="left"> 
                 <a href="/2015/02/01/7/" title="Previous Post: 
 Setting Up Networking">&laquo; Setting Up Networking</a> 
-				</div>
+        </div>
          
          
 
@@ -116,8 +116,8 @@ Teleoperation">Teleoperation &raquo; </a>
 <p>If you get a collection of lines that start with <code>process[camera...</code> everything is perfect and you can skip the troubleshooting section below and move on to the “View Image Data” section. Leave the two terminal windows open.</p>
 
 <div style="margin-bottom: 1.5em;">
-	
-	<div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/QjFBrZZki-E?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">TurtleBot Bringup &amp; Openni for Kinect</p></div>
+  
+  <div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/QjFBrZZki-E?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">TurtleBot Bringup &amp; Openni for Kinect</p></div>
 </div>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
@@ -151,13 +151,6 @@ Teleoperation">Teleoperation &raquo; </a>
   <li>Save and exit BIOS.</li>
 </ol>
 
-<h4 id="troubleshooting-kinects-usb-connection-is-dropping-randomly">Troubleshooting: Kinect’s USB connection is dropping randomly</h4>
-
-<p>On some GNU/Linux systems, specific power settings may drop the USB connection of Kinect. In order to
-prevent this, run this command, plug Kinect out and in:</p>
-
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">sudo bash -c <span class="s1">&#39;echo -1 &gt; /sys/module/usbcore/parameters/autosuspend&#39;</span></code></pre></div>
-
 <h4 id="if-you-still-have-trouble-check-that-the-kinect-has-power-by-running">If you still have trouble, check that the Kinect has power by running:</h4>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">lsusb</code></pre></div>
@@ -183,8 +176,8 @@ prevent this, run this command, plug Kinect out and in:</p>
 <p>Press ‘q’ to quit the depth image.</p>
 
 <div style="margin-bottom: 1.5em;">
-	
-	<div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/9xN7zRUZsIw?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">Kinect RGB &amp; Depth Images</p></div>
+  
+  <div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/9xN7zRUZsIw?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">Kinect RGB &amp; Depth Images</p></div>
 </div>
 
 <h2 id="stop-openni-turtlebot">Stop Openni (TurtleBot)</h2>
@@ -194,8 +187,8 @@ prevent this, run this command, plug Kinect out and in:</p>
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">roslaunch turtlebot_bringup 3dsensor.launch</code></pre></div>
 
 <div style="margin-bottom: 1.5em;">
-	
-	<div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/-eGh2QJF398?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">3dsensor.launch</p></div>
+  
+  <div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/-eGh2QJF398?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">3dsensor.launch</p></div>
 </div>
 
 <h2 id="rviz-workstation">RViz (Workstation)</h2>
@@ -211,8 +204,8 @@ prevent this, run this command, plug Kinect out and in:</p>
 <p>If you have trouble, here’s a YouTube walkthrough:</p>
 
 <div style="margin-bottom: 1.5em;">
-	
-	<div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/QRWObANzrCk?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">RVIZ Display Panel</p></div>
+  
+  <div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/QRWObANzrCk?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">RVIZ Display Panel</p></div>
 </div>
 
 <h2 id="learn-more-at-wikirosorg">Learn more at wiki.ros.org</h2>
@@ -234,15 +227,15 @@ prevent this, run this command, plug Kinect out and in:</p>
 </div>
 
 <div class="page-navigation"> 
-		<hr>
-		<div class="page-navigation-title">Keep Reading</div>
+    <hr>
+    <div class="page-navigation-title">Keep Reading</div>
         <div class="clear">&nbsp;</div> 
         
          
-				<div class="left"> 
+        <div class="left"> 
                 <a href="/2015/02/01/7/" title="Previous Post: 
 Setting Up Networking">&laquo; Setting Up Networking</a> 
-				</div>
+        </div>
          
 
         <div class="right"> 
@@ -262,24 +255,24 @@ Teleoperation">Teleoperation &raquo; </a>
   <div class="wrapper">
 
     <!--<h2 class="footer-heading">Learn TurtleBot and ROS</h2>-->
-	<div style="margin-bottom:1.5em;">
-	<!--<h4><a href="https://groups.google.com/forum/#!forum/ros-sig-turtlebot" target="_blank">Questions / comments?  Post them on TurtleBot's Group</a></h4>-->
-	<div id="answerrosorg_title">
-		<div id="answerrosorg_title_main">ROS Answers Related to this Page</div>
-		
-		<div id="answerrosorg_title_leftmargin">
-			<div id="answerrosorg_title_sublinks">
-				<a href="javascript:void(0);" id="viewallquestions_footer" class="answerrosorg_hideifnoquestionsexist">View all Questions</a><span class="answerrosorg_hideifnoquestionsexist" id="questionsdot_footer">&#183;</span><a href="javascript:void(0);" id="askyourquestion_footer">Ask your Question</a>
-			</div>
-			<div class="answerrosorg_hideifnoquestionsexist" id="answerrosorg_title_sub">
-				Recent Questions
-			</div>
-			<div id="answerrosorg"></div>
-		</div>
-	</div>
-	
-	
-	</div>
+  <div style="margin-bottom:1.5em;">
+  <!--<h4><a href="https://groups.google.com/forum/#!forum/ros-sig-turtlebot" target="_blank">Questions / comments?  Post them on TurtleBot's Group</a></h4>-->
+  <div id="answerrosorg_title">
+    <div id="answerrosorg_title_main">ROS Answers Related to this Page</div>
+    
+    <div id="answerrosorg_title_leftmargin">
+      <div id="answerrosorg_title_sublinks">
+        <a href="javascript:void(0);" id="viewallquestions_footer" class="answerrosorg_hideifnoquestionsexist">View all Questions</a><span class="answerrosorg_hideifnoquestionsexist" id="questionsdot_footer">&#183;</span><a href="javascript:void(0);" id="askyourquestion_footer">Ask your Question</a>
+      </div>
+      <div class="answerrosorg_hideifnoquestionsexist" id="answerrosorg_title_sub">
+        Recent Questions
+      </div>
+      <div id="answerrosorg"></div>
+    </div>
+  </div>
+  
+  
+  </div>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -329,13 +322,13 @@ Teleoperation">Teleoperation &raquo; </a>
         <p class="text">An open source getting started guide for web, mobile and maker developers interested in robotics.
   <br><a href="/about/">Contribute to the Project</a><br><a href="https://github.com/markwsilliman/turtlebot-tutorial">Fork the Project</a></p>
       </div>
-	  <div class="footer-col  footer-col-3">
-			<p class="text">Developed with <a href="http://www.turtlebot.com">TurtleBot.com</a> & <a href="http://www.ros.org">ROS.org</a>.</p>
-	  </div>
+    <div class="footer-col  footer-col-3">
+      <p class="text">Developed with <a href="http://www.turtlebot.com">TurtleBot.com</a> & <a href="http://www.ros.org">ROS.org</a>.</p>
     </div>
-	
-	<div class="rosanswertag">ROS Answers Tag: learn_turtlebot_test_kinect<input type="hidden" id="answerrostag_hidden" value="test_kinect"></div>
-	
+    </div>
+  
+  <div class="rosanswertag">ROS Answers Tag: learn_turtlebot_test_kinect<input type="hidden" id="answerrostag_hidden" value="test_kinect"></div>
+  
 
   </div>
 
