@@ -57,7 +57,7 @@ We're going to disable USB 3.0 in the BIOS.
 2. Go to the *advanced* tab.
 3. This part varies depending on your computer. If you have a USB option go there first.
 4. If your BIOS lists **xHCI**, disable it.
-5. If you BIOS lists **USB Debugging**, enable it.
+5. If your BIOS lists **USB Debugging**, enable it.
 6. Save and exit BIOS.
 
 #### Troubleshooting: Kinect's USB connection is dropping randomly
