@@ -9,16 +9,32 @@ In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBo
 
 ## Test Driver and USB Connection (TurtleBot Only)
 
+Before doing anything, check the default 3D sensor of Turtlebot by printing an
+environment variable and confirm the output:
+
+{% highlight sh %}
+echo $TURTLEBOT_3D_SENSOR
+# Output: kinect
+{% endhighlight %}
+
+If you see another 3D sensor, for example **asus_xtion_pro**, you will need to
+set the default value of the environment variable in **.bashrc** and restart your
+terminal:
+
+{% highlight sh %}
+echo "export TURTLEBOT_3D_SENSOR=kinect" >> .bashrc
+{% endhighlight %}
+
 On TurtleBot, close all terminals, then open a new window and run:
 
 {% highlight sh %}
-roslaunch turtlebot_bringup minimal.launch 
+roslaunch turtlebot_bringup minimal.launch
 {% endhighlight %}
 
 Then open another terminal window and run:
 
 {% highlight sh %}
-roslaunch openni_launch openni.launch 
+roslaunch openni_launch openni.launch
 {% endhighlight %}
 
 If you get a collection of lines that start with `process[camera...` everything is perfect and you can skip the troubleshooting section below and move on to the “View Image Data” section. Leave the two terminal windows open.
@@ -38,7 +54,7 @@ this is probably because the Kinect driver wasn’t installed. [See Install Kine
 If you receive:
 
 {% highlight sh %}
-terminate called after throwing an instance of 'openni_wrapper::OpenNIException' 
+terminate called after throwing an instance of 'openni_wrapper::OpenNIException'
 {% endhighlight %}
 
 or
@@ -137,4 +153,3 @@ If you have trouble, here’s a YouTube walkthrough:
 ## Troubleshooting
 
 If you get a warning about “no image available”, try closing everything on both TurtleBot and workstation and then re-opening.
-
