@@ -3,6 +3,7 @@ layout: post
 title:  "Writing Your First Script"
 date:   2015-02-01 13:46:14
 answerrostag: "first_script"
+track: [main]
 ---
 
 Let’s write our first script to get a feel for writing scripts for ROS. If you don’t understand what every line means, don’t worry- we’ll get there! Our example is designed to be as simple as possible.

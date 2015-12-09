@@ -3,6 +3,7 @@ layout: post
 title:  "Pending Challenges"
 date:   2015-02-01 13:46:28
 answerrostag: "pending_challenges"
+track: [coffeebot]
 ---
 
 [We need your help]({{ site.url }}/about/)! Though the netbook and Kobuki batteries will autonomously charge and could theoretically run indefinitely, the Keurig is *not* powered by the base. In our demo the customer must plug in the Keurig to use it. Powering the Keurig plus a few other features would make our demo a full-fledged CoffeeBot!

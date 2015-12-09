@@ -1,0 +1,218 @@
+---
+layout: post
+title:  "Writing Your First Rapp"
+date:   2015-02-04 10:00:08
+answerrostag: "challenge_rapp"
+track: [challenge]
+---
+
+We want to show you how to write a rocon application (rapp). It is a bunch
+of instructions how to launch the application, something like a wrapper which
+has special structure and logic. You can find more information in
+[Rapp Specification Document](http://docs.ros.org/indigo/api/rocon_app_utilities/html/rapp_specification.html).  
+
+We will write a rapp for turtlebot_follower package.
+
+## Prerequisites
+
+This lesson is a continuation of the previous lesson:
+["Multiple TurtleBots in Concert"]({{ site.url }}{% post_url 2015-02-04-6 %}).
+If you have not done that lesson, do it firstly.
+
+## Creating follower Rapp
+
+1\. Create a package `my_rapps`.
+{% highlight sh %}
+cd ~/my_ws/src
+catkin_create_pkg my_rapps
+{% endhighlight %}
+
+2\. Create a folder for `follower` rapp.
+{% highlight sh %}
+cd my_rapps
+mkdir -p rapps/follower
+{% endhighlight %}
+
+3\. Copy files from
+[github](https://github.com/turtlebot/turtlebot_apps/tree/indigo/turtlebot_rapps/rapps/follower).
+There are four files: `follower.interface`, `follower.launch`, `follower.rapp`,
+`follower_bubble_icon.png`. You can find more information about these files in
+[Create your First Rapp](http://wiki.ros.org/turtlebot/Tutorials/indigo/Create%20your%20First%20Rapp)
+lesson or on [rocon](http://wiki.ros.org/rocon) page.
+
+4\. Create an empty `follower.parameters` file.
+{% highlight sh %}
+touch follower.parameters
+{% endhighlight %}
+
+5\. Modify `follower.launch` file. Change default `simulation` value to `true`.
+
+Old value:
+{% highlight sh %}
+<arg name="simulation" default="false"/>
+{% endhighlight %}
+
+New value:
+{% highlight sh %}
+<arg name="simulation" default="true"/>
+{% endhighlight %}
+
+6\. Add this string in `follower.rapp` file.
+{% highlight sh %}
+public_parameters: follower.parameters
+{% endhighlight %}
+
+The result:
+{% highlight sh %}
+display:           Follower
+description:       Take the TurtleBot for a stroll. TurtleBot will follow whatever is in front of it.
+compatibility:     rocon:/turtlebot
+launch:            follower.launch
+public_interface:  follower.interface
+public_parameters: follower.parameters
+icon:              follower_bubble_icon.png
+{% endhighlight %}
+
+7\. Export the rapp in `my_rapps/package.xml` file by adding this string
+in `<export>` tag.
+{% highlight sh %}
+<export>
+  <rocon_app>rapps/follower/follower.rapp</rocon_app>
+</export>
+{% endhighlight %}
+
+8\. Build package.
+{% highlight sh %}
+source /opt/ros/indigo/setup.bash
+cd ~/my_ws/
+catkin_make
+{% endhighlight %}
+
+## Testing
+
+1\. Change the path.
+{% highlight sh %}
+source ~/my_ws/devel/setup.bash
+{% endhighlight %}
+
+2\. Show existing rapps.
+{% highlight sh %}
+rocon_app list
+{% endhighlight %}
+
+You will see the long list.
+
+{% include image.html img="/assets/sim_rocon_app_list.png" title="rocon_app list" %}
+
+Find my_rapps.
+
+{% include image.html img="/assets/sim_rocon_app_my_rapps.png" title="my_rapps" %}
+
+3\. Show information about your rapp.
+{% highlight sh %}
+rocon_app info my_rapps/follower
+{% endhighlight %}
+
+You will see this output.
+
+{% include image.html img="/assets/sim_rocon_app_info.png" title="my_rapps Information" %}
+
+## Modifying gazebo_concert Package
+
+1\. Edit `gazebo.parameters` file.
+{% highlight sh %}
+cd ~/my_ws/src/rocon_tutorials/concert_tutorials/gazebo_concert/solutions
+{% endhighlight %}
+
+Modify `robot_rapp_whitelist` for each robot.
+
+Old value:
+{% highlight sh %}
+robot_rapp_whitelist: [rocon_apps, turtlebot_rapps]
+{% endhighlight %}
+
+New value:
+{% highlight sh %}
+robot_rapp_whitelist: [rocon_apps, turtlebot_rapps, my_rapps]
+{% endhighlight %}
+
+2\. Build package.
+{% highlight sh %}
+source /opt/ros/indigo/setup.bash
+cd ~/my_ws/
+catkin_make
+{% endhighlight %}
+
+## Running follower Rapp
+
+1\. Change the path.
+{% highlight sh %}
+source ~/my_ws/devel/setup.bash
+{% endhighlight %}
+
+2\. Launch gazebo_concert.
+{% highlight sh %}
+roslaunch gazebo_concert concert.launch
+{% endhighlight %}
+
+You will see these strings in each robots terminal.
+{% highlight sh %}
+[INFO] [WallTime: 1456200881.276905] [5.990000] Rapp Manager : 'my_rapps/follower' added to the list of runnable apps.
+{% endhighlight %}
+
+{% include image.html img="/assets/sim_gamza1_terminal.png" title="Rapp Manager" %}
+
+3\. Start rocon_remocon.
+{% highlight sh %}
+rocon_remocon
+{% endhighlight %}
+
+4\. Press `Refresh`.
+
+5\. Select `Gazebo Concert`->`User`->`Gazebo Viewer`.
+
+You will see the familiar gazebo world.
+
+{% include image.html img="/assets/sim_gazebo_concert.png" title="Gazebo Concert" %}
+
+6\. In a new terminal start follower rapp.
+{% highlight sh %}
+rosservice call /gamza2/start_rapp my_rapps/follower [] []
+# Output:
+started: True
+error_code: 0
+message: Success
+application_namespace: gamza2
+{% endhighlight %}
+
+You will see in `gamza2` terminal:
+
+{% highlight sh %}
+[INFO] [WallTime: 1456201608.858077] [15.600000] Rapp Manager : request received to start rapp [my_rapps/follower]
+[INFO] [WallTime: 1456201608.858627] [15.600000] Rapp Manager : starting app 'my_rapps/follower' underneath gamza2
+{% endhighlight %}
+
+***NOTE:*** *Only one rapp can be run at one time, otherwise a resource conflict might occur.*
+
+7\. Select `Concert Teleop` in `Interactions Chooser`.
+
+8\. Select `gamza1` in the resource list and capture it.
+
+9\. Drive `gamza1` using joystick to initiate following behavior.
+
+10\. Stop rapp.
+{% highlight sh %}
+rosservice call /gamza2/stop_rapp
+# Output:
+stopped: True
+error_code: 0
+message: Success
+{% endhighlight %}
+
+11\. Interrupt the processes. Close the windows.
+
+You can watch these steps in the video:
+
+{% include youtube.html youtubeid="ckucl1SeyJM" youtubetitle="Writing Your First Rapp"%}
+
+We have finished with robot side, go to the next lesson to write user side.

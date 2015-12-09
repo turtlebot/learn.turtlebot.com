@@ -3,6 +3,7 @@ layout: post
 title:  "Going Forward and Avoiding Obstacles with Code"
 date:   2015-02-01 13:46:15
 answerrostag: "avoid_obstacles"
+track: [main]
 ---
 
 By this point [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) for this article series and successfully [created a map]({{ site.url }}{% post_url 2015-02-01-11 %}) (saved at `/tmp/mymap`) of your current location. (If you have changed locations since the map generation article, create a new map.)

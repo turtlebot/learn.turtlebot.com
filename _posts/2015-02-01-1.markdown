@@ -1,15 +1,16 @@
 ---
 layout: post
-title:  "We Want You to Learn Turtlebot (and Robotics)!"
+title:  "We Want You to Learn TurtleBot (and Robotics)!"
 date:   2015-02-01 13:46:06
 answerrostag: "introduction"
+track: [main]
 ---
 
 Practical and accessible robotics is upon us, ready to move from government and institutional labs to individual development spaces like the home, office, or garage. Like the personal computer revolution in the late 70’s and early 80’s, robots are ready for the first great generation of amateur developers to take the foundation work of robotics pioneers to undreamed-of places.
 
 Through software packages like the [Robot Operating System (ROS)](http://www.ros.org/), the intense research and expertise of engineers, computer scientists and more get distilled into ready-to-use development environments and function calls. Year by year, the barriers to entry come down and as web, mobile and maker developers transition into the field, the walls come down even faster.
 
-**The goal of this article series is to get web, mobile, and maker developers programming with ROS via the Turtlebot development platform.** We hope you will see the amazing possibilities and opportunities, dive in and never look back.
+**The goal of this article series is to get web, mobile, and maker developers programming with ROS via the TurtleBot development platform.** We hope you will see the amazing possibilities and opportunities, dive in and never look back.
 
 ## What is TurtleBot and What Does it Do?
 {% include image_onrightoftext.html img="/assets/turtlebot_2_lg.png" width="225" %}
@@ -33,7 +34,7 @@ Given that TurtleBot is a mobile base that can autonomously move around an envir
 
 We decided to have TurtleBot perform the *critical* task of making coffee available on-demand for our coworkers without needing to leave the comfort of their desks.
 
-After mounting a Keurig coffee maker and K-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via [web app](http://learn.turtlebot.com/2015/02/01/24/) or a [Google Chrome extension](http://learn.turtlebot.com/2015/02/01/21/) on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker then [plugged in the Keurig](http://learn.turtlebot.com/2015/02/01/27/) and made their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
+After mounting a Keurig coffee maker and K-cup holder on top of TurtleBot, we allowed any person in our office to request coffee via [web app]({{ site.url }}{% post_url 2015-02-01-24 %}) or a [Google Chrome extension]({{ site.url }}{% post_url 2015-02-01-21 %}) on their computer. When a user asked for coffee, TurtleBot autonomously traveled to the requested desk and waited. The co-worker then [plugged in the Keurig]({{ site.url }}{% post_url 2015-02-01-27 %}) and made their coffee. When our co-worker was finished they pressed a button on the back of TurtleBot and it went to the next desk or, if no one was waiting, it went back to its charging station to await the next needed caffeine fix.
 
 ## Start Dreaming Beyond These Demos!
 
@@ -42,4 +43,3 @@ When a mobile base can move wherever it is needed without running into obstacles
 Recently we saw Bill Smart from Oregon State University and his autonomously navigating electric wheelchair for patients with ALS. In ALS patients, the eyes often work well into the late stages of the disease. Smart places patients wearing Google Glass in the wheelchair and they simply look where they want to go and blink. The wheelchair navigates to that location, without running into anything along the way.
 
 In summary, whether you are delivering coffee, transporting people, or moving industrial equipment, progress starts with knowing where you are, what your goal is, and how to achieve it while avoiding obstacles. TurtleBot makes learning these core concepts affordable, accessible and fun.
-

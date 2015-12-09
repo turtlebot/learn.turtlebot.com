@@ -1,0 +1,167 @@
+---
+layout: post
+title:  "Multiple TurtleBots in Concert"
+date:   2015-02-04 10:00:06
+answerrostag: "challenge_multiple_turtlebots"
+track: [challenge]
+---
+
+In this lesson we will learn how to launch two TurtleBots simultaneously in
+simulation world. We will use robotics in concert packages (a.k.a. rocon).
+
+## Prerequisites
+
+1\. Install packages.
+{% highlight sh %}
+sudo apt-get install ros-indigo-turtlebot-concert
+sudo apt-get install ros-indigo-gazebo-concert
+sudo apt-get install ros-indigo-rocon-remocon
+sudo apt-get install ros-indigo-concert-services
+{% endhighlight %}
+
+2\. In the tutorial we will use some modifications of standard packages. Let's
+create a workspace.
+{% highlight sh %}
+mkdir -p ~/my_ws/src/
+{% endhighlight %}
+
+All packages will be situated in `src` folder. It is highly recommended to
+review [Creating a ROS Package](http://wiki.ros.org/ROS/Tutorials/CreatingPackage)
+and [Building a ROS Package](http://wiki.ros.org/ROS/Tutorials/BuildingPackages)
+before move on.
+
+3\. We will use a `gazebo_concert` package to provide alternative parameters.
+
+3.1 Change directory.
+{% highlight sh %}
+cd ~/my_ws/src
+{% endhighlight %}
+
+3.2 Clone the `rocon_tutorial` repository.
+{% highlight sh %}
+git clone https://github.com/robotics-in-concert/rocon_tutorials.git
+{% endhighlight %}
+
+3.3 Change directory.
+{% highlight sh %}
+cd rocon_tutorials
+{% endhighlight %}
+
+3.4 Change git branch.
+{% highlight sh %}
+git checkout indigo
+{% endhighlight %}
+
+3.5 Change directory.
+{% highlight sh %}
+cd concert_tutorials/gazebo_concert/solutions/
+{% endhighlight %}
+
+3.6 Edit `gazebo.parameters` file. We want to launch two TurtleBot simultaneously.
+It is a new `gazebo.parameters` file.
+{% highlight sh %}
+robots:
+  - name: gamza1
+    type: turtlebot
+    robot_rapp_whitelist: [rocon_apps, turtlebot_rapps]
+    location: [0.0, 0.2, 0.0]
+  - name: gamza2
+    type: turtlebot
+    robot_rapp_whitelist: [rocon_apps, turtlebot_rapps]
+    location: [0.0, 0.0, 0.0]
+
+world_file: concert_service_gazebo/playground.world
+{% endhighlight %}
+
+4\. Build package.
+
+4.1  Remember to source your environment setup file.
+{% highlight sh %}
+source /opt/ros/indigo/setup.bash
+{% endhighlight %}
+
+4.2 Change the directory to catkin workspace.
+{% highlight sh %}
+cd ~/my_ws/
+{% endhighlight %}
+
+4.3 Use catkin_make.
+{% highlight sh %}
+catkin_make
+{% endhighlight %}
+
+## Launching Gazebo Concert
+
+1\. Source setup file.
+{% highlight sh %}
+source ~/my_ws/devel/setup.bash
+{% endhighlight %}
+
+***NOTE:*** *The command changes the path only in this terminal.*
+
+2\. Launch gazebo_concert.
+{% highlight sh %}
+roslaunch gazebo_concert concert.launch
+{% endhighlight %}
+
+3\. Start rocon_remocon.
+{% highlight sh %}
+rocon_remocon
+{% endhighlight %}
+
+You will see this image:
+
+{% include image.html img="/assets/sim_remocon_empty_list.png" title="Remocon" %}
+
+4\. Press `Add`. Edit `MASTER_URI`.
+{% highlight sh %}
+MASTER_URI: http://localhost:11311
+{% endhighlight %}
+
+{% include image.html img="/assets/sim_remocon_add.png" title="Remocon Add Master" %}
+
+5\. Press `Add`. You will see ros master `Gazebo Concert`.
+
+{% include image.html img="/assets/sim_remocon.png" title="Remocon Master List" %}
+
+6\. Press `Refresh`.
+
+7\. Select `Gazebo Concert`.
+
+8\. Select `User`.
+
+{% include image.html img="/assets/sim_remocon_role.png" title="Remocon Role Chooser" %}
+
+9\. Select `Gazebo Viewer`.
+
+{% include image.html img="/assets/sim_remocon_interact.png" title="Remocon Interactions Chooser" %}
+
+You will see two TurtleBots!
+
+{% include image.html img="/assets/sim_two_turtlebots.png" title="Two TurtleBots in Gazebo" %}
+
+10\. Select `Concert Teleop` in `Interactions Chooser`. You will see this window.
+
+{% include image.html img="/assets/sim_concert_teleop.png" title="Concert Teleop" %}
+
+11\. Select the robot in the resource list and capture it.
+
+{% include image.html img="/assets/sim_concert_capture.png" title="Concert Teleop" %}
+
+***NOTE:*** *You can open concert teleop for each robot and capture them.*
+
+12\. You can drive robot using joystick.
+
+{% include image.html img="/assets/sim_concert_joystick.png" title="Joystick Operations" %}
+
+13\. To finish select `Release`.
+
+14\. Interrupt the processes. Close the windows.
+
+You can watch these steps in the video:
+
+{% include youtube.html youtubeid="9CnzOqjZn7Y" youtubetitle="Multiple TurtleBots in Concert"%}
+
+You can add new robots in simulation by editing `gazebo.parameters` file in
+`gazebo_concert` package. Read more about rocon project on
+[wiki ros](http://wiki.ros.org/rocon).

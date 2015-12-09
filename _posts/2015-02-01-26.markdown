@@ -3,6 +3,7 @@ layout: post
 title:  "Setting Optimal Angles for Customers"
 date:   2015-02-01 13:46:27
 answerrostag: "set_angle"
+track: [coffeebot]
 ---
 
 For simplicity, our tutorial applications include only the X and Y coordinates for your customers and do not include the angle TurtleBot should face when it arrives at the customer’s location. Keep in mind that ROS is developed for robots that work in 3D environments like drones.  Therefore, orientation isn't represented with a single angle. For those who want to take their application to the next level and allow custom angles, here are some tips:

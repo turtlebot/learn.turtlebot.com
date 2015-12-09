@@ -3,13 +3,14 @@ layout: post
 title:  "Testing Kinect"
 date:   2015-02-01 13:46:13
 answerrostag: "test_kinect"
+track: [main]
 ---
 
 In addition to its cliff sensors and bumpers, Kinect is one of the ways TurtleBot “sees” its environment. We’ve already [installed the drivers for Kinect]({{ site.url }}{% post_url 2015-02-01-5 %}) so now we’ll test it to make sure it works.
 
 ## Test Driver and USB Connection (TurtleBot Only)
 
-Before doing anything, check the default 3D sensor of Turtlebot by printing an
+Before doing anything, check the default 3D sensor of TurtleBot by printing an
 environment variable and confirm the output:
 
 {% highlight sh %}

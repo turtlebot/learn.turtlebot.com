@@ -3,6 +3,7 @@ layout: post
 title:  "Charging the Netbook"
 date:   2015-02-01 13:46:19
 answerrostag: "charging_netbook"
+track: [main]
 ---
 
 By default, when you dock to the charging station the Kobuki base will charge but the netbook will not charge. The Kobuki base includes a 19v 2a power rail that allows you to autonomously charge the netbook as well.
