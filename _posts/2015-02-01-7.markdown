@@ -9,7 +9,7 @@ Now that we’ve chased [TurtleBot around while pressing keys on the netbook]({{
 
 ## Synchronizing Clocks (TurtleBot and Workstation)
 
-Follow only the [“Network Time Protocol” instructions on the Post-Installation Setup](http://wiki.ros.org/turtlebot/Tutorials/indigo/Post-Installation%20Setup) page. Skip the special cases instructions.
+Follow only the [“Network Time Protocol” instructions on the Post-Installation Setup](http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration#Robots.2BAC8-TurtleBot.2BAC8-Robot_Setup.2BAC8-ntp.Network_Time_Protocol) page. Skip the special cases instructions.
 
 ***QUICK TIP:** Make sure both TurtleBot and the workstation are connected to the same router. To avoid problems moving forward, disable security options such as firewalls and anything that does port blocking .*
 
