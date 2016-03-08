@@ -33,8 +33,10 @@ If you’d like to contribute, email me your github username and feel free to ad
 * [Mark Silliman](https://github.com/markwsilliman)
 * [Austin Meyers (AK5A)](https://github.com/ak5a)
 * [Melissa Eaton](https://github.com/MustangSally12)
+* [Tully Foote](https://github.com/tfoote)
 * [ClearPath Robotics](https://github.com/clearpathrobotics)
 * [Erico Guizzo](https://twitter.com/ericoguizzo)
 * [Tarik Kelestemur](https://github.com/tkelestemur)
 * [Ahmet Sezgin Duran](https://github.com/marjinal1st)
 * Ivan Gavran
+* [Nadya Ampilogova](https://github.com/nampi)
