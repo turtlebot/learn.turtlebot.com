@@ -15,4 +15,4 @@ EXPOSE 4000
 VOLUME /tmp/jekyll
 WORKDIR /tmp/jekyll
 
-CMD jekyll serve -w --baseurl='' -d /tmp/_site
+CMD jekyll serve -w -H 0.0.0.0 --baseurl='' -d /tmp/_site

@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "We Want You to Learn TurtleBot in Simulation!"
+date:   2015-02-03 10:00:01
+answerrostag: "simulation_introduction"
+track: [simulation]
+---
+
+A robotics simulator is used to create embedded applications for a robot
+without depending physically on the actual machine. The good part is that most
+applications used in simulation can be transferred to physical robots without
+major changes.
+
+## Advantages of Using Simulation
+
+Simulation can be useful if you have not a real robot and even if you have.
+
+If you have not got a robot you can start the work without buying, waiting for
+the delivery, making the robot. It is free! You should install the special
+software and go throw this tutorial. You can start writing the working code and
+see the results in a short time!
+
+If you have a real robot you can save your time and money using simulation:
+
+1. Cost
+
+   There would be no risk damaging your hardware if you want to test some new
+   programs. No hardware consumption, no maintenance.
+2. Time
+
+   You do not have to wait the battery recharge. You can run simulations in
+   parallel or you can run different types of robots in one model. You do not
+   have to spend your time on hardware repairing.
+3. Experiments
+
+   You can choose any environment, any robot and any sensor. In real life it is
+   difficult to repeat the exact circumstances again so you only get one chance
+   to collect the results and you cannot test different ideas under the exact
+   circumstances. You can test the same system again and again with different
+   inputs using simulation software.
+
+Unfortunately, despite all advantages even the best software cannot simulate
+the real world in his perfect.
+
+## Start Using TurtleBot in Gazebo Simulator!
+
+We use [Gazebo](http://gazebosim.org/) simulation platform in this tutorial. Gazebo
+supports ROS and maintained by [Open Source Robotics Foundation](http://www.osrfoundation.org/).
+Gazebo is an open source software platform for which anyone can develop a
+plug-in with model components. Gazebo can simulate complex systems. For
+instance, several robots with objects in their environments. It is used
+especially in developing robots used in interaction, to lift or grab objects,
+to push, or for any other activity which requires recognition and localization
+in space.

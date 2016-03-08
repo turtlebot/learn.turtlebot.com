@@ -3,6 +3,7 @@ layout: post
 title:  "Configuring the Final Script"
 date:   2015-02-01 13:46:22
 answerrostag: "config_script"
+track: [coffeebot]
 ---
 
 On the workstation, open a terminal and run:

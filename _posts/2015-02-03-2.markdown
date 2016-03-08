@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Software Installation"
+date:   2015-02-03 10:00:02
+answerrostag: "simulation_installation"
+track: [simulation]
+---
+
+This tutorial assumes you are running Ubuntu 14.04. If you want to install
+Ubuntu on your machine, follow [this tutorial]({{ site.url }}{% post_url 2015-02-01-4 %}).
+
+***NOTE:*** *If you use virtual machine it will cause problems.*
+
+To create a TurtleBot simulation you will need to install ROS Indigo and
+TurtleBot packages following [this tutorial]({{ site.url }}{% post_url 2015-02-01-5 %}).
+
+***NOTE:*** *You should use the LTS versions of these software as we wrote
+[before]({{ site.url }}{% post_url 2015-02-01-4 %}). Both Ubuntu 14.04 and ROS
+Indigo are LTS.*
+
+You can check which version of Linux you have by running:
+{% highlight sh %}
+lsb_release -a
+{% endhighlight %}
+
+You have the right version if you see:
+{% highlight sh %}
+Description: Ubuntu 14.04.* LTS
+{% endhighlight %}
+
+{% include image.html img="/assets/sim_lsb_release.png" title="Result of “lsb_release -a” in Terminal" %}
+
+You have to set up the ROS environment variables before executing any ROS
+command. You have to run in every new terminal:
+{% highlight sh %}
+source /opt/ros/indigo/setup.bash
+{% endhighlight %}
+
+But, you can pre-configure your terminal with ROS environment variables and
+do not think about it:
+{% highlight sh %}
+echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
+{% endhighlight %}
+
+***NOTE:*** *If you want to edit or remove this configuration from your terminal's
+environment you will need to edit `~/.bashrc` and make the updates there.*
+
+Adding settings to the `~/.bashrc` will affect only new terminals. So you will
+need to reopen the terminals.
+
+***NOTE:*** *We use the pre-configured terminal in all lessons, so do not forget
+to write the proper command if you prefer the first case.*
+
+You can check which distribution of ROS you have by running:
+{% highlight sh %}
+roscore
+{% endhighlight %}
+
+You have the right distribution if you see:
+{% highlight sh %}
+ * /rosdistro: indigo
+{% endhighlight %}
+
+{% include image.html img="/assets/sim_roscore.png" title="Result of “roscore” in Terminal" %}
+
+ROS is installed correctly if you see:
+{% highlight sh %}
+started core service [/rosout]
+{% endhighlight %}
+
+If there are any troubles, try to reinstall the software step by step using the
+tutorials. In addition, you can ask your questions or find a solution for
+similar problem on [this site](http://answers.ros.org/questions/).

@@ -3,6 +3,7 @@ layout: post
 title:  "Configure CoffeeBot’s Web Server"
 date:   2015-02-01 13:46:20
 answerrostag: "web_server"
+track: [coffeebot]
 ---
 
 {% include critical_pre.html title="Important" %}
@@ -170,5 +171,3 @@ $a["password"] = "turtlebot"; //mysql password
 and update the value.
 
 Then *ctrl + x* to exit and y to save.
-
-

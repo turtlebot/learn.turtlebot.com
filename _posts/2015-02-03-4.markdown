@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Testing Simulated Kinect"
+date:   2015-02-03 10:00:04
+answerrostag: "simulation_kinect"
+track: [simulation]
+---
+## What is Kinect?
+{% include image_onrightoftext.html img="/assets/sim_kinect_camera.png" width="225" %}
+
+Kinect consists of three parts that work together: an RGB camera, a depth sensor, and a multi-array microphone. The TurtleBot uses Kinect to see the world in 3D and for detecting and tracking objects.
+
+## Prerequisites
+
+First of all, make sure you have the openni packages installed:
+{% highlight sh %}
+sudo apt-get install ros-indigo-openni-*
+{% endhighlight %}
+
+You can check the active 3D sensor of TurtleBot by running:
+{% highlight sh %}
+echo $TURTLEBOT_3D_SENSOR
+{% endhighlight %}
+
+You have the right active 3D sensor if you see `kinect`. If you see `asus_xtion_pro` or something else you will need to set another value in `.bashrc`:
+{% highlight sh %}
+echo "export TURTLEBOT_3D_SENSOR=kinect" >> .bashrc
+{% endhighlight %}
+
+or run this command in every new terminal:
+{% highlight sh %}
+TURTLEBOT_3D_SENSOR=kinect
+{% endhighlight %}
+
+## Testing Kinect
+
+[comment]: <> (TODO: write this section)
+
+***NOTE:*** *This section is going to be completed later.*

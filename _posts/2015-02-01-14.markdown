@@ -3,6 +3,7 @@ layout: post
 title:  "Going to a Specific Location on Your Map Using Code"
 date:   2015-02-01 13:46:16
 answerrostag: "specific_location"
+track: [main]
 ---
 
 Now that you’ve found that TurtleBot can go to a specific relative pose (pose = location + orientation), it’s probably not surprising to learn that it can go to a specific location on a map.
@@ -38,13 +39,13 @@ In a new terminal window run:
 gedit ~/helloworld/go_to_specific_point_on_map.py
 {% endhighlight %}
 
-Look for this line of code (line 30):
+Look for this line of code (line 83):
 
 {% highlight sh %}
-goal.target_pose.pose = Pose((Point(2.18, -1.7, 0.000), Quaternion(0.000, 0.000, 0.892, -1.500)).
+position = {'x': 1.22, 'y' : 2.56}
 {% endhighlight %}
 
-Overwrite the first two values of `Point()` with the numbers you wrote down earlier when doing “publish point”. Save and exit.
+Overwrite the `x`, `y` values with the numbers you wrote down earlier when doing “publish point”. Save and exit.
 
 Then run:
 

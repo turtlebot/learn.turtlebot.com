@@ -3,6 +3,7 @@ layout: post
 title:  "Installing the Chrome Browser Extension"
 date:   2015-02-01 13:46:21
 answerrostag: "chrome_extension"
+track: [coffeebot]
 ---
 
 We might love ordering coffee from the terminal, but we suspect your customers won’t. Give them the CoffeeBot Chrome Extension so they can order in style.
@@ -68,4 +69,3 @@ Back in Chrome:
 Once we’ve finished the demo, you can order coffee right from the browser!
 
 ***TIP:** You can share the modified browser extension folder with all of your customers and have them install it using the above instructions. (This works on Mac, PC and anything that can install Chrome.)*
-

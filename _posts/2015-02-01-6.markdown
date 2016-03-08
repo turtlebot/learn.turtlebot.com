@@ -3,6 +3,7 @@ layout: post
 title:  "Testing TurtleBot Installation"
 date:   2015-02-01 13:46:11
 answerrostag: "install_turtlebot"
+track: [main]
 ---
 
 ***NOTE:** For this tutorial, set the computer on top of TurtleBot with the lid open instead of placing the closed netbook on the shelf above the Kobuki base.*

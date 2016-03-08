@@ -3,6 +3,7 @@ layout: post
 title:  "Creating a Map"
 date:   2015-02-01 13:46:15
 answerrostag: "create_map"
+track: [main]
 ---
 
 Though ROS can work in unknown environments, it helps to start with a map of the environment that we’re working in.

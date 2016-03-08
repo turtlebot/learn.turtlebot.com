@@ -3,6 +3,7 @@ layout: post
 title:  "Hardware Setup"
 date:   2015-02-01 13:46:08
 answerrostag: "hardware"
+track: [main]
 ---
 
 {% include youtube.html youtubeid="dzZGsZPW4aY" youtubetitle="TurtleBot Hardware Setup"%}

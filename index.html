@@ -10,11 +10,47 @@ answerrostag: "index"
 
   {% include image_onrightoftext.html img="assets/turtlebot_2_lg.png" width="225" %}
 
+  <h2>Learning with the TurtleBot</h2>
   <ol>
     {% for post in site.posts reversed %}
-      <li>
+      {% if post.track contains "main" %}
+        <li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  <h2>CoffeeBot Challenge</h2>
+  <ol>
+    {% for post in site.posts reversed %}
+      {% if post.track contains "coffeebot" %}
+        <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  <h2>Learning with the TurtleBot in Simulation</h2>
+  <ol>
+    {% for post in site.posts reversed %}
+      {% if post.track contains "simulation" %}
+        <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  <h2>Challenge in Simulation</h2>
+  <ol>
+    {% for post in site.posts reversed %}
+      {% if post.track contains "challenge" %}
+        <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ol>
 
