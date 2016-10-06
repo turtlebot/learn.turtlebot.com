@@ -34,6 +34,19 @@ TURTLEBOT_3D_SENSOR=kinect
 
 ## Testing Kinect
 
-[comment]: <> (TODO: write this section)
+To test Kinect sensor in simulated environment, fire up a standard Turtlebot simulation by running:
 
-***NOTE:*** *This section is going to be completed later.*
+{% highlight sh %}
+roslaunch turtlebot_gazebo turtlebot_world.launch
+{% endhighlight %}
+
+Next, start the Rviz by running:
+
+{% highlight sh %}
+roslaunch turtlebot_rviz_launchers view_robot.launch
+{% endhighlight %}
+
+Then click on **DepthCloud** option on the left side and, move your camera with mouse.
+You should see Kinect's depth cloud in various colors.
+
+{% include image.html img="/assets/simulated-kinect.png" title="Simulated Kinect" %}
