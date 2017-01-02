@@ -22,7 +22,7 @@ roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
 On the workstation, open a terminal and run:
 
 {% highlight sh %}
-roslaunch kobuki_auto_docking TurtleBot.launch
+roslaunch kobuki_auto_docking coffeebot.launch
 roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
 {% endhighlight %}
 
