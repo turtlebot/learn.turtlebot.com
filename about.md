@@ -40,3 +40,4 @@ If you’d like to contribute, email me your github username and feel free to ad
 * [Ahmet Sezgin Duran](https://github.com/marjinal1st)
 * Ivan Gavran
 * [Nadya Ampilogova](https://github.com/nampi)
+* Jan-Hubert van Rensen
