@@ -12,5 +12,9 @@ twitter_username: MWSilliman
 markdown: kramdown
 permalink: pretty
 
-gems:
-  - jekyll-sitemap
+plugins:
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji
+#- jekyll-github-metadata
