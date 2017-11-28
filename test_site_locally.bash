@@ -2,6 +2,4 @@
 
 set -o errexit
 
-docker build -t "learn_turtlebot" .
-
-docker run -v `pwd`:/tmp/jekyll -w /tmp/jekyll -i -t --net=host learn_turtlebot
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
