@@ -13,10 +13,10 @@ major changes.
 
 ## Advantages of Using Simulation
 
-Simulation can be useful if you have not a real robot and even if you have.
+Simulation can be useful whether or not you have a physical robot.
 
-If you have not got a robot you can start the work without buying, waiting for
-the delivery, making the robot. It is free! You should install the special
+If you do not have a robot, you can start the work without buying, waiting for
+the delivery, and making the robot. It is free! You should install the special
 software and go throw this tutorial. You can start writing the working code and
 see the results in a short time!
 
@@ -39,13 +39,13 @@ If you have a real robot you can save your time and money using simulation:
    circumstances. You can test the same system again and again with different
    inputs using simulation software.
 
-Unfortunately, despite all advantages even the best software cannot simulate
-the real world in his perfect.
+Unfortunately, despite all advantages, even the best software cannot simulate
+the real world perfectly.
 
 ## Start Using TurtleBot in Gazebo Simulator!
 
 We use [Gazebo](http://gazebosim.org/) simulation platform in this tutorial. Gazebo
-supports ROS and maintained by [Open Source Robotics Foundation](http://www.osrfoundation.org/).
+supports ROS and is maintained by [Open Robotics](https://www.openrobotics.org/).
 Gazebo is an open source software platform for which anyone can develop a
 plug-in with model components. Gazebo can simulate complex systems. For
 instance, several robots with objects in their environments. It is used
